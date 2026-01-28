@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "about": "About",
+    "coachingFocus": "Coaching Focus",
+    "references": "References",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Begin Your Transformation",
+    "subtitle": "Unlock the potential of individuals and organizations through professional coaching and training solutions",
+    "cta": "Get in Touch",
+    "scroll": "Explore"
+  },
+  "about": {
+    "title": "About",
+    "description": "Founded in 2017 by Nurhan Yazganel (MCC, EIA SP), the company was established to support professionals in contributing to the positive transformation of individuals and organizations, increasing their business performance, enabling them to demonstrate their professional competencies at the highest level, establishing the most appropriate management/leadership models using contemporary management styles, and helping them find quick and practical solutions in their ways of working, increasing their motivation and helping them achieve their goals.",
+    "description2": "The company, which provides coaching and training services to offer customized solutions to national and international organizations and individuals, was founded by Nurhan Yazganel, who serves in coaching, training, and consulting roles at different levels in different sectors. Believing that coaching and training contribute to the positive transformation of the world, it operates with the understanding of \"Individual/Corporate Customized Service.\"",
+    "description3": "Yazganel, who can combine education, coaching, mentoring, and facilitation hats while offering short, medium, and long-term solutions, makes a difference with the measurements and techniques she applies to ensure the best feedback, create action plans, and achieve individual behavioral changes."
+  },
+  "founder": {
+    "title": "Nurhan YAZGANEL",
+    "credentials": "MCC, EIA SP",
+    "quote": "'Love yourself, believe in yourself, and make a difference.'",
+    "bio": "Nurhan Yazganel, who graduated from the Naval Academy in 1996, is Turkey's first active-duty female officer. She completed her Bachelor's degree in Computer and Control Engineering and then completed Master's programs in Business Administration, International Relations, and Public Administration at various universities. She worked in many different roles with different teams/leaders for 21 years in the Naval Forces Command and retired with the rank of Major.",
+    "bio2": "From this date, she decided to continue her journey with coaching and received training from many different disciplines that develop coaching, including Basic and Advanced Professional Coaching training, Team Coaching, Executive Coaching, and Parent Coaching. With over 8,000 hours of experience in high-level executive, team, and performance coaching/mentoring, she has managed to become one of the few coaches holding the MCC (Master Certified Coach) title approved by ICF (International Coach Federation). She is also one of the few coaches holding the Senior Practitioner title approved by EMCC (European Mentoring & Coaching Council).",
+    "bio3": "She led the establishment of PDRICMA (PDR International Coaching and Mentoring Academy), one of Turkey's leading coaching schools, in 2020, and pioneered the school's design and accreditation as a mosaic that considers Turkish motifs, traces of Eastern/Western civilizations, and all coaching schools. She served as the Dean of PDRICMA from 2020-2026 and now continues her work through Core Coaching & Training Solutions, the company she founded and directs.",
+    "bio4": "Yazganel, who is also an expert in corporate training, has had the opportunity to work with tens of thousands of people by providing training/seminars on a wide variety of topics to over 300 companies on national and international platforms for over 12 years. She is one of the names preferred by companies as a Keynote Speaker/Motivation speaker in recent times.",
+    "bio5": "Believing that individuals are unique and one-of-a-kind, trying to look at life holistically, and valuing nature and love, she has made it her mission to be with people and touch them so that everyone can discover their potential and make a difference. The words that best express her outlook on life would be \"Passion,\" \"Curiosity,\" and \"Love.\""
+  },
+  "coaching": {
+    "title": "Coaching Focus Areas",
+    "coachingArea": {
+      "title": "Coaching Area",
+      "items": [
+        "C-Level Leadership Coaching",
+        "Team Coaching",
+        "Executive Coaching",
+        "Assessment Preparation Coaching",
+        "Credentialing Coaching",
+        "Credentialing Mentoring",
+        "Level 1 and Level 2 Professional Coaching Training Program Instructor"
+      ]
+    },
+    "trainingArea": {
+      "title": "Training/Consulting Area",
+      "items": [
+        "Developing Management and Leadership Skills",
+        "Effective People Management",
+        "Change Management",
+        "Motivation",
+        "The Art of Feedback",
+        "Teamwork and Team Coaching",
+        "Coaching for Corporate Assessment Preparation Processes",
+        "Enhancing Performance Review Effectiveness",
+        "Developing Coaching Skills",
+        "Emotional Intelligence",
+        "Stress Management",
+        "Time Management",
+        "Meeting Management",
+        "Verbal and Written Communication Skills",
+        "Success and Self-Confidence",
+        "Problem Solving and Decision Making",
+        "Customer Focus and Quality Service",
+        "Strategy Management"
+      ]
+    }
+  },
+  "references": {
+    "title": "Reference Examples"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch with us to begin your transformation journey",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "youtube": "YouTube"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Thought leadership and insights",
+    "readMore": "Read More",
+    "backToBlog": "Back to Blog"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

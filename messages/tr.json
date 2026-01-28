@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "about": "Hakkımızda",
+    "coachingFocus": "Koçluk Odak Alanları",
+    "references": "Referanslar",
+    "contact": "İletişim",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Dönüşümünüzü Başlatın",
+    "subtitle": "Profesyonel koçluk ve eğitim çözümleriyle bireylerin ve kurumların potansiyelini ortaya çıkarın",
+    "cta": "İletişime Geçin",
+    "scroll": "Keşfet"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "description": "2017 yılında Nurhan Yazganel (MCC, EIA SP) tarafından kurulan şirket, bireylerin ve kurumların olumlu anlamda dönüşümüne katkı sağlamak, iş performanslarını arttırmak, profesyonel yetkinliklerini en üst düzeyde sergilemelerine imkân sağlamak, günümüz çağdaş yönetim stillerini kullanarak en doğru yönetim/liderlik modellerini kurmak, iş yapış şekillerinde hızlı ve pratik çözümler bulmalarını kolaylaştırmak üzere profesyonelleri desteklemek, motivasyonlarını arttırmak ve hedeflerine ulaşmalarına yardımcı olmak maksadıyla kurulmuştur.",
+    "description2": "Ulusal ve uluslararası kuruluşlara, bireylere özgü çözümler sunmak amacıyla koçluk ve eğitim hizmeti veren şirket, farklı sektörlerde, farklı seviyelerde koçluk, eğitim ve danışmanlık görevlerinde bulunan Nurhan Yazganel tarafından kurulmuştur. Koçluk ve eğitimlerin dünyanın olumlu dönüşümüne katkı sağladığına inanarak \"Bireye/Kuruma Özel Hizmet\" anlayışıyla hizmetlerini yürütmektedir.",
+    "description3": "Kısa, orta ve uzun vadeli çözümler sunarken eğitim, koçluk, mentorluk ve fasilitasyon şapkalarını birleştirerek sunabilen Yazganel, en iyi geri dönüşümün alınabilmesi, aksiyon planlarının oluşturulması ve bireysel davranış değişikliklerinin sağlanabilmesi için uyguladığı ölçümler ve tekniklerle fark yaratmaktadır."
+  },
+  "founder": {
+    "title": "Nurhan YAZGANEL",
+    "credentials": "MCC, EIA SP",
+    "quote": "'Kendinizi sevin, kendinize inanın ve fark yaratın.'",
+    "bio": "1996'da Deniz Harp Okulundan mezun olan Nurhan Yazganel, Türkiye'nin ilk muvazzaf kadın subayıdır. Bilgisayar ve Kontrol Mühendisliği lisansı üzerine çeşitli üniversitelerde İşletme, Uluslararası İlişkiler ve Kamu Yönetimi yüksek lisans programlarını tamamlamıştır. Deniz Kuvvetleri Komutanlığında 21 yıl boyunca çok çeşitli görevde farklı birçok ekiple/liderle çalışmış ve binbaşı rütbesi ile emekli olmuştur.",
+    "bio2": "Bu tarihten itibaren yoluna koçluk yolculuğu ile devam kararı alarak Temel ve İleri Düzey Profesyonel Koçluk eğitimleri ile Takım Koçluğu, Yönetici Koçluğu, Ebeveyn Koçluğu dahil koçluğu geliştiren pek çok farklı disiplinden eğitimler almış, halihazırda 8.000 saati aşkın üst düzey yönetici, takım ve performans koçluğu/mentorlüğu deneyimleri ile ICF (International Coach Federation/ Uluslararası Koçluk Federasyonu) onaylı MCC (Master Certified Coach) ünvanı taşıyan sayılı koçlar arasına girmeyi başarmıştır. Aynı zamanda EMCC (European Mentoring & Coaching Council /Avrupa Yönderlik ve Koçluk Derneği) onaylı Senior Practioner unvanını taşıyan sayılı koçlardandır.",
+    "bio3": "Halihazırda Türkiye'nin sayılı koçluk okullarından biri olan PDRICMA (PDR International Coaching and Mentoring Academy)'nın 2020 yılında kuruluşuna liderlik etmiş, okulun Türk motifleri, doğu/ batı medeniyetlerinin izleri ve tüm koçluk ekollerinin dikkate alan bir mozaik halinde tasarlanarak akredite edilmesine öncülük etmiştir. 2020-2026 yılları arasında PDRICMA Fakülte Başkanlığı görevini yürütmüş, şimdilerde kendi kurduğu ve direktörlüğün yürüttüğü Core Coaching & Training Solutions şirketi üzerinden çalışmalarına devam etmektedir.",
+    "bio4": "Kurumsal eğitimler konusunda da uzman olan Yazganel, bu kapsamda 12 yılı aşkın bir zamandır ulusal ve uluslararası platformlarda 300'ün üzerinde şirkete çok çeşitli konularda eğitimler/seminerler vererek on binlerce kişiyle çalışma şansı bulmuştur. Keynote Speaker/Motivasyon konuşmacısı olarak son dönemlerde şirketler tarafından tercih edilen isimlerdendir.",
+    "bio5": "Bireylerin tek ve eşsiz olduklarına inanan, hayata bütünsel bakmaya çalışan, doğa ve sevgiye değer veren yapısı ile herkesin içinde var olan potansiyelini keşfetmesi ve fark yaratmaları için insanların yanında olmayı, onlara dokunmayı kendine misyon edinmiştir. Hayata bakışını en iyi ifade eden kelimeler \"Tutku\", \"Merak\" ve \"Sevgi\" olacaktır."
+  },
+  "coaching": {
+    "title": "Koçluk Odak Alanları",
+    "coachingArea": {
+      "title": "Koçluk Alanı",
+      "items": [
+        "C-Level Lider Koçluğu",
+        "Takım Koçluğu",
+        "Yönetici/Executive Koçluğu",
+        "Assesment Hazırlama Koçluğu",
+        "Unvanlanma Koçluğu",
+        "Unvanlanma Mentorluğu",
+        "Level 1 ve Level 2 Profesyonel Koçluk Eğitim Programları Eğitmeni"
+      ]
+    },
+    "trainingArea": {
+      "title": "Eğitim/Danışmanlık Alanı",
+      "items": [
+        "Yönetim ve Liderlik Becerilerini Geliştirme",
+        "Etkin İnsan Yönetimi",
+        "Değişim Yönetimi",
+        "Motivasyon",
+        "Geri Bildirim Sanatı",
+        "Ekip Çalışması ve Ekip Koçluğu",
+        "Kurumsal Değerlendirme Hazırlık Süreçleri için Koçluk",
+        "Performans Müzakerelerine Etkinlik Kazandırma",
+        "Koçluk Becerilerini Geliştirme",
+        "Duygusal Zeka",
+        "Stres Yönetimi",
+        "Zaman Yönetimi",
+        "Toplantı Yönetimi",
+        "Sözlü ve Yazılı İletişim Becerileri",
+        "Başarı ve Özgüven",
+        "Problem Çözme ve Karar Verme",
+        "Müşteri Odaklılık ve Kaliteli Hizmet",
+        "Strateji Yönetimi"
+      ]
+    }
+  },
+  "references": {
+    "title": "Referans Örnekleri"
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Dönüşüm yolculuğunuza başlamak için bizimle iletişime geçin",
+    "email": "E-posta",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "youtube": "YouTube"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Düşünce liderliği ve içgörüler",
+    "readMore": "Devamını Oku",
+    "backToBlog": "Blog'a Dön"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır."
+  }
+}
