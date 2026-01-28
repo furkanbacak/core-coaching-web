@@ -4,9 +4,13 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
+import { useLocale } from 'next-intl';
+import { useRouter } from 'next/navigation';
 
 export default function Hero() {
   const t = useTranslations('hero');
+  const locale = useLocale();
+  const router = useRouter();
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [videoError, setVideoError] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -50,8 +54,8 @@ export default function Hero() {
     smoothScrollTo('#about');
   };
 
-  const scrollToContact = () => {
-    smoothScrollTo('#contact');
+  const goToContactPage = () => {
+    router.push(`/${locale}/contact`);
   };
 
   return (
@@ -116,10 +120,10 @@ export default function Hero() {
             className="pt-4"
           >
             <motion.a
-              href="#contact"
+              href={`/${locale}/contact`}
               onClick={(e) => {
                 e.preventDefault();
-                scrollToContact();
+                goToContactPage();
               }}
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}

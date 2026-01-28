@@ -16,13 +16,13 @@ export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [isHeroSection, setIsHeroSection] = useState(true);
 
-  // Check if we're on blog page or home page
-  const isBlogPage = pathname.includes('/blog');
+  // Route context
   const isHomePage = pathname === `/${locale}` || pathname === '/';
+  const isNonHomePage = !isHomePage;
 
   useEffect(() => {
-    // On blog pages, always use dark text (light background)
-    if (isBlogPage) {
+    // On non-home pages (contact, blog, legal, etc.), always use dark text (light background)
+    if (isNonHomePage) {
       setIsHeroSection(false);
       setScrolled(true);
       return;
@@ -42,7 +42,7 @@ export default function Navigation() {
     
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [isBlogPage]);
+  }, [isNonHomePage]);
 
   const toggleLanguage = () => {
     const newLocale = locale === 'tr' ? 'en' : 'tr';
@@ -52,9 +52,9 @@ export default function Navigation() {
 
   const navItems = [
     { key: 'about', href: '#about' },
-    { key: 'coachingFocus', href: '#coaching' },
     { key: 'references', href: '#references' },
-    { key: 'contact', href: '#contact' },
+    { key: 'coachingFocus', href: '#coaching' },
+    { key: 'contact', href: `/${locale}/contact` },
     { key: 'blog', href: `/${locale}/blog` },
   ];
 
@@ -78,14 +78,14 @@ export default function Navigation() {
     if (href.startsWith('#')) {
       // Check if we're on the home page
       const isHomePage = pathname === `/${locale}` || pathname === '/';
-      
+
       if (isHomePage) {
-        // If on home page, use smooth scroll
         smoothScrollTo(href);
       } else {
-        // If not on home page, navigate to home page with hash
         router.push(`/${locale}${href}`);
       }
+    } else {
+      router.push(href);
     }
     setIsOpen(false);
   };
@@ -101,7 +101,7 @@ export default function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isBlogPage || scrolled || !isHeroSection
+        isNonHomePage || scrolled || !isHeroSection
           ? 'bg-white/95 backdrop-blur-sm shadow-sm'
           : 'bg-transparent'
       }`}

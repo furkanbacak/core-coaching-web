@@ -41,14 +41,23 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl"
+            className="flex justify-center md:justify-end"
           >
-            <Image
-              src="/images/nurhan-yazganel.jpg"
-              alt="Nurhan Yazganel"
-              fill
-              className="object-cover"
-            />
+            <div className="relative w-full max-w-sm">
+              {/* subtle premium frame */}
+              <div className="absolute -inset-3 rounded-[28px] bg-gradient-to-br from-primary-50 via-white to-white opacity-90 blur-[2px]" />
+              <div className="relative rounded-[24px] bg-white p-2 shadow-xl ring-1 ring-neutral-200">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-[18px] bg-neutral-100">
+                  <Image
+                    src="/images/nurhan-yazganel.jpg"
+                    alt="Nurhan Yazganel"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
 

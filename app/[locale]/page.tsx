@@ -4,7 +4,6 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import CoachingFocus from '@/components/CoachingFocus';
 import References from '@/components/References';
-import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 export default function HomePage() {
@@ -15,9 +14,8 @@ export default function HomePage() {
       <main>
         <Hero />
         <About />
-        <CoachingFocus />
         <References />
-        <Contact />
+        <CoachingFocus />
       </main>
       <Footer />
     </>

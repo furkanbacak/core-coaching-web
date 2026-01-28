@@ -67,7 +67,7 @@
     }
   },
   "references": {
-    "title": "Referans Örnekleri"
+    "title": "Referanslar"
   },
   "contact": {
     "title": "İletişim",
@@ -84,6 +84,31 @@
     "backToBlog": "Blog'a Dön"
   },
   "footer": {
-    "rights": "Tüm hakları saklıdır."
+    "rights": "Tüm hakları saklıdır.",
+    "contactTitle": "İletişim",
+    "contactLink": "İletişim sayfası",
+    "emailLabel": "E-posta",
+    "socialTitle": "Sosyal",
+    "legalTitle": "Yasal",
+    "terms": "Kullanım Şartları",
+    "privacy": "Gizlilik Politikası",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "youtube": "YouTube"
+  },
+  "contactPage": {
+    "title": "İletişim",
+    "subtitle": "Kısa bir not bırakın; mesajınız mail uygulamanızda taslak olarak açılır.",
+    "name": "Ad Soyad",
+    "email": "E-posta",
+    "message": "Mesaj",
+    "submit": "Mail Oluştur",
+    "hint": "Gönder’e bastığınızda, cihazınızın mail uygulamasında bir e‑posta taslağı açılır. Form verileri sitede saklanmaz.",
+    "consent": "<terms>Kullanım Şartları</terms> ve <privacy>Gizlilik Politikası</privacy>’nı okudum, kabul ediyorum.",
+    "consentCta": "Devam etmek için onay vermeniz gerekiyor."
+  },
+  "legal": {
+    "termsTitle": "Kullanım Şartları",
+    "privacyTitle": "Gizlilik Politikası"
   }
 }

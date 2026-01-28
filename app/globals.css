@@ -26,6 +26,34 @@ body {
   line-height: 1.6;
 }
 
+/* Reference marquee (continuous logo scroll) */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 120s linear infinite;
+  will-change: transform;
+}
+
+@media (max-width: 640px) {
+  .marquee-track {
+    animation-duration: 150s;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
