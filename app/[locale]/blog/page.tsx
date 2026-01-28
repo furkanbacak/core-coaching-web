@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import Navigation from '@/components/Navigation';
+import BlogHero from '@/components/BlogHero';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 
@@ -77,16 +78,9 @@ export default async function BlogPage({
   return (
     <>
       <Navigation />
-      <main className="pt-20 min-h-screen bg-white">
+      <BlogHero />
+      <main className="min-h-screen bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-neutral-900 mb-6">
-              {t('title')}
-            </h1>
-            <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
-              {t('subtitle')}
-            </p>
-          </div>
 
           <div className="space-y-8">
             {blogPosts.map((post) => (

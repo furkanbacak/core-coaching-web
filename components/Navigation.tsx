@@ -14,14 +14,35 @@ export default function Navigation() {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isHeroSection, setIsHeroSection] = useState(true);
+
+  // Check if we're on blog page or home page
+  const isBlogPage = pathname.includes('/blog');
+  const isHomePage = pathname === `/${locale}` || pathname === '/';
 
   useEffect(() => {
+    // On blog pages, always use dark text (light background)
+    if (isBlogPage) {
+      setIsHeroSection(false);
+      setScrolled(true);
+      return;
+    }
+
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      const scrollY = window.scrollY;
+      setScrolled(scrollY > 20);
+      
+      // Check if we're in the hero section (first 80vh)
+      const heroHeight = window.innerHeight;
+      setIsHeroSection(scrollY < heroHeight * 0.8);
     };
+    
+    // Initial check
+    handleScroll();
+    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isBlogPage]);
 
   const toggleLanguage = () => {
     const newLocale = locale === 'tr' ? 'en' : 'tr';
@@ -37,17 +58,30 @@ export default function Navigation() {
     { key: 'blog', href: `/${locale}/blog` },
   ];
 
+  // Ultra-smooth scroll using native behavior
+  const smoothScrollTo = (targetId: string) => {
+    const targetElement = document.querySelector(targetId);
+    if (!targetElement) return;
+
+    const navHeight = 80;
+    const elementPosition = targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+
+    // Use native smooth scroll for best performance
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth',
+    });
+  };
+
   const handleNavClick = (href: string) => {
     if (href.startsWith('#')) {
       // Check if we're on the home page
       const isHomePage = pathname === `/${locale}` || pathname === '/';
       
       if (isHomePage) {
-        // If on home page, just scroll to the section
-        const element = document.querySelector(href);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
+        // If on home page, use smooth scroll
+        smoothScrollTo(href);
       } else {
         // If not on home page, navigate to home page with hash
         router.push(`/${locale}${href}`);
@@ -56,10 +90,20 @@ export default function Navigation() {
     setIsOpen(false);
   };
 
+  // Determine text color based on section
+  const isLightBackground = !isHeroSection || scrolled;
+  const textColor = isLightBackground 
+    ? 'text-neutral-700 hover:text-primary-500' 
+    : 'text-white hover:text-primary-200';
+  const logoTextColor = isLightBackground ? 'text-neutral-800' : 'text-white';
+  const hamburgerColor = isLightBackground ? 'bg-neutral-700' : 'bg-white';
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+        isBlogPage || scrolled || !isHeroSection
+          ? 'bg-white/95 backdrop-blur-sm shadow-sm'
+          : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,7 +118,7 @@ export default function Navigation() {
                 priority
               />
             </div>
-            <span className="text-xl font-semibold text-neutral-800">CORE</span>
+            <span className={`text-xl font-semibold transition-colors ${logoTextColor}`}>CORE</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -91,7 +135,7 @@ export default function Navigation() {
                     router.push(item.href);
                   }
                 }}
-                className="text-neutral-700 hover:text-primary-500 transition-colors text-sm font-medium cursor-pointer"
+                className={`${textColor} transition-colors text-sm font-medium cursor-pointer`}
               >
                 {t(item.key)}
               </a>
@@ -117,21 +161,21 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-neutral-700"
+            className={`md:hidden p-2 ${isLightBackground ? 'text-neutral-700' : 'text-white'}`}
             aria-label="Toggle menu"
           >
             <div className="w-6 h-6 flex flex-col justify-center space-y-1.5">
               <motion.span
                 animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
-                className="block h-0.5 w-6 bg-neutral-700 transition-all"
+                className={`block h-0.5 w-6 ${hamburgerColor} transition-all`}
               />
               <motion.span
                 animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-                className="block h-0.5 w-6 bg-neutral-700 transition-all"
+                className={`block h-0.5 w-6 ${hamburgerColor} transition-all`}
               />
               <motion.span
                 animate={isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
-                className="block h-0.5 w-6 bg-neutral-700 transition-all"
+                className={`block h-0.5 w-6 ${hamburgerColor} transition-all`}
               />
             </div>
           </button>
@@ -160,7 +204,7 @@ export default function Navigation() {
                       router.push(item.href);
                     }
                   }}
-                  className="block text-neutral-700 hover:text-primary-500 transition-colors text-base font-medium py-2 cursor-pointer"
+                  className={`block ${textColor} transition-colors text-base font-medium py-2 cursor-pointer`}
                 >
                   {t(item.key)}
                 </a>
