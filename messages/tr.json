@@ -73,6 +73,8 @@
     "title": "İletişim",
     "subtitle": "Dönüşüm yolculuğunuza başlamak için bizimle iletişime geçin",
     "email": "E-posta",
+    "location": "Konum",
+    "socialTitle": "Sosyal Medya",
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
     "youtube": "YouTube"
@@ -97,15 +99,20 @@
     "youtube": "YouTube"
   },
   "contactPage": {
-    "title": "İletişim",
-    "subtitle": "Kısa bir not bırakın; mesajınız mail uygulamanızda taslak olarak açılır.",
+    "title": "İletişime Geçin",
+    "subtitle": "Dönüşüm yolculuğunuza birlikte başlayalım",
+    "formTitle": "Mesaj Gönderin",
     "name": "Ad Soyad",
     "email": "E-posta",
     "message": "Mesaj",
-    "submit": "Mail Oluştur",
-    "hint": "Gönder’e bastığınızda, cihazınızın mail uygulamasında bir e‑posta taslağı açılır. Form verileri sitede saklanmaz.",
-    "consent": "<terms>Kullanım Şartları</terms> ve <privacy>Gizlilik Politikası</privacy>’nı okudum, kabul ediyorum.",
-    "consentCta": "Devam etmek için onay vermeniz gerekiyor."
+    "submit": "Gönder",
+    "hint": "Mail uygulamanızda taslak olarak açılır, verileriniz saklanmaz.",
+    "consent": "<terms>Kullanım Şartları</terms> ve <privacy>Gizlilik Politikası</privacy>'nı kabul ediyorum.",
+    "consentCta": "Devam etmek için onay vermeniz gerekiyor.",
+    "quickResponse": "Hızlı Yanıt",
+    "quickResponseText": "Mesajlarınıza genellikle iş günlerinde 24 saat içinde dönüş yapıyoruz.",
+    "responseTime": "Ortalama yanıt süresi",
+    "responseTimeValue": "< 24 saat"
   },
   "legal": {
     "termsTitle": "Kullanım Şartları",

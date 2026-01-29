@@ -18,7 +18,6 @@ import {
   ClipboardList,
   Gauge,
   BookOpen,
-  Heart,
   Shield,
   Clock,
   Calendar,
@@ -27,10 +26,6 @@ import {
   UserCheck,
   Target,
   Brain,
-  Activity,
-  Puzzle,
-  Smile,
-  Chess,
 } from 'lucide-react';
 
 // Icon mapping for coaching area items
@@ -63,7 +58,7 @@ const trainingIcons = [
   Trophy,          // Başarı ve Özgüven
   Lightbulb,       // Problem Çözme ve Karar Verme
   UserCheck,       // Müşteri Odaklılık ve Kaliteli Hizmet
-  Chess,           // Strateji Yönetimi
+  Target,          // Strateji Yönetimi
 ];
 
 const getIcon = (index: number, category: 'coaching' | 'training') => {

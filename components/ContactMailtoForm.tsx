@@ -2,8 +2,9 @@
 
 import { FormEvent, useMemo, useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { Mail, Send } from 'lucide-react';
-import Link from 'next/link';
+import { Mail, Send, User, MessageCircle } from 'lucide-react';
+import LegalModal from './LegalModal';
+import { TermsContent, PrivacyContent } from './LegalContent';
 
 const DEFAULT_TO = 'info@corecoaching.com';
 
@@ -18,12 +19,17 @@ function buildMailtoUrl(params: { to: string; subject: string; body: string }) {
 
 export default function ContactMailtoForm() {
   const t = useTranslations('contactPage');
+  const tLegal = useTranslations('legal');
   const locale = useLocale();
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [consent, setConsent] = useState(false);
+
+  // Modal states
+  const [showTerms, setShowTerms] = useState(false);
+  const [showPrivacy, setShowPrivacy] = useState(false);
 
   const subject = useMemo(() => {
     return locale === 'tr' ? 'İletişim Formu' : 'Contact Form';
@@ -51,105 +57,161 @@ export default function ContactMailtoForm() {
   };
 
   return (
-    <form onSubmit={onSubmit} className="space-y-5">
-      <div className="grid gap-4 md:grid-cols-2">
-        <label className="space-y-2">
-          <span className="text-sm font-medium text-neutral-700">{t('name')}</span>
-          <input
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+    <>
+      <form onSubmit={onSubmit} className="space-y-6">
+        <div className="grid gap-5 md:grid-cols-2">
+          {/* Name Field */}
+          <div className="space-y-2">
+            <label className="flex items-center gap-2 text-sm font-medium text-neutral-700">
+              <User className="w-4 h-4 text-neutral-400" />
+              {t('name')}
+            </label>
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+              className="w-full rounded-xl border-2 border-neutral-200 bg-neutral-50 px-4 py-3.5 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-primary-400 focus:bg-white focus:ring-4 focus:ring-primary-100 transition-all duration-200"
+              placeholder={locale === 'tr' ? 'Ad Soyad' : 'Full name'}
+            />
+          </div>
+
+          {/* Email Field */}
+          <div className="space-y-2">
+            <label className="flex items-center gap-2 text-sm font-medium text-neutral-700">
+              <Mail className="w-4 h-4 text-neutral-400" />
+              {t('email')}
+            </label>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="w-full rounded-xl border-2 border-neutral-200 bg-neutral-50 px-4 py-3.5 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-primary-400 focus:bg-white focus:ring-4 focus:ring-primary-100 transition-all duration-200"
+              placeholder="email@sirket.com"
+            />
+          </div>
+        </div>
+
+        {/* Message Field */}
+        <div className="space-y-2">
+          <label className="flex items-center gap-2 text-sm font-medium text-neutral-700">
+            <MessageCircle className="w-4 h-4 text-neutral-400" />
+            {t('message')}
+          </label>
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             required
-            className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 shadow-sm focus:outline-none focus:ring-4 focus:ring-primary-100 focus:border-primary-300 transition"
-            placeholder={locale === 'tr' ? 'Ad Soyad' : 'Full name'}
+            rows={5}
+            className="w-full resize-none rounded-xl border-2 border-neutral-200 bg-neutral-50 px-4 py-3.5 text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-primary-400 focus:bg-white focus:ring-4 focus:ring-primary-100 transition-all duration-200"
+            placeholder={locale === 'tr' ? 'Mesajınızı buraya yazın…' : 'Write your message here…'}
           />
-        </label>
+        </div>
 
-        <label className="space-y-2">
-          <span className="text-sm font-medium text-neutral-700">{t('email')}</span>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="w-full rounded-xl border border-neutral-200 bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 shadow-sm focus:outline-none focus:ring-4 focus:ring-primary-100 focus:border-primary-300 transition"
-            placeholder="name@company.com"
-          />
-        </label>
-      </div>
-
-      <label className="space-y-2 block">
-        <span className="text-sm font-medium text-neutral-700">{t('message')}</span>
-        <textarea
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-          rows={6}
-          className="w-full resize-none rounded-xl border border-neutral-200 bg-white px-4 py-3 text-neutral-900 placeholder:text-neutral-400 shadow-sm focus:outline-none focus:ring-4 focus:ring-primary-100 focus:border-primary-300 transition"
-          placeholder={locale === 'tr' ? 'Kısa bir not…' : 'A short note…'}
-        />
-      </label>
-
-      <div className="rounded-2xl border border-neutral-200 bg-white p-4">
-        <label className="flex items-start gap-3">
-          <input
-            type="checkbox"
-            checked={consent}
-            onChange={(e) => setConsent(e.target.checked)}
-            className="mt-1 h-4 w-4 rounded border-neutral-300 text-primary-600 focus:ring-primary-200"
-          />
-          <span className="text-sm text-neutral-700 leading-relaxed">
-            {t.rich('consent', {
-              terms: (chunks) => (
-                <Link
-                  href={`/${locale}/terms`}
-                  className="text-primary-600 hover:text-primary-700 underline underline-offset-4"
+        {/* Consent Checkbox */}
+        <div className="rounded-xl border-2 border-neutral-200 bg-neutral-50 p-4">
+          <label className="flex items-start gap-3 cursor-pointer group">
+            <div className="relative mt-0.5">
+              <input
+                type="checkbox"
+                checked={consent}
+                onChange={(e) => setConsent(e.target.checked)}
+                className="peer sr-only"
+              />
+              <div className="w-5 h-5 rounded-md border-2 border-neutral-300 bg-white peer-checked:bg-primary-500 peer-checked:border-primary-500 transition-all duration-200 flex items-center justify-center">
+                <svg
+                  className={`w-3 h-3 text-white transition-opacity ${consent ? 'opacity-100' : 'opacity-0'}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
                 >
-                  {chunks}
-                </Link>
-              ),
-              privacy: (chunks) => (
-                <Link
-                  href={`/${locale}/privacy`}
-                  className="text-primary-600 hover:text-primary-700 underline underline-offset-4"
-                >
-                  {chunks}
-                </Link>
-              ),
-            })}
-          </span>
-        </label>
-        {!consent && (
-          <p className="mt-2 text-xs text-neutral-500">{t('consentCta')}</p>
-        )}
-      </div>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+            </div>
+            <span className="text-sm text-neutral-600 leading-relaxed group-hover:text-neutral-900 transition-colors">
+              {locale === 'tr' ? (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => setShowTerms(true)}
+                    className="text-primary-600 hover:text-primary-700 underline underline-offset-4 font-medium"
+                  >
+                    Kullanım Şartları
+                  </button>
+                  {' ve '}
+                  <button
+                    type="button"
+                    onClick={() => setShowPrivacy(true)}
+                    className="text-primary-600 hover:text-primary-700 underline underline-offset-4 font-medium"
+                  >
+                    Gizlilik Politikası
+                  </button>
+                  {"'nı kabul ediyorum."}
+                </>
+              ) : (
+                <>
+                  {'I agree to the '}
+                  <button
+                    type="button"
+                    onClick={() => setShowTerms(true)}
+                    className="text-primary-600 hover:text-primary-700 underline underline-offset-4 font-medium"
+                  >
+                    Terms of Service
+                  </button>
+                  {' and '}
+                  <button
+                    type="button"
+                    onClick={() => setShowPrivacy(true)}
+                    className="text-primary-600 hover:text-primary-700 underline underline-offset-4 font-medium"
+                  >
+                    Privacy Policy
+                  </button>
+                  {'.'}
+                </>
+              )}
+            </span>
+          </label>
+        </div>
 
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <p className="text-xs text-neutral-500 leading-relaxed">{t('hint')}</p>
+        {/* Submit Section */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
+          <p className="text-xs text-neutral-500 leading-relaxed max-w-sm">
+            {t('hint')}
+          </p>
 
-        <button
-          type="submit"
-          disabled={!consent}
-          className={`inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-white font-semibold shadow-sm transition ${
-            consent
-              ? 'bg-primary-500 hover:bg-primary-600'
-              : 'bg-neutral-400 cursor-not-allowed'
-          }`}
-        >
-          <Send className="w-4 h-4" />
-          {t('submit')}
-        </button>
-      </div>
+          <button
+            type="submit"
+            disabled={!consent}
+            className={`inline-flex items-center justify-center gap-2.5 rounded-xl px-8 py-4 text-white font-semibold shadow-lg transition-all duration-300 ${
+              consent
+                ? 'bg-primary-500 hover:bg-primary-600 hover:shadow-xl hover:shadow-primary-500/25 hover:-translate-y-0.5'
+                : 'bg-neutral-300 cursor-not-allowed shadow-none'
+            }`}
+          >
+            <Send className="w-4 h-4" />
+            {t('submit')}
+          </button>
+        </div>
+      </form>
 
-      <div className="pt-4 border-t border-neutral-200/70">
-        <a
-          href={`mailto:${DEFAULT_TO}`}
-          className="inline-flex items-center gap-2 text-sm text-neutral-700 hover:text-primary-600 transition-colors"
-        >
-          <Mail className="w-4 h-4" />
-          {DEFAULT_TO}
-        </a>
-      </div>
-    </form>
+      {/* Terms Modal */}
+      <LegalModal
+        isOpen={showTerms}
+        onClose={() => setShowTerms(false)}
+        title={tLegal('termsTitle')}
+      >
+        <TermsContent />
+      </LegalModal>
+
+      {/* Privacy Modal */}
+      <LegalModal
+        isOpen={showPrivacy}
+        onClose={() => setShowPrivacy(false)}
+        title={tLegal('privacyTitle')}
+      >
+        <PrivacyContent />
+      </LegalModal>
+    </>
   );
 }
-

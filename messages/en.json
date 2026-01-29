@@ -73,6 +73,8 @@
     "title": "Contact",
     "subtitle": "Get in touch with us to begin your transformation journey",
     "email": "Email",
+    "location": "Location",
+    "socialTitle": "Social Media",
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
     "youtube": "YouTube"
@@ -97,15 +99,20 @@
     "youtube": "YouTube"
   },
   "contactPage": {
-    "title": "Contact",
-    "subtitle": "Leave a short note and your email app will open with a draft.",
+    "title": "Get in Touch",
+    "subtitle": "Let's start your transformation journey together",
+    "formTitle": "Send a Message",
     "name": "Full name",
     "email": "Email",
     "message": "Message",
-    "submit": "Create Email",
-    "hint": "When you click Send, your device opens an email draft. We don’t store your form details on the website.",
-    "consent": "I have read and agree to the <terms>Terms of Service</terms> and <privacy>Privacy Policy</privacy>.",
-    "consentCta": "Please agree before continuing."
+    "submit": "Send",
+    "hint": "Opens as a draft in your email app. Your data is not stored.",
+    "consent": "I agree to the <terms>Terms of Service</terms> and <privacy>Privacy Policy</privacy>.",
+    "consentCta": "Please agree before continuing.",
+    "quickResponse": "Quick Response",
+    "quickResponseText": "We typically respond to messages within 24 hours on business days.",
+    "responseTime": "Average response time",
+    "responseTimeValue": "< 24 hours"
   },
   "legal": {
     "termsTitle": "Terms of Service",
