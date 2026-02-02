@@ -1,4 +1,5 @@
-import { getTranslations } from 'next-intl/server';
+/* eslint-disable react/no-unescaped-entities */
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
@@ -14,8 +15,9 @@ export default async function TermsPage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  const t = await getTranslations('legal');
   const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations('legal');
   const effectiveDate = '2026-01-28';
 
   return (
