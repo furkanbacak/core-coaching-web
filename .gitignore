@@ -19,6 +19,9 @@
 .DS_Store
 *.pem
 
+# cursor
+.cursor/
+
 # design/source assets (not used by the app)
 /images/reference-logos/
 
