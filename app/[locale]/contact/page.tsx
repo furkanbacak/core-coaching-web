@@ -56,9 +56,9 @@ export default async function ContactPage({
         {/* Content Section */}
         <section className="relative -mt-16 pb-24">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid gap-8 lg:grid-cols-3">
+            <div className="grid gap-8 lg:grid-cols-[2fr_1.1fr]">
               {/* Main Form Card */}
-              <div className="lg:col-span-2 bg-white rounded-3xl p-8 md:p-12 shadow-xl shadow-neutral-200/50 border border-neutral-100">
+              <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl shadow-neutral-200/50 border border-neutral-100">
                 <div className="mb-8">
                   <h2 className="text-2xl font-serif font-bold text-neutral-900 mb-2">
                     {t('formTitle') || (t('title'))}
@@ -69,7 +69,7 @@ export default async function ContactPage({
               </div>
 
               {/* Side Info Card */}
-              <div className="lg:col-span-1 space-y-6">
+              <div className="space-y-6">
                 {/* Contact Details Card */}
                 <ContactDetails />
                 

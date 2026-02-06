@@ -6,7 +6,7 @@ import { Mail, Send, User, MessageCircle } from 'lucide-react';
 import LegalModal from './LegalModal';
 import { TermsContent, PrivacyContent } from './LegalContent';
 
-const DEFAULT_TO = 'info@corecoaching.com';
+const DEFAULT_TO = 'info@corecoachingtraining.com';
 
 function buildMailtoUrl(params: { to: string; subject: string; body: string }) {
   const { to, subject, body } = params;

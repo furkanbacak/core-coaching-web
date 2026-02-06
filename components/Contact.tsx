@@ -57,10 +57,10 @@ export default function Contact() {
             <div className="flex items-center justify-center space-x-4 text-neutral-700">
               <Mail className="w-6 h-6 text-primary-500" />
               <a
-                href="mailto:info@corecoaching.com"
+                href="mailto:info@corecoachingtraining.com"
                 className="text-lg md:text-xl hover:text-primary-500 transition-colors"
               >
-                info@corecoaching.com
+                info@corecoachingtraining.com
               </a>
             </div>
 

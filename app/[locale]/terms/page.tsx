@@ -100,7 +100,7 @@ export default async function TermsPage({
                 <h2>10. İletişim</h2>
                 <p>
                   Bu Şartlar hakkında sorularınız için{' '}
-                  <a href="mailto:info@corecoaching.com">info@corecoaching.com</a> adresine yazabilirsiniz.
+                  <a href="mailto:info@corecoachingtraining.com">info@corecoachingtraining.com</a> adresine yazabilirsiniz.
                 </p>
               </>
             ) : (
@@ -172,7 +172,7 @@ export default async function TermsPage({
                 <h2>10. Contact</h2>
                 <p>
                   If you have questions about these Terms, email{' '}
-                  <a href="mailto:info@corecoaching.com">info@corecoaching.com</a>.
+                  <a href="mailto:info@corecoachingtraining.com">info@corecoachingtraining.com</a>.
                 </p>
               </>
             )}

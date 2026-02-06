@@ -9,7 +9,7 @@ export default function Footer() {
   const t = useTranslations('footer');
   const locale = useLocale();
 
-  const email = 'info@corecoaching.com';
+  const email = 'info@corecoachingtraining.com';
   const socials = [
     {
       key: 'linkedin',

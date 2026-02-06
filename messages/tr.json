@@ -1,10 +1,17 @@
 {
   "nav": {
     "about": "Hakkımızda",
-    "coachingFocus": "Koçluk Odak Alanları",
+    "coachingFocus": "Kurumsal Programlar",
+    "coachingSchool": "Koçluk Okulu",
     "references": "Referanslar",
     "contact": "İletişim",
-    "blog": "Blog"
+    "blog": "Blog",
+    "resources": "Kaynaklar",
+    "comingSoon": "Yakında"
+  },
+  "programs": {
+    "coachingPrograms": "Koçluk Programları",
+    "trainingPrograms": "Eğitim Programları"
   },
   "hero": {
     "title": "Dönüşümünüzü Başlatın",
@@ -29,9 +36,9 @@
     "bio5": "Bireylerin tek ve eşsiz olduklarına inanan, hayata bütünsel bakmaya çalışan, doğa ve sevgiye değer veren yapısı ile herkesin içinde var olan potansiyelini keşfetmesi ve fark yaratmaları için insanların yanında olmayı, onlara dokunmayı kendine misyon edinmiştir. Hayata bakışını en iyi ifade eden kelimeler \"Tutku\", \"Merak\" ve \"Sevgi\" olacaktır."
   },
   "coaching": {
-    "title": "Koçluk Odak Alanları",
+    "title": "Kurumsal Programlar",
     "coachingArea": {
-      "title": "Koçluk Alanı",
+      "title": "Koçluk Programları",
       "items": [
         "C-Level Lider Koçluğu",
         "Takım Koçluğu",
@@ -43,7 +50,7 @@
       ]
     },
     "trainingArea": {
-      "title": "Eğitim/Danışmanlık Alanı",
+      "title": "Eğitim Programları",
       "items": [
         "Yönetim ve Liderlik Becerilerini Geliştirme",
         "Etkin İnsan Yönetimi",
@@ -67,7 +74,47 @@
     }
   },
   "references": {
-    "title": "Referanslar"
+    "title": "Referanslar",
+    "subtitle": "Güvenilir ortaklarımız ve müşterilerimiz",
+    "companies": {
+      "mercedesBenzAutomotive": "Mercedes-Benz Otomotiv",
+      "mercedesBenzAutomotiveAndFinancial": "Mercedes-Benz Otomotiv & Mercedes-Benz Finansal Hizmetler",
+      "mercedesBenzFinancial": "Mercedes-Benz Finansal Hizmetler",
+      "koczer": "Koçzer",
+      "nissan": "Nissan",
+      "volvo": "Volvo",
+      "sony": "Sony",
+      "roche": "Roche",
+      "entek": "Entek",
+      "iss": "ISS",
+      "omron": "Omron",
+      "iqvia": "IQVIA",
+      "boyner": "Boyner",
+      "merck": "Merck İlaç",
+      "michelin": "Michelin",
+      "netas": "Netaş",
+      "vaillant": "Vaillant",
+      "yorsan": "Yörsan",
+      "hayat": "Hayat Kimya",
+      "kastamonu": "Kastamonu Entegre",
+      "hitit": "Hitit Bilgisayar",
+      "asseco": "Asseco SEE",
+      "vestel": "Vestel",
+      "medipol": "Medipol Hastane",
+      "biruni": "Biruni Laboratuvar",
+      "cengizMakina": "Cengiz Makina",
+      "atasun": "Atasun Optik",
+      "hdIskender": "HD İskender",
+      "nurus": "Nurus",
+      "enerya": "Enerya",
+      "yesim": "Yeşim Tekstil",
+      "tjk": "TJK",
+      "abc": "ABC Deterjan",
+      "turquoiseYachts": "Turquoise Yachts",
+      "abalioglu": "Abalıoğlu Holding",
+      "yasar": "Yaşar Faktoring",
+      "enerjisa": "Enerjisa"
+    }
   },
   "contact": {
     "title": "İletişim",
@@ -117,5 +164,43 @@
   "legal": {
     "termsTitle": "Kullanım Şartları",
     "privacyTitle": "Gizlilik Politikası"
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "subtitle": "Merak ettikleriniz için yanıtlar",
+    "items": [
+      {
+        "question": "Koçluk hizmetleriniz hangi alanları kapsıyor?",
+        "answer": "Koçluk hizmetlerimiz C-Level lider koçluğu, takım koçluğu, yönetici koçluğu, assessment hazırlama koçluğu, unvanlanma koçluğu ve mentorluğu ile profesyonel koçluk eğitim programları eğitmenliğini kapsamaktadır."
+      },
+      {
+        "question": "Eğitim programlarınız hangi konularda sunuluyor?",
+        "answer": "Eğitim programlarımız yönetim ve liderlik becerileri, etkin insan yönetimi, değişim yönetimi, motivasyon, geri bildirim sanatı, ekip çalışması, duygusal zeka, stres yönetimi, zaman yönetimi, toplantı yönetimi, iletişim becerileri, problem çözme ve karar verme, müşteri odaklılık ve strateji yönetimi gibi geniş bir yelpazede sunulmaktadır."
+      },
+      {
+        "question": "Hizmetleriniz bireysel mi yoksa kurumsal mı?",
+        "answer": "Hem bireysel hem de kurumsal müşterilere hizmet veriyoruz. Bireye ve kuruma özel çözümler sunarak, her müşterinin ihtiyacına göre özelleştirilmiş programlar tasarlıyoruz."
+      },
+      {
+        "question": "Koçluk süreci nasıl işliyor?",
+        "answer": "Koçluk sürecimiz müşterinin ihtiyaçlarını anlamakla başlar. Ardından özelleştirilmiş bir koçluk planı oluşturulur ve düzenli oturumlarla ilerleme takip edilir. Süreç boyunca ölçümler ve tekniklerle en iyi geri dönüşüm sağlanır ve aksiyon planları oluşturulur."
+      },
+      {
+        "question": "Eğitim programlarınız online mı yoksa yüz yüze mi?",
+        "answer": "Eğitim programlarımız hem online hem de yüz yüze formatlarda sunulabilmektedir. Müşterinin tercihine ve ihtiyacına göre en uygun format seçilir."
+      },
+      {
+        "question": "Koçluk sertifikasyonunuz var mı?",
+        "answer": "Evet, kurucumuz Nurhan Yazganel ICF (International Coach Federation) onaylı MCC (Master Certified Coach) ve EMCC (European Mentoring & Coaching Council) onaylı Senior Practitioner unvanlarına sahiptir. Ayrıca 8.000 saati aşkın koçluk deneyimi bulunmaktadır."
+      },
+      {
+        "question": "Hangi sektörlerde deneyiminiz var?",
+        "answer": "Otomotiv, finans, teknoloji, sağlık, perakende, kimya, tekstil, enerji, lojistik ve daha birçok sektörde 300'ün üzerinde şirkete hizmet vermiş bulunmaktayız."
+      },
+      {
+        "question": "İletişime nasıl geçebilirim?",
+        "answer": "İletişim sayfamızdaki formu doldurabilir veya doğrudan info@corecoachingtraining.com adresine e-posta gönderebilirsiniz. Genellikle iş günlerinde 24 saat içinde dönüş yapıyoruz."
+      }
+    ]
   }
 }

@@ -1,10 +1,17 @@
 {
   "nav": {
     "about": "About",
-    "coachingFocus": "Coaching Focus",
+    "coachingFocus": "Corporate Programs",
+    "coachingSchool": "Coaching School",
     "references": "References",
     "contact": "Contact",
-    "blog": "Blog"
+    "blog": "Blog",
+    "resources": "Resources",
+    "comingSoon": "Coming Soon"
+  },
+  "programs": {
+    "coachingPrograms": "Coaching Programs",
+    "trainingPrograms": "Training Programs"
   },
   "hero": {
     "title": "Begin Your Transformation",
@@ -29,9 +36,9 @@
     "bio5": "Believing that individuals are unique and one-of-a-kind, trying to look at life holistically, and valuing nature and love, she has made it her mission to be with people and touch them so that everyone can discover their potential and make a difference. The words that best express her outlook on life would be \"Passion,\" \"Curiosity,\" and \"Love.\""
   },
   "coaching": {
-    "title": "Coaching Focus Areas",
+    "title": "Corporate Programs",
     "coachingArea": {
-      "title": "Coaching Area",
+      "title": "Coaching Programs",
       "items": [
         "C-Level Leadership Coaching",
         "Team Coaching",
@@ -43,7 +50,7 @@
       ]
     },
     "trainingArea": {
-      "title": "Training/Consulting Area",
+      "title": "Training Programs",
       "items": [
         "Developing Management and Leadership Skills",
         "Effective People Management",
@@ -67,7 +74,47 @@
     }
   },
   "references": {
-    "title": "References"
+    "title": "References",
+    "subtitle": "Our trusted partners and clients",
+    "companies": {
+      "mercedesBenzAutomotive": "Mercedes-Benz Automotive",
+      "mercedesBenzAutomotiveAndFinancial": "Mercedes-Benz Automotive & Mercedes-Benz Financial Services",
+      "mercedesBenzFinancial": "Mercedes-Benz Financial Services",
+      "koczer": "Koçzer",
+      "nissan": "Nissan",
+      "volvo": "Volvo",
+      "sony": "Sony",
+      "roche": "Roche",
+      "entek": "Entek",
+      "iss": "ISS",
+      "omron": "Omron",
+      "iqvia": "IQVIA",
+      "boyner": "Boyner",
+      "merck": "Merck Pharmaceuticals",
+      "michelin": "Michelin",
+      "netas": "Netaş",
+      "vaillant": "Vaillant",
+      "yorsan": "Yörsan",
+      "hayat": "Hayat Chemical",
+      "kastamonu": "Kastamonu Integrated",
+      "hitit": "Hitit Computer",
+      "asseco": "Asseco SEE",
+      "vestel": "Vestel",
+      "medipol": "Medipol Hospital",
+      "biruni": "Biruni Laboratory",
+      "cengizMakina": "Cengiz Machinery",
+      "atasun": "Atasun Optics",
+      "hdIskender": "HD İskender",
+      "nurus": "Nurus",
+      "enerya": "Enerya",
+      "yesim": "Yeşim Textile",
+      "tjk": "TJK",
+      "abc": "ABC Detergent",
+      "turquoiseYachts": "Turquoise Yachts",
+      "abalioglu": "Abalıoğlu Holding",
+      "yasar": "Yaşar Factoring",
+      "enerjisa": "Enerjisa"
+    }
   },
   "contact": {
     "title": "Contact",
@@ -117,5 +164,43 @@
   "legal": {
     "termsTitle": "Terms of Service",
     "privacyTitle": "Privacy Policy"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to your questions",
+    "items": [
+      {
+        "question": "What areas do your coaching services cover?",
+        "answer": "Our coaching services cover C-Level leadership coaching, team coaching, executive coaching, assessment preparation coaching, credentialing coaching and mentoring, as well as professional coaching training program instruction."
+      },
+      {
+        "question": "What topics are your training programs offered in?",
+        "answer": "Our training programs are offered in a wide range of topics including management and leadership skills, effective people management, change management, motivation, the art of feedback, teamwork, emotional intelligence, stress management, time management, meeting management, communication skills, problem solving and decision making, customer focus and strategy management."
+      },
+      {
+        "question": "Are your services individual or corporate?",
+        "answer": "We serve both individual and corporate clients. We offer customized solutions tailored to each client's needs, designing personalized programs for both individuals and organizations."
+      },
+      {
+        "question": "How does the coaching process work?",
+        "answer": "Our coaching process begins with understanding the client's needs. Then a customized coaching plan is created and progress is tracked through regular sessions. Throughout the process, measurements and techniques ensure the best feedback and action plans are created."
+      },
+      {
+        "question": "Are your training programs online or in-person?",
+        "answer": "Our training programs can be delivered in both online and in-person formats. The most suitable format is selected according to the client's preference and needs."
+      },
+      {
+        "question": "Do you have coaching certifications?",
+        "answer": "Yes, our founder Nurhan Yazganel holds the MCC (Master Certified Coach) title approved by ICF (International Coach Federation) and the Senior Practitioner title approved by EMCC (European Mentoring & Coaching Council). She also has over 8,000 hours of coaching experience."
+      },
+      {
+        "question": "What industries do you have experience in?",
+        "answer": "We have served over 300 companies in various sectors including automotive, finance, technology, healthcare, retail, chemicals, textiles, energy, logistics and many more."
+      },
+      {
+        "question": "How can I get in touch?",
+        "answer": "You can fill out the form on our contact page or send an email directly to info@corecoachingtraining.com. We typically respond within 24 hours on business days."
+      }
+    ]
   }
 }

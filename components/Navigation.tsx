@@ -1,20 +1,26 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import { GraduationCap } from 'lucide-react';
 
 export default function Navigation() {
   const t = useTranslations('nav');
+  const tCoaching = useTranslations('coaching');
+  const tPrograms = useTranslations('programs');
+  const tFAQ = useTranslations('faq');
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isHeroSection, setIsHeroSection] = useState(true);
+  const [isCoachingDropdownOpen, setIsCoachingDropdownOpen] = useState(false);
+  const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState(false);
 
   // Route context
   const isHomePage = pathname === `/${locale}` || pathname === '/';
@@ -46,17 +52,69 @@ export default function Navigation() {
 
   const toggleLanguage = () => {
     const newLocale = locale === 'tr' ? 'en' : 'tr';
-    const pathWithoutLocale = pathname.replace(`/${locale}`, '') || '/';
-    router.push(`/${newLocale}${pathWithoutLocale}`);
+    
+    // Extract path without locale prefix
+    // pathname can be: '/en/training', '/tr/training', '/training' (default locale), '/en', '/tr', '/'
+    let pathWithoutLocale = pathname;
+    
+    // Remove current locale prefix if it exists
+    if (pathname.startsWith(`/${locale}/`)) {
+      pathWithoutLocale = pathname.slice(`/${locale}`.length);
+    } else if (pathname === `/${locale}`) {
+      pathWithoutLocale = '/';
+    }
+    // If pathname doesn't start with locale, it might be default locale (tr) without prefix
+    // or it's already without locale prefix
+    
+    // Ensure path starts with /
+    if (!pathWithoutLocale.startsWith('/')) {
+      pathWithoutLocale = `/${pathWithoutLocale}`;
+    }
+    
+    // Build new path with new locale
+    const newPath = pathWithoutLocale === '/' ? `/${newLocale}` : `/${newLocale}${pathWithoutLocale}`;
+    
+    router.push(newPath);
   };
 
-  const navItems = [
+  const navItems: Array<{ key: string; href: string; hasDropdown?: boolean; comingSoon?: boolean }> = [
     { key: 'about', href: '#about' },
-    { key: 'references', href: '#references' },
-    { key: 'coachingFocus', href: '#coaching' },
+    { key: 'references', href: `/${locale}/references` },
+    { key: 'coachingFocus', href: '#coaching', hasDropdown: true },
+    { key: 'coachingSchool', href: '#', comingSoon: true },
+    { key: 'resources', href: '#', hasDropdown: true },
     { key: 'contact', href: `/${locale}/contact` },
-    { key: 'blog', href: `/${locale}/blog` },
   ];
+
+  const coachingDropdownItems = useMemo(() => {
+    const coachingHref = `/${locale}/coaching`;
+    const trainingHref = `/${locale}/training`;
+    return [
+      { 
+        key: 'coachingPrograms', 
+        href: coachingHref,
+        label: tPrograms('coachingPrograms')
+      },
+      { 
+        key: 'trainingPrograms', 
+        href: trainingHref,
+        label: tPrograms('trainingPrograms')
+      },
+    ];
+  }, [locale, tPrograms]);
+
+  const resourcesDropdownItems = useMemo(() => [
+    { 
+      key: 'blog', 
+      href: `/${locale}/blog`,
+      label: t('blog')
+    },
+    { 
+      key: 'faq', 
+      href: `/${locale}/faq`,
+      label: tFAQ('title')
+    },
+  ], [locale, t, tFAQ]);
 
   // Ultra-smooth scroll using native behavior
   const smoothScrollTo = (targetId: string) => {
@@ -90,13 +148,15 @@ export default function Navigation() {
     setIsOpen(false);
   };
 
-  // Determine text color based on section
+  // Determine text color based on section (for header + desktop nav)
   const isLightBackground = !isHeroSection || scrolled;
   const textColor = isLightBackground 
     ? 'text-neutral-700 hover:text-primary-500' 
     : 'text-white hover:text-primary-200';
   const logoTextColor = isLightBackground ? 'text-neutral-800' : 'text-white';
   const hamburgerColor = isLightBackground ? 'bg-neutral-700' : 'bg-white';
+  // Mobile menu panel is always white, so always use dark text inside it
+  const mobileMenuTextColor = 'text-neutral-700 hover:text-primary-500';
 
   return (
     <nav
@@ -108,7 +168,7 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link href={`/${locale}`} className="flex items-center space-x-3">
+          <Link href={`/${locale}`} className="flex items-center">
             <div className="relative w-12 h-12">
               <Image
                 src="/images/core-logo.png"
@@ -118,28 +178,101 @@ export default function Navigation() {
                 priority
               />
             </div>
-            <span className={`text-xl font-semibold transition-colors ${logoTextColor}`}>CORE</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.key}
-                href={item.href.startsWith('#') ? `/${locale}${item.href}` : item.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  if (item.href.startsWith('#')) {
-                    handleNavClick(item.href);
-                  } else {
-                    router.push(item.href);
-                  }
-                }}
-                className={`${textColor} transition-colors text-sm font-medium cursor-pointer`}
-              >
-                {t(item.key)}
-              </a>
-            ))}
+            {navItems.map((item) => {
+              if (item.hasDropdown) {
+                const isOpen = item.key === 'coachingFocus' ? isCoachingDropdownOpen : isResourcesDropdownOpen;
+                const setIsOpen = item.key === 'coachingFocus' ? setIsCoachingDropdownOpen : setIsResourcesDropdownOpen;
+                const dropdownItems = item.key === 'coachingFocus' ? coachingDropdownItems : resourcesDropdownItems;
+                
+                return (
+                  <div
+                    key={item.key}
+                    className="relative"
+                    onMouseEnter={() => setIsOpen(true)}
+                    onMouseLeave={() => setIsOpen(false)}
+                  >
+                    <button
+                      className={`${textColor} transition-colors text-sm font-medium cursor-pointer flex items-center gap-1`}
+                    >
+                      {t(item.key)}
+                      <svg
+                        className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <AnimatePresence>
+                      {isOpen && (
+                        <motion.div
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          transition={{ duration: 0.2 }}
+                          className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-neutral-200 py-2 z-50"
+                        >
+                          {dropdownItems.map((dropdownItem) => (
+                            <button
+                              key={dropdownItem.key}
+                              onClick={() => {
+                                router.push(dropdownItem.href);
+                                setIsOpen(false);
+                              }}
+                              className="w-full text-left block px-4 py-3 text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                            >
+                              {dropdownItem.label}
+                            </button>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                );
+              }
+              if (item.comingSoon) {
+                return (
+                  <div
+                    key={item.key}
+                    className="relative group/soon"
+                    title={t('comingSoon')}
+                  >
+                    <span
+                      className={`${textColor} transition-colors text-sm font-medium cursor-not-allowed opacity-80 flex items-center gap-1.5`}
+                      aria-disabled="true"
+                    >
+                      <GraduationCap className="w-4 h-4" />
+                      {t(item.key)}
+                    </span>
+                    <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-1.5 px-2.5 py-1.5 text-xs font-medium text-white bg-neutral-800 rounded-lg opacity-0 group-hover/soon:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+                      {t('comingSoon')}
+                    </span>
+                  </div>
+                );
+              }
+              return (
+                <a
+                  key={item.key}
+                  href={item.href.startsWith('#') ? `/${locale}${item.href}` : item.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (item.href.startsWith('#')) {
+                      handleNavClick(item.href);
+                    } else {
+                      router.push(item.href);
+                    }
+                  }}
+                  className={`${textColor} transition-colors text-sm font-medium cursor-pointer`}
+                >
+                  {t(item.key)}
+                </a>
+              );
+            })}
             <button
               onClick={toggleLanguage}
               className="relative px-4 py-2 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 transition-all duration-200 rounded-lg shadow-sm hover:shadow-md transform hover:-translate-y-0.5 flex items-center justify-center space-x-2 group min-w-[70px]"
@@ -192,23 +325,87 @@ export default function Navigation() {
             className="md:hidden bg-white border-t border-neutral-200"
           >
             <div className="px-4 py-6 space-y-4">
-              {navItems.map((item) => (
-                <a
-                  key={item.key}
-                  href={item.href.startsWith('#') ? `/${locale}${item.href}` : item.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    if (item.href.startsWith('#')) {
-                      handleNavClick(item.href);
-                    } else {
-                      router.push(item.href);
-                    }
-                  }}
-                  className={`block ${textColor} transition-colors text-base font-medium py-2 cursor-pointer`}
-                >
-                  {t(item.key)}
-                </a>
-              ))}
+              {navItems.map((item) => {
+                if (item.hasDropdown) {
+                  const isDropdownOpen = item.key === 'coachingFocus' ? isCoachingDropdownOpen : isResourcesDropdownOpen;
+                  const setIsDropdownOpen = item.key === 'coachingFocus' ? setIsCoachingDropdownOpen : setIsResourcesDropdownOpen;
+                  const dropdownItems = item.key === 'coachingFocus' ? coachingDropdownItems : resourcesDropdownItems;
+                  
+                  return (
+                    <div key={item.key} className="space-y-2">
+                      <button
+                        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                        className={`w-full text-left ${mobileMenuTextColor} transition-colors text-base font-medium py-2 cursor-pointer flex items-center justify-between`}
+                      >
+                        {t(item.key)}
+                        <svg
+                          className={`w-4 h-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </button>
+                      <AnimatePresence>
+                        {isDropdownOpen && (
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: 'auto' }}
+                            exit={{ opacity: 0, height: 0 }}
+                            className="pl-4 space-y-2 border-l-2 border-neutral-200"
+                          >
+                            {dropdownItems.map((dropdownItem) => (
+                              <button
+                                key={dropdownItem.key}
+                                onClick={() => {
+                                  router.push(dropdownItem.href);
+                                  setIsOpen(false);
+                                  setIsDropdownOpen(false);
+                                }}
+                                className="w-full text-left block text-sm text-neutral-600 hover:text-primary-600 transition-colors py-1"
+                              >
+                                {dropdownItem.label}
+                              </button>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  );
+                }
+                if (item.comingSoon) {
+                  return (
+                    <div
+                      key={item.key}
+                      className={`flex items-center gap-2 py-2 ${mobileMenuTextColor} opacity-80`}
+                    >
+                      <GraduationCap className="w-5 h-5 flex-shrink-0" />
+                      <span className="font-medium">{t(item.key)}</span>
+                      <span className="text-xs bg-neutral-200 text-neutral-600 px-2 py-0.5 rounded">
+                        {t('comingSoon')}
+                      </span>
+                    </div>
+                  );
+                }
+                return (
+                  <a
+                    key={item.key}
+                    href={item.href.startsWith('#') ? `/${locale}${item.href}` : item.href}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if (item.href.startsWith('#')) {
+                        handleNavClick(item.href);
+                      } else {
+                        router.push(item.href);
+                      }
+                    }}
+                    className={`block ${mobileMenuTextColor} transition-colors text-base font-medium py-2 cursor-pointer`}
+                  >
+                    {t(item.key)}
+                  </a>
+                );
+              })}
               <button
                 onClick={toggleLanguage}
                 className="w-full text-left px-4 py-3 text-base font-semibold text-white bg-primary-500 hover:bg-primary-600 transition-all duration-200 rounded-lg shadow-sm mt-2 flex items-center space-x-2"

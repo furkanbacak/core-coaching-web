@@ -9,11 +9,12 @@ interface Reference {
   logo?: string;
 }
 
-const references: Reference[] = [
-  // Mercedes - iki ayrı şirket
-  { name: 'Mercedes-Benz Otomotiv', logo: 'mercedes-benz.png' },
-  { name: 'Mercedes-Benz Finansal Hizmetler', logo: 'mercedes-benz-finansal.png' },
-  
+// Mercedes birleşik etiket (çeviri ile doldurulacak)
+const getMercedesName = (t: (key: string) => string) =>
+  t('mercedesBenzAutomotiveAndFinancial');
+
+const references = (t: (key: string) => string): Reference[] => [
+  { name: getMercedesName(t), logo: 'mercedes-benz.png' },
   // Diğer referanslar
   { name: 'Koçzer', logo: 'koczer.png' },
   { name: 'Nissan', logo: 'nissan.png' },
@@ -45,17 +46,17 @@ const references: Reference[] = [
   { name: 'Yeşim Tekstil', logo: 'yesim.png' },
   { name: 'TJK', logo: 'tjk.png' },
   { name: 'ABC Deterjan', logo: 'abc.png' },
-  { name: 'Turkuaz Yachting', logo: 'turkuaz.png' },
-  { name: 'Abalıoğlu Holding', logo: 'abalioglu.png' },
+  { name: t('turquoiseYachts'), logo: 'turquoise-yachts.png' },
+  { name: 'Abalıoğlu Holding', logo: 'abalioglu.png?v=2' },
   { name: 'Yaşar Faktoring', logo: 'yasar.webp' },
   { name: 'Enerjisa', logo: 'enerjisa.png' },
 ];
 
-// Duplicate once for seamless marquee (track width ~200%)
-const marqueeItems: Reference[] = [...references, ...references];
-
 export default function References() {
   const t = useTranslations('references');
+  const tCompanies = useTranslations('references.companies');
+  const refList = references(tCompanies);
+  const marqueeItems: Reference[] = [...refList, ...refList];
 
   return (
     <section 
@@ -84,11 +85,11 @@ export default function References() {
             {marqueeItems.map((ref, idx) => (
               <div
                 key={`${ref.name}-${idx}`}
-                className="shrink-0 w-44 md:w-52 h-20 md:h-24 rounded-2xl border border-neutral-200 bg-white flex items-center justify-center px-5 hover:border-primary-200 hover:shadow-sm transition-all group"
+                className="shrink-0 w-44 md:w-52 h-24 md:h-28 rounded-2xl border border-neutral-200 bg-white flex items-center justify-center px-5 hover:border-primary-200 hover:shadow-sm transition-all group"
                 title={ref.name}
               >
                 {ref.logo ? (
-                  <div className="relative w-full h-10 md:h-12">
+                  <div className="relative w-full h-14 md:h-16">
                     <Image
                       src={`/images/references/${ref.logo}`}
                       alt={ref.name}

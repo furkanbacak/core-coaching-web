@@ -79,7 +79,7 @@ export function TermsContent() {
         <h3>10. İletişim</h3>
         <p>
           Bu Şartlar hakkında sorularınız için{' '}
-          <a href="mailto:info@corecoaching.com" className="text-primary-600 hover:text-primary-700">info@corecoaching.com</a> adresine yazabilirsiniz.
+          <a href="mailto:info@corecoachingtraining.com" className="text-primary-600 hover:text-primary-700">info@corecoachingtraining.com</a> adresine yazabilirsiniz.
         </p>
       </>
     );
@@ -154,7 +154,7 @@ export function TermsContent() {
       <h3>10. Contact</h3>
       <p>
         If you have questions about these Terms, email{' '}
-        <a href="mailto:info@corecoaching.com" className="text-primary-600 hover:text-primary-700">info@corecoaching.com</a>.
+        <a href="mailto:info@corecoachingtraining.com" className="text-primary-600 hover:text-primary-700">info@corecoachingtraining.com</a>.
       </p>
     </>
   );
@@ -177,7 +177,7 @@ export function PrivacyContent() {
         <h3>1. Veri Sorumlusu / İletişim</h3>
         <p>
           Bu politika kapsamındaki sorular için{' '}
-          <a href="mailto:info@corecoaching.com" className="text-primary-600 hover:text-primary-700">info@corecoaching.com</a>{' '}
+          <a href="mailto:info@corecoachingtraining.com" className="text-primary-600 hover:text-primary-700">info@corecoachingtraining.com</a>{' '}
           adresine yazabilirsiniz.
         </p>
 
@@ -244,7 +244,7 @@ export function PrivacyContent() {
       <h3>1. Contact</h3>
       <p>
         For privacy-related questions, email{' '}
-        <a href="mailto:info@corecoaching.com" className="text-primary-600 hover:text-primary-700">info@corecoaching.com</a>.
+        <a href="mailto:info@corecoachingtraining.com" className="text-primary-600 hover:text-primary-700">info@corecoachingtraining.com</a>.
       </p>
 
       <h3>2. Information We Collect</h3>

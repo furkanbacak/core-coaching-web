@@ -41,7 +41,7 @@ export default async function PrivacyPage({
 
                 <h2>1. Veri Sorumlusu / İletişim</h2>
                 <p>
-                  Bu politika kapsamındaki sorular için <a href="mailto:info@corecoaching.com">info@corecoaching.com</a>{' '}
+                  Bu politika kapsamındaki sorular için <a href="mailto:info@corecoachingtraining.com">info@corecoachingtraining.com</a>{' '}
                   adresine yazabilirsiniz.
                 </p>
 
@@ -105,7 +105,7 @@ export default async function PrivacyPage({
                 <h2>1. Contact</h2>
                 <p>
                   For privacy-related questions, email{' '}
-                  <a href="mailto:info@corecoaching.com">info@corecoaching.com</a>.
+                  <a href="mailto:info@corecoachingtraining.com">info@corecoachingtraining.com</a>.
                 </p>
 
                 <h2>2. Information We Collect</h2>

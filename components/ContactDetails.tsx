@@ -5,7 +5,7 @@ import { Instagram, Linkedin, Mail, Youtube, MapPin } from 'lucide-react';
 
 export default function ContactDetails() {
   const t = useTranslations('contact');
-  const email = 'info@corecoaching.com';
+  const email = 'info@corecoachingtraining.com';
 
   const socialLinks = [
     {
@@ -29,13 +29,13 @@ export default function ContactDetails() {
   ] as const;
 
   return (
-    <div className="bg-white rounded-3xl p-6 md:p-8 shadow-lg shadow-neutral-200/50 border border-neutral-100">
+    <div className="bg-white rounded-3xl p-6 md:p-8 lg:p-10 xl:p-12 shadow-lg shadow-neutral-200/50 border border-neutral-100 w-full">
       {/* Email Section */}
       <div className="flex items-start gap-4">
         <div className="w-12 h-12 rounded-2xl bg-primary-50 flex items-center justify-center flex-shrink-0">
           <Mail className="w-5 h-5 text-primary-600" />
         </div>
-        <div>
+        <div className="flex-1 min-w-0 pr-6">
           <p className="text-xs font-medium text-neutral-500 uppercase tracking-wider mb-1">
             {t('email')}
           </p>
