@@ -6,20 +6,22 @@ import {
   Crown,
   Users,
   Briefcase,
+  TrendingUp,
+  Activity,
+  Star,
   ClipboardCheck,
   Award,
-  UserCog,
-  GraduationCap,
 } from 'lucide-react';
 
 const coachingIcons = [
-  Crown,
-  Users,
-  Briefcase,
-  ClipboardCheck,
-  Award,
-  UserCog,
-  GraduationCap,
+  Crown,           // C Level Lider Koçluğu
+  Users,           // Takım Koçluğu
+  Briefcase,       // Yönetici / Executive Koçluğu
+  TrendingUp,      // Kariyer Koçluğu
+  Activity,        // Yetkinlik Gelişim Koçluğu
+  Star,            // Yükselen Yıldızlara Koçluk
+  ClipboardCheck,  // Assesment Hazırlık Koçluğu
+  Award,           // Unvanlanma Koçluğu/Mentorluğu
 ];
 
 export default function CoachingAreaList() {
@@ -41,7 +43,7 @@ export default function CoachingAreaList() {
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
               className="bg-neutral-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-100 hover:border-primary-200 group"
             >
-              <div className="flex items-start space-x-4">
+              <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-50 group-hover:bg-primary-100 flex items-center justify-center transition-colors duration-300">
                   <Icon className="w-6 h-6 text-primary-600" />
                 </div>

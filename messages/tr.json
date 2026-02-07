@@ -3,6 +3,9 @@
     "about": "Hakkımızda",
     "coachingFocus": "Kurumsal Programlar",
     "coachingSchool": "Koçluk Okulu",
+    "level1": "Level 1",
+    "level2": "Level 2",
+    "level3": "Level 3",
     "references": "Referanslar",
     "contact": "İletişim",
     "blog": "Blog",
@@ -11,7 +14,9 @@
   },
   "programs": {
     "coachingPrograms": "Koçluk Programları",
-    "trainingPrograms": "Eğitim Programları"
+    "trainingPrograms": "Eğitim Programları",
+    "workshopPrograms": "Atölye/Çember Çalışmaları",
+    "keynoteSpeeches": "Keynote Konuşmaları"
   },
   "hero": {
     "title": "Dönüşümünüzü Başlatın",
@@ -21,57 +26,86 @@
   },
   "about": {
     "title": "Hakkımızda",
-    "description": "2017 yılında Nurhan Yazganel (MCC, EIA SP) tarafından kurulan şirket, bireylerin ve kurumların olumlu anlamda dönüşümüne katkı sağlamak, iş performanslarını arttırmak, profesyonel yetkinliklerini en üst düzeyde sergilemelerine imkân sağlamak, günümüz çağdaş yönetim stillerini kullanarak en doğru yönetim/liderlik modellerini kurmak, iş yapış şekillerinde hızlı ve pratik çözümler bulmalarını kolaylaştırmak üzere profesyonelleri desteklemek, motivasyonlarını arttırmak ve hedeflerine ulaşmalarına yardımcı olmak maksadıyla kurulmuştur.",
-    "description2": "Ulusal ve uluslararası kuruluşlara, bireylere özgü çözümler sunmak amacıyla koçluk ve eğitim hizmeti veren şirket, farklı sektörlerde, farklı seviyelerde koçluk, eğitim ve danışmanlık görevlerinde bulunan Nurhan Yazganel tarafından kurulmuştur. Koçluk ve eğitimlerin dünyanın olumlu dönüşümüne katkı sağladığına inanarak \"Bireye/Kuruma Özel Hizmet\" anlayışıyla hizmetlerini yürütmektedir.",
-    "description3": "Kısa, orta ve uzun vadeli çözümler sunarken eğitim, koçluk, mentorluk ve fasilitasyon şapkalarını birleştirerek sunabilen Yazganel, en iyi geri dönüşümün alınabilmesi, aksiyon planlarının oluşturulması ve bireysel davranış değişikliklerinin sağlanabilmesi için uyguladığı ölçümler ve tekniklerle fark yaratmaktadır."
+    "quote1": "Gerçek dönüşüm, insanı ve sistemi birlikte okuyabildiğinizde başlar.",
+    "intro": "CCT, 2016 yılında Nurhan Yazganel tarafından; bireysel ve kurumsal gelişimi parçalara ayırmadan, bütünsel bir bakış açısıyla ele almak ve uzun vadeli, kalıcı değer üretmek amacıyla kuruldu.",
+    "focus": "Kuruluşundan bu yana odağımız nettir: Farkındalığı davranışa, potansiyeli sürdürülebilir etkiye dönüştüren gelişim modelleri tasarlamak.",
+    "today": "Bugünün iş dünyasında yalnızca sonuç üretmek yeterli değil. Hız, belirsizlik ve artan rekabet; kurumları daha çevik, daha bilinçli ve daha insan odaklı olmaya zorluyor. Geleceğe taşınan yapılar; insan kaynağını güçlendiren, liderlik kapasitesini geliştiren ve öğrenmeyi kültür hâline getiren kurumlardır.",
+    "real": "Çünkü gerçek dönüşüm sistemlerden değil, insanlardan başlar.",
+    "holistic": "CCT olarak biz gelişimi sadece eğitimle ya da koçlukla sınırlı görmeyiz. İnsanı, takımı ve sistemi birlikte okuruz. Koçluk, eğitim, mentorluk, danışmanlık ve fasilitasyonu ayrı ayrı hizmetler olarak değil; tek bir bütünsel etki modeli olarak ele alırız.",
+    "noShelf": "CCT'de hiçbir program raftan inmez.",
+    "everyProgram": "Her program, önce ihtiyacın derinlemesine keşfedilmesiyle başlar. Ardından kurumun kültürüne, hedeflerine, dinamiklerine ve gerçek iş problemlerine özel olarak sıfırdan tasarlanır. Standart içerikler yerine yaşayan, esnek ve sahadaki gerçekliğe göre şekillenen gelişim yolculukları sunarız.",
+    "because": "Çünkü biliyoruz ki: tek tip çözümler geçici sonuçlar üretir, özgün tasarımlar kalıcı dönüşüm yaratır. Bu nedenle çalışmalarımızda yalnızca bilgi aktarımı değil; davranış değişikliği, uygulama, performans artışı ve ölçülebilir etki hedeflenir. Başarıyı kısa vadeli memnuniyetle değil, sahada görülen somut sonuçlarla tanımlarız.",
+    "missionTitle": "Misyonumuz",
+    "mission": "İnsanı ve sistemi birlikte okuyarak; eğitim, koçluk, mentorluk, danışmanlık ve fasilitasyonu tek bir bütünsel etki modelinde birleştiren, her kurum ve birey için özgün, hedefe yönelik ve kalıcı dönüşüm yaratan gelişim yolculukları tasarlamak.",
+    "journeysIntro": "Bu yolculuklar:",
+    "journey1": "Kurumun, takımın ve bireyin kendi dinamiklerinden beslenen",
+    "journey2": "İhtiyaca göre şekillenen",
+    "journey3": "Yeni bakış açıları kazandıran",
+    "journey4": "İnsan odaklı ve sürdürülebilir",
+    "journey5": "Fark edilir, ölçülebilir ve kalıcı sonuçlar üreten yapılar üzerine inşa edilir.",
+    "quote2": "Gerçek dönüşüm, tek tip çözümlerle değil; doğru anda bütünsel yaklaşımla mümkündür.",
+    "different": "Bugün pek çok yapı eğitim, koçluk, mentorluk veya danışmanlığı ayrı ayrı sunar. CCT'yi farklı ve güçlü kılan ise bu disiplinleri aynı anda görebilen, doğru yerde doğru yaklaşımı kullanabilen bütünsel bakış açısıdır. Bu yaklaşımın arkasında yalnızca teori değil, sahada kazanılmış derin deneyimler vardır.",
+    "founderIntro": "CCT'nin kurucusu ve direktörü Nurhan Yazganel'in disiplinli liderlik geçmişi, ICF Master Certified Coach (MCC) uzmanlığı ve yıllara yayılan eğitmenlik/koçluk deneyimi; CCT programlarının en ayırt edici gücünü oluşturur. Bu sayede her program, içeriği kadar uygulama biçimiyle de benzersizdir.",
+    "whyTitle": "Neden CCT?",
+    "why1": "Çünkü biz hazır çözümler sunmayız. Gerçek ihtiyacı keşfeder, doğru soruları sorar ve kuruma özel tasarlarız.",
+    "why2": "Çünkü biz sadece öğretmeyiz. Davranış değiştirir, etki yaratırız.",
+    "why3": "Çünkü biz gelişimi anlatmayız. Yaşatırız.",
+    "why4": "CCT'de her bir yolculuk içinde koçluk, mentorluk, danışmanlık, fasilitasyon ve eğitim yetkinlikleriyle harmanlanmıştır. Bu nedenle yolculuk kalıcı etkiler, ölçülebilir sonuçlar bırakır."
   },
   "founder": {
     "title": "Nurhan YAZGANEL",
     "credentials": "MCC, EIA SP",
     "quote": "'Kendinizi sevin, kendinize inanın ve fark yaratın.'",
-    "bio": "1996'da Deniz Harp Okulundan mezun olan Nurhan Yazganel, Türkiye'nin ilk muvazzaf kadın subayıdır. Bilgisayar ve Kontrol Mühendisliği lisansı üzerine çeşitli üniversitelerde İşletme, Uluslararası İlişkiler ve Kamu Yönetimi yüksek lisans programlarını tamamlamıştır. Deniz Kuvvetleri Komutanlığında 21 yıl boyunca çok çeşitli görevde farklı birçok ekiple/liderle çalışmış ve binbaşı rütbesi ile emekli olmuştur.",
-    "bio2": "Bu tarihten itibaren yoluna koçluk yolculuğu ile devam kararı alarak Temel ve İleri Düzey Profesyonel Koçluk eğitimleri ile Takım Koçluğu, Yönetici Koçluğu, Ebeveyn Koçluğu dahil koçluğu geliştiren pek çok farklı disiplinden eğitimler almış, halihazırda 8.000 saati aşkın üst düzey yönetici, takım ve performans koçluğu/mentorlüğu deneyimleri ile ICF (International Coach Federation/ Uluslararası Koçluk Federasyonu) onaylı MCC (Master Certified Coach) ünvanı taşıyan sayılı koçlar arasına girmeyi başarmıştır. Aynı zamanda EMCC (European Mentoring & Coaching Council /Avrupa Yönderlik ve Koçluk Derneği) onaylı Senior Practioner unvanını taşıyan sayılı koçlardandır.",
-    "bio3": "Halihazırda Türkiye'nin sayılı koçluk okullarından biri olan PDRICMA (PDR International Coaching and Mentoring Academy)'nın 2020 yılında kuruluşuna liderlik etmiş, okulun Türk motifleri, doğu/ batı medeniyetlerinin izleri ve tüm koçluk ekollerinin dikkate alan bir mozaik halinde tasarlanarak akredite edilmesine öncülük etmiştir. 2020-2026 yılları arasında PDRICMA Fakülte Başkanlığı görevini yürütmüş, şimdilerde kendi kurduğu ve direktörlüğün yürüttüğü Core Coaching & Training Solutions şirketi üzerinden çalışmalarına devam etmektedir.",
-    "bio4": "Kurumsal eğitimler konusunda da uzman olan Yazganel, bu kapsamda 12 yılı aşkın bir zamandır ulusal ve uluslararası platformlarda 300'ün üzerinde şirkete çok çeşitli konularda eğitimler/seminerler vererek on binlerce kişiyle çalışma şansı bulmuştur. Keynote Speaker/Motivasyon konuşmacısı olarak son dönemlerde şirketler tarafından tercih edilen isimlerdendir.",
-    "bio5": "Bireylerin tek ve eşsiz olduklarına inanan, hayata bütünsel bakmaya çalışan, doğa ve sevgiye değer veren yapısı ile herkesin içinde var olan potansiyelini keşfetmesi ve fark yaratmaları için insanların yanında olmayı, onlara dokunmayı kendine misyon edinmiştir. Hayata bakışını en iyi ifade eden kelimeler \"Tutku\", \"Merak\" ve \"Sevgi\" olacaktır."
+    "bio": "Nurhan Yazganel, bireysel ve kurumsal gelişimi yalnızca performans artışı olarak değil; farkındalığı kalıcı etkiye dönüştüren <b>bütünsel bir dönüşüm süreci</b> olarak ele alan bir <b>gelişim lideridir</b>. <b>CCT'nin kurucusu ve direktörü</b> olan Yazganel, aynı zamanda ICF (International Coaching Federation) tarafından verilen en üst seviye unvan olan <b>Master Certified Coach (MCC)</b> derecesine sahip dünyada sayılı profesyoneller arasındadır.",
+    "bio2": "1996 yılında Deniz Harp Okulu'ndan mezun olan Nurhan Yazganel, <b>Türkiye'nin ilk kadın muvazzaf deniz subayıdır</b>. Bu öncü deneyim, liderlik yaklaşımının temel taşlarından biri olmuştur. Bilgisayar ve Kontrol Mühendisliği eğitiminin ardından İşletme, Uluslararası İlişkiler ve Kamu Yönetimi alanlarında yüksek lisans çalışmalarını tamamlamıştır. Deniz Kuvvetleri Komutanlığı bünyesinde <b>21 yıl</b> boyunca farklı görevlerde bulunmuş; çok sayıda ekip ve sistemi yönetmiş, <b>binbaşı rütbesiyle emekli</b> olmuştur.",
+    "bio3": "Askerî kariyerinin ardından yönünü insan gelişimine çeviren Yazganel, koçluk ve eğitim yolculuğuna derinlikli bir öğrenme süreciyle adım atmıştır. İkinci kariyerinde yerel ve uluslararası <b>200'ü aşkın kurumda</b> binlerce katılımcıya farklı başlıklarda koçluk ve eğitimler vermiş, özellikle koçluk ve eğitim şapkalarını birleştiren modeller tasarlayarak iş yapış şekillerinin dönüşümünde hız ve etkinlik yaratmaya odaklanmıştır. Bugüne kadar <b>8.000 saatin üzerinde</b> üst düzey yönetici, lider, takım ve performans koçluğu deneyimine sahiptir. 2016 yılında kendi koçluk ve eğitim şirketi <b>Core Coaching & Training (CCT)</b>'i kurarak profesyonel yolculuğunu bu alanda derinleştirmiştir.",
+    "bio4": "Nurhan Yazganel yalnızca koçluk ve mentorluk yapan bir koç değil; aynı zamanda <b>koçlar yetiştiren</b>, koçluk mesleğinin gelişimine katkı sunan <b>usta koçtur</b>. Bu kapsamda Türkiye'nin prestijli koçluk okullarından biri olan <b>PDRICMA</b> (PDR International Coaching and Mentoring Academy)'nin 2020 yılında kuruluşuna liderlik etmiş; 2020–2026 yılları arasında <b>Fakülte Başkanlığı</b> görevini yürütmüştür. Bu yönüyle koçluğu bireysel bir uzmanlık alanının ötesine taşıyarak, mesleğin sürdürülebilir gelişimine katkı sunan nadir isimlerden biri olarak öne çıkmıştır. Halen kendi kurduğu <b>CCT</b> şirketi üzerinden çalışmalarına devam etmektedir.",
+    "bio5": "Bireylerin tek ve eşsiz olduğuna inanan, hayata bütünsel bir perspektiften bakan Yazganel; insanların kendi potansiyellerini keşfetmeleri, fark yaratmaları ve yaşamlarının lideri olmaları için yanlarında olmayı misyon edinmiştir. Hayata bakışını en iyi tanımlayan kelimeler ise <b>Tutku, Merak ve Sevgi</b>'dir."
   },
   "coaching": {
     "title": "Kurumsal Programlar",
     "coachingArea": {
       "title": "Koçluk Programları",
       "items": [
-        "C-Level Lider Koçluğu",
+        "C Level Lider Koçluğu",
         "Takım Koçluğu",
-        "Yönetici/Executive Koçluğu",
-        "Assesment Hazırlama Koçluğu",
-        "Unvanlanma Koçluğu",
-        "Unvanlanma Mentorluğu",
-        "Level 1 ve Level 2 Profesyonel Koçluk Eğitim Programları Eğitmeni"
+        "Yönetici / Executive Koçluğu",
+        "Kariyer Koçluğu",
+        "Yetkinlik Gelişim Koçluğu",
+        "Yükselen Yıldızlara Koçluk",
+        "Assesment Hazırlık Koçluğu",
+        "Unvanlanma Koçluğu/Mentorluğu"
       ]
     },
     "trainingArea": {
       "title": "Eğitim Programları",
       "items": [
-        "Yönetim ve Liderlik Becerilerini Geliştirme",
-        "Etkin İnsan Yönetimi",
-        "Değişim Yönetimi",
-        "Motivasyon",
-        "Geri Bildirim Sanatı",
-        "Ekip Çalışması ve Ekip Koçluğu",
-        "Kurumsal Değerlendirme Hazırlık Süreçleri için Koçluk",
-        "Performans Müzakerelerine Etkinlik Kazandırma",
-        "Koçluk Becerilerini Geliştirme",
-        "Duygusal Zeka",
-        "Stres Yönetimi",
-        "Zaman Yönetimi",
-        "Toplantı Yönetimi",
-        "Sözlü ve Yazılı İletişim Becerileri",
-        "Başarı ve Özgüven",
-        "Problem Çözme ve Karar Verme",
-        "Müşteri Odaklılık ve Kaliteli Hizmet",
-        "Strateji Yönetimi"
+        "Liderin Seyir Defteri",
+        "Koçvari Liderliğe Yolculuk",
+        "Yüksek Performanslı Takım Pusulası",
+        "Motivasyon Kodları",
+        "İletişimin DNA'sı",
+        "Kurumsal Duygusal Zekâ",
+        "Zaman Mimarı",
+        "Performans Görüşmelerinde Ustalık",
+        "Yetkinlik Gelişim Odaklı Mentorluk",
+        "Geribildirim Alma ve Vermede Ustalaşmak"
       ]
     }
+  },
+  "workshop": {
+    "title": "Atölye/Çember Çalışmaları",
+    "subtitle": "Kurumsal Programlar"
+  },
+  "keynote": {
+    "title": "Keynote Konuşmaları",
+    "subtitle": "Kurumsal Programlar"
+  },
+  "coachingSchool": {
+    "subtitle": "Koçluk Okulu",
+    "level1": { "title": "Level 1" },
+    "level2": { "title": "Level 2" },
+    "level3": { "title": "Level 3" }
   },
   "references": {
     "title": "Referanslar",
@@ -113,7 +147,21 @@
       "turquoiseYachts": "Turquoise Yachts",
       "abalioglu": "Abalıoğlu Holding",
       "yasar": "Yaşar Faktoring",
-      "enerjisa": "Enerjisa"
+      "enerjisa": "Enerjisa",
+      "yeditepe": "Yeditepe Üniversitesi",
+      "medicana": "Medicana",
+      "isBankasi": "İş Bankası",
+      "lukoil": "Lukoil",
+      "omsan": "Omsan",
+      "akzoNobel": "Akzo Nobel",
+      "bungeGida": "Bunge Gıda",
+      "teksan": "Teksan Jeneratör",
+      "executas": "Executas",
+      "entes": "Entes",
+      "aktifBank": "Aktif Bank",
+      "dapYapi": "DAP Yapı",
+      "sutas": "Sütaş",
+      "ravago": "Ravago"
     }
   },
   "contact": {
@@ -128,7 +176,7 @@
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Düşünce liderliği ve içgörüler",
+    "subtitle": "Düşünce Liderliği ve İçgörüler",
     "readMore": "Devamını Oku",
     "backToBlog": "Blog'a Dön"
   },

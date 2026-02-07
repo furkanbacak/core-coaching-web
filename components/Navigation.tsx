@@ -20,6 +20,7 @@ export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [isHeroSection, setIsHeroSection] = useState(true);
   const [isCoachingDropdownOpen, setIsCoachingDropdownOpen] = useState(false);
+  const [isCoachingSchoolDropdownOpen, setIsCoachingSchoolDropdownOpen] = useState(false);
   const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState(false);
 
   // Route context
@@ -79,29 +80,31 @@ export default function Navigation() {
 
   const navItems: Array<{ key: string; href: string; hasDropdown?: boolean; comingSoon?: boolean }> = [
     { key: 'about', href: '#about' },
-    { key: 'references', href: `/${locale}/references` },
     { key: 'coachingFocus', href: '#coaching', hasDropdown: true },
-    { key: 'coachingSchool', href: '#', comingSoon: true },
+    { key: 'coachingSchool', href: '#', hasDropdown: true },
     { key: 'resources', href: '#', hasDropdown: true },
+    { key: 'references', href: `/${locale}/references` },
     { key: 'contact', href: `/${locale}/contact` },
   ];
 
   const coachingDropdownItems = useMemo(() => {
-    const coachingHref = `/${locale}/coaching`;
-    const trainingHref = `/${locale}/training`;
+    const base = `/${locale}`;
     return [
-      { 
-        key: 'coachingPrograms', 
-        href: coachingHref,
-        label: tPrograms('coachingPrograms')
-      },
-      { 
-        key: 'trainingPrograms', 
-        href: trainingHref,
-        label: tPrograms('trainingPrograms')
-      },
+      { key: 'coachingPrograms', href: `${base}/coaching`, label: tPrograms('coachingPrograms') },
+      { key: 'trainingPrograms', href: `${base}/training`, label: tPrograms('trainingPrograms') },
+      { key: 'workshopPrograms', href: `${base}/workshop`, label: tPrograms('workshopPrograms'), comingSoon: true },
+      { key: 'keynoteSpeeches', href: `${base}/keynote`, label: tPrograms('keynoteSpeeches'), comingSoon: true },
     ];
   }, [locale, tPrograms]);
+
+  const coachingSchoolDropdownItems = useMemo(() => {
+    const base = `/${locale}/coaching-school`;
+    return [
+      { key: 'level1', href: `${base}/level-1`, label: t('level1'), comingSoon: true },
+      { key: 'level2', href: `${base}/level-2`, label: t('level2'), comingSoon: true },
+      { key: 'level3', href: `${base}/level-3`, label: t('level3'), comingSoon: true },
+    ];
+  }, [locale, t]);
 
   const resourcesDropdownItems = useMemo(() => [
     { 
@@ -184,9 +187,9 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => {
               if (item.hasDropdown) {
-                const isOpen = item.key === 'coachingFocus' ? isCoachingDropdownOpen : isResourcesDropdownOpen;
-                const setIsOpen = item.key === 'coachingFocus' ? setIsCoachingDropdownOpen : setIsResourcesDropdownOpen;
-                const dropdownItems = item.key === 'coachingFocus' ? coachingDropdownItems : resourcesDropdownItems;
+                const isOpen = item.key === 'coachingFocus' ? isCoachingDropdownOpen : item.key === 'coachingSchool' ? isCoachingSchoolDropdownOpen : isResourcesDropdownOpen;
+                const setIsOpen = item.key === 'coachingFocus' ? setIsCoachingDropdownOpen : item.key === 'coachingSchool' ? setIsCoachingSchoolDropdownOpen : setIsResourcesDropdownOpen;
+                const dropdownItems = item.key === 'coachingFocus' ? coachingDropdownItems : item.key === 'coachingSchool' ? coachingSchoolDropdownItems : resourcesDropdownItems;
                 
                 return (
                   <div
@@ -196,8 +199,9 @@ export default function Navigation() {
                     onMouseLeave={() => setIsOpen(false)}
                   >
                     <button
-                      className={`${textColor} transition-colors text-sm font-medium cursor-pointer flex items-center gap-1`}
+                      className={`${textColor} transition-colors text-sm font-medium cursor-pointer flex items-center gap-1.5`}
                     >
+                      {item.key === 'coachingSchool' && <GraduationCap className="w-4 h-4 shrink-0" />}
                       {t(item.key)}
                       <svg
                         className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`}
@@ -217,41 +221,33 @@ export default function Navigation() {
                           transition={{ duration: 0.2 }}
                           className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-lg border border-neutral-200 py-2 z-50"
                         >
-                          {dropdownItems.map((dropdownItem) => (
-                            <button
-                              key={dropdownItem.key}
-                              onClick={() => {
-                                router.push(dropdownItem.href);
-                                setIsOpen(false);
-                              }}
-                              className="w-full text-left block px-4 py-3 text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
-                            >
-                              {dropdownItem.label}
-                            </button>
-                          ))}
+                          {dropdownItems.map((dropdownItem) =>
+                            (dropdownItem as { comingSoon?: boolean }).comingSoon ? (
+                              <div
+                                key={dropdownItem.key}
+                                className="flex items-center justify-between px-4 py-3 text-sm text-neutral-400 cursor-not-allowed"
+                              >
+                                <span>{dropdownItem.label}</span>
+                                <span className="text-xs bg-neutral-200 text-neutral-500 px-2 py-0.5 rounded">
+                                  {t('comingSoon')}
+                                </span>
+                              </div>
+                            ) : (
+                              <button
+                                key={dropdownItem.key}
+                                onClick={() => {
+                                  router.push(dropdownItem.href);
+                                  setIsOpen(false);
+                                }}
+                                className="w-full text-left block px-4 py-3 text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                              >
+                                {dropdownItem.label}
+                              </button>
+                            )
+                          )}
                         </motion.div>
                       )}
                     </AnimatePresence>
-                  </div>
-                );
-              }
-              if (item.comingSoon) {
-                return (
-                  <div
-                    key={item.key}
-                    className="relative group/soon"
-                    title={t('comingSoon')}
-                  >
-                    <span
-                      className={`${textColor} transition-colors text-sm font-medium cursor-not-allowed opacity-80 flex items-center gap-1.5`}
-                      aria-disabled="true"
-                    >
-                      <GraduationCap className="w-4 h-4" />
-                      {t(item.key)}
-                    </span>
-                    <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-1.5 px-2.5 py-1.5 text-xs font-medium text-white bg-neutral-800 rounded-lg opacity-0 group-hover/soon:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
-                      {t('comingSoon')}
-                    </span>
                   </div>
                 );
               }
@@ -327,9 +323,9 @@ export default function Navigation() {
             <div className="px-4 py-6 space-y-4">
               {navItems.map((item) => {
                 if (item.hasDropdown) {
-                  const isDropdownOpen = item.key === 'coachingFocus' ? isCoachingDropdownOpen : isResourcesDropdownOpen;
-                  const setIsDropdownOpen = item.key === 'coachingFocus' ? setIsCoachingDropdownOpen : setIsResourcesDropdownOpen;
-                  const dropdownItems = item.key === 'coachingFocus' ? coachingDropdownItems : resourcesDropdownItems;
+                  const isDropdownOpen = item.key === 'coachingFocus' ? isCoachingDropdownOpen : item.key === 'coachingSchool' ? isCoachingSchoolDropdownOpen : isResourcesDropdownOpen;
+                  const setIsDropdownOpen = item.key === 'coachingFocus' ? setIsCoachingDropdownOpen : item.key === 'coachingSchool' ? setIsCoachingSchoolDropdownOpen : setIsResourcesDropdownOpen;
+                  const dropdownItems = item.key === 'coachingFocus' ? coachingDropdownItems : item.key === 'coachingSchool' ? coachingSchoolDropdownItems : resourcesDropdownItems;
                   
                   return (
                     <div key={item.key} className="space-y-2">
@@ -337,7 +333,10 @@ export default function Navigation() {
                         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                         className={`w-full text-left ${mobileMenuTextColor} transition-colors text-base font-medium py-2 cursor-pointer flex items-center justify-between`}
                       >
-                        {t(item.key)}
+                        <span className="flex items-center gap-2">
+                          {item.key === 'coachingSchool' && <GraduationCap className="w-5 h-5 flex-shrink-0" />}
+                          {t(item.key)}
+                        </span>
                         <svg
                           className={`w-4 h-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`}
                           fill="none"
@@ -355,36 +354,34 @@ export default function Navigation() {
                             exit={{ opacity: 0, height: 0 }}
                             className="pl-4 space-y-2 border-l-2 border-neutral-200"
                           >
-                            {dropdownItems.map((dropdownItem) => (
-                              <button
-                                key={dropdownItem.key}
-                                onClick={() => {
-                                  router.push(dropdownItem.href);
-                                  setIsOpen(false);
-                                  setIsDropdownOpen(false);
-                                }}
-                                className="w-full text-left block text-sm text-neutral-600 hover:text-primary-600 transition-colors py-1"
-                              >
-                                {dropdownItem.label}
-                              </button>
-                            ))}
+                            {dropdownItems.map((dropdownItem) =>
+                              (dropdownItem as { comingSoon?: boolean }).comingSoon ? (
+                                <div
+                                  key={dropdownItem.key}
+                                  className="flex items-center justify-between py-2 text-sm text-neutral-400 cursor-not-allowed"
+                                >
+                                  <span>{dropdownItem.label}</span>
+                                  <span className="text-xs bg-neutral-200 text-neutral-500 px-2 py-0.5 rounded">
+                                    {t('comingSoon')}
+                                  </span>
+                                </div>
+                              ) : (
+                                <button
+                                  key={dropdownItem.key}
+                                  onClick={() => {
+                                    router.push(dropdownItem.href);
+                                    setIsOpen(false);
+                                    setIsDropdownOpen(false);
+                                  }}
+                                  className="w-full text-left block text-sm text-neutral-600 hover:text-primary-600 transition-colors py-1"
+                                >
+                                  {dropdownItem.label}
+                                </button>
+                              )
+                            )}
                           </motion.div>
                         )}
                       </AnimatePresence>
-                    </div>
-                  );
-                }
-                if (item.comingSoon) {
-                  return (
-                    <div
-                      key={item.key}
-                      className={`flex items-center gap-2 py-2 ${mobileMenuTextColor} opacity-80`}
-                    >
-                      <GraduationCap className="w-5 h-5 flex-shrink-0" />
-                      <span className="font-medium">{t(item.key)}</span>
-                      <span className="text-xs bg-neutral-200 text-neutral-600 px-2 py-0.5 rounded">
-                        {t('comingSoon')}
-                      </span>
                     </div>
                   );
                 }

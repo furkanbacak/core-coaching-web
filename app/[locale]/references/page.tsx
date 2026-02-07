@@ -54,6 +54,20 @@ const references: Reference[] = [
   { key: 'abalioglu', logo: 'abalioglu.png?v=2' },
   { key: 'yasar', logo: 'yasar.webp' },
   { key: 'enerjisa', logo: 'enerjisa.png' },
+  { key: 'yeditepe', logo: 'yeditepe.png' },
+  { key: 'medicana', logo: 'medicana.png' },
+  { key: 'isBankasi', logo: 'is-bankasi.png' },
+  { key: 'lukoil', logo: 'lukoil.png' },
+  { key: 'omsan', logo: 'omsan.png' },
+  { key: 'akzoNobel', logo: 'akzo-nobel.png' },
+  { key: 'bungeGida', logo: 'bunge-gida.png' },
+  { key: 'teksan', logo: 'teksan.png' },
+  { key: 'executas', logo: 'executas.png' },
+  { key: 'entes', logo: 'entes.png' },
+  { key: 'aktifBank', logo: 'aktif-bank.png' },
+  { key: 'dapYapi', logo: 'dap-yapi.png' },
+  { key: 'sutas', logo: 'sutas.png' },
+  { key: 'ravago', logo: 'ravago.png' },
 ];
 
 export default async function ReferencesPage({

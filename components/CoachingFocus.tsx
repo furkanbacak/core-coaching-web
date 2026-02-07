@@ -6,59 +6,46 @@ import {
   Crown,
   Users,
   Briefcase,
+  TrendingUp,
+  Activity,
+  Star,
   ClipboardCheck,
   Award,
-  UserCog,
-  GraduationCap,
-  TrendingUp,
-  RefreshCw,
+  BookOpen,
+  Compass,
   Zap,
   MessageSquare,
-  Network,
-  ClipboardList,
-  Gauge,
-  BookOpen,
-  Shield,
-  Clock,
-  Calendar,
-  Trophy,
-  Lightbulb,
-  UserCheck,
-  Target,
   Brain,
+  Clock,
+  ClipboardList,
+  UserCog,
+  Target,
 } from 'lucide-react';
 
-// Icon mapping for coaching area items
+// Icon mapping for coaching area items (8)
 const coachingIcons = [
-  Crown,           // C-Level Lider Koçluğu
+  Crown,           // C Level Lider Koçluğu
   Users,           // Takım Koçluğu
-  Briefcase,       // Yönetici/Executive Koçluğu
-  ClipboardCheck,  // Assesment Hazırlama Koçluğu
-  Award,           // Unvanlanma Koçluğu
-  UserCog,         // Unvanlanma Mentorluğu
-  GraduationCap,   // Level 1 ve Level 2 Profesyonel Koçluk Eğitim Programları Eğitmeni
+  Briefcase,       // Yönetici / Executive Koçluğu
+  TrendingUp,      // Kariyer Koçluğu
+  Activity,        // Yetkinlik Gelişim Koçluğu
+  Star,            // Yükselen Yıldızlara Koçluk
+  ClipboardCheck,  // Assesment Hazırlık Koçluğu
+  Award,           // Unvanlanma Koçluğu/Mentorluğu
 ];
 
-// Icon mapping for training area items
+// Icon mapping for training area items (10)
 const trainingIcons = [
-  TrendingUp,      // Yönetim ve Liderlik Becerilerini Geliştirme
-  Users,           // Etkin İnsan Yönetimi
-  RefreshCw,       // Değişim Yönetimi
-  Zap,             // Motivasyon
-  MessageSquare,  // Geri Bildirim Sanatı
-  Network,         // Ekip Çalışması ve Ekip Koçluğu
-  ClipboardList,   // Kurumsal Değerlendirme Hazırlık Süreçleri için Koçluk
-  Gauge,           // Performans Müzakerelerine Etkinlik Kazandırma
-  BookOpen,        // Koçluk Becerilerini Geliştirme
-  Brain,           // Duygusal Zeka
-  Shield,          // Stres Yönetimi
-  Clock,           // Zaman Yönetimi
-  Calendar,        // Toplantı Yönetimi
-  MessageSquare,  // Sözlü ve Yazılı İletişim Becerileri
-  Trophy,          // Başarı ve Özgüven
-  Lightbulb,       // Problem Çözme ve Karar Verme
-  UserCheck,       // Müşteri Odaklılık ve Kaliteli Hizmet
-  Target,          // Strateji Yönetimi
+  BookOpen,        // Liderin Seyir Defteri
+  Compass,         // Koçvari Liderliğe Yolculuk
+  Users,           // Yüksek Performanslı Takım Pusulası
+  Zap,             // Motivasyon Kodları
+  MessageSquare,   // İletişimin DNA'sı
+  Brain,           // Kurumsal Duygusal Zekâ
+  Clock,           // Zaman Mimarı
+  ClipboardList,   // Performans Görüşmelerinde Ustalık
+  UserCog,         // Yetkinlik Gelişim Odaklı Mentorluk
+  Target,          // Geribildirim Alma ve Vermede Ustalaşmak
 ];
 
 const getIcon = (index: number, category: 'coaching' | 'training') => {
@@ -95,7 +82,7 @@ export default function CoachingFocus() {
           transition={{ duration: 1.2, ease: 'easeOut' }}
           className="mb-20"
         >
-          <h3 className="text-2xl md:text-3xl font-serif font-bold text-neutral-900 mb-8 text-center">
+          <h3 className="text-2xl md:text-3xl font-serif font-bold text-primary-600 mb-8 text-center">
             {t('coachingArea.title')}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -111,7 +98,7 @@ export default function CoachingFocus() {
                   whileHover={{ y: -4, transition: { duration: 0.2 } }}
                   className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-100 hover:border-primary-200 group"
                 >
-                  <div className="flex items-start space-x-4">
+                  <div className="flex items-center space-x-4">
                     <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-50 group-hover:bg-primary-100 flex items-center justify-center transition-colors duration-300">
                       <Icon className="w-6 h-6 text-primary-600" />
                     </div>
@@ -132,7 +119,7 @@ export default function CoachingFocus() {
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
         >
-          <h3 className="text-2xl md:text-3xl font-serif font-bold text-neutral-900 mb-8 text-center">
+          <h3 className="text-2xl md:text-3xl font-serif font-bold text-primary-600 mb-8 text-center">
             {t('trainingArea.title')}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -148,7 +135,7 @@ export default function CoachingFocus() {
                   whileHover={{ y: -4, transition: { duration: 0.2 } }}
                   className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-100 hover:border-primary-200 group"
                 >
-                  <div className="flex items-start space-x-4">
+                  <div className="flex items-center space-x-4">
                     <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-50 group-hover:bg-primary-100 flex items-center justify-center transition-colors duration-300">
                       <Icon className="w-6 h-6 text-primary-600" />
                     </div>

@@ -3,6 +3,9 @@
     "about": "About",
     "coachingFocus": "Corporate Programs",
     "coachingSchool": "Coaching School",
+    "level1": "Level 1",
+    "level2": "Level 2",
+    "level3": "Level 3",
     "references": "References",
     "contact": "Contact",
     "blog": "Blog",
@@ -11,7 +14,9 @@
   },
   "programs": {
     "coachingPrograms": "Coaching Programs",
-    "trainingPrograms": "Training Programs"
+    "trainingPrograms": "Training Programs",
+    "workshopPrograms": "Workshop/Circle Studies",
+    "keynoteSpeeches": "Keynote Speeches"
   },
   "hero": {
     "title": "Begin Your Transformation",
@@ -21,57 +26,86 @@
   },
   "about": {
     "title": "About",
-    "description": "Founded in 2017 by Nurhan Yazganel (MCC, EIA SP), the company was established to support professionals in contributing to the positive transformation of individuals and organizations, increasing their business performance, enabling them to demonstrate their professional competencies at the highest level, establishing the most appropriate management/leadership models using contemporary management styles, and helping them find quick and practical solutions in their ways of working, increasing their motivation and helping them achieve their goals.",
-    "description2": "The company, which provides coaching and training services to offer customized solutions to national and international organizations and individuals, was founded by Nurhan Yazganel, who serves in coaching, training, and consulting roles at different levels in different sectors. Believing that coaching and training contribute to the positive transformation of the world, it operates with the understanding of \"Individual/Corporate Customized Service.\"",
-    "description3": "Yazganel, who can combine education, coaching, mentoring, and facilitation hats while offering short, medium, and long-term solutions, makes a difference with the measurements and techniques she applies to ensure the best feedback, create action plans, and achieve individual behavioral changes."
+    "quote1": "Real transformation begins when you can read both the person and the system together.",
+    "intro": "CCT was founded in 2016 by Nurhan Yazganel to address individual and organizational development holistically—without fragmenting it—and to create long-term, lasting value.",
+    "focus": "Since our founding, our focus has been clear: to design development models that turn awareness into behavior and potential into sustainable impact.",
+    "today": "In today's business world, producing results alone is not enough. Speed, uncertainty, and increasing competition push organizations to become more agile, more conscious, and more human-centered. The structures that endure are those that strengthen people, develop leadership capacity, and make learning part of the culture.",
+    "real": "Because real transformation starts with people, not systems.",
+    "holistic": "At CCT we do not limit development to training or coaching. We read the person, the team, and the system together. We treat coaching, training, mentoring, consulting, and facilitation not as separate services but as one integrated impact model.",
+    "noShelf": "At CCT, no program comes off the shelf.",
+    "everyProgram": "Every program starts with a deep discovery of need. It is then designed from scratch around the organization's culture, goals, dynamics, and real business challenges. We offer development journeys that are living, flexible, and shaped by reality in the field—not standard content.",
+    "because": "Because we know: one-size-fits-all solutions produce temporary results; tailored design creates lasting transformation. So we aim not only for knowledge transfer but for behavior change, application, performance improvement, and measurable impact. We define success by concrete results in the field, not short-term satisfaction.",
+    "missionTitle": "Our Mission",
+    "mission": "To design development journeys that read people and systems together; unite training, coaching, mentoring, consulting, and facilitation in one integrated impact model; and create unique, goal-oriented, lasting transformation for every organization and individual.",
+    "journeysIntro": "These journeys are built on:",
+    "journey1": "Structures that draw on the dynamics of the organization, team, and individual",
+    "journey2": "Shaping according to need",
+    "journey3": "Gaining new perspectives",
+    "journey4": "Human-centered and sustainable approaches",
+    "journey5": "Noticeable, measurable, and lasting results.",
+    "quote2": "Real transformation is possible not with one-size-fits-all solutions, but with a holistic approach at the right moment.",
+    "different": "Many organizations today offer training, coaching, mentoring, or consulting separately. What makes CCT different and strong is a holistic view that can see these disciplines together and use the right approach in the right place. Behind this approach is not only theory but deep experience gained in the field.",
+    "founderIntro": "The disciplined leadership background of Nurhan Yazganel, founder and director of CCT, her ICF Master Certified Coach (MCC) expertise, and her long-standing experience in training and coaching form the most distinctive strength of CCT programs. Thus every program is unique in both content and the way it is delivered.",
+    "whyTitle": "Why CCT?",
+    "why1": "Because we don't offer ready-made solutions. We discover real need, ask the right questions, and design for the organization.",
+    "why2": "Because we don't just teach. We change behavior and create impact.",
+    "why3": "Because we don't just talk about development. We bring it to life.",
+    "why4": "At CCT, every journey blends coaching, mentoring, consulting, facilitation, and training. That is why our journeys leave lasting impact and measurable results."
   },
   "founder": {
     "title": "Nurhan YAZGANEL",
     "credentials": "MCC, EIA SP",
     "quote": "'Love yourself, believe in yourself, and make a difference.'",
-    "bio": "Nurhan Yazganel, who graduated from the Naval Academy in 1996, is Turkey's first active-duty female officer. She completed her Bachelor's degree in Computer and Control Engineering and then completed Master's programs in Business Administration, International Relations, and Public Administration at various universities. She worked in many different roles with different teams/leaders for 21 years in the Naval Forces Command and retired with the rank of Major.",
-    "bio2": "From this date, she decided to continue her journey with coaching and received training from many different disciplines that develop coaching, including Basic and Advanced Professional Coaching training, Team Coaching, Executive Coaching, and Parent Coaching. With over 8,000 hours of experience in high-level executive, team, and performance coaching/mentoring, she has managed to become one of the few coaches holding the MCC (Master Certified Coach) title approved by ICF (International Coach Federation). She is also one of the few coaches holding the Senior Practitioner title approved by EMCC (European Mentoring & Coaching Council).",
-    "bio3": "She led the establishment of PDRICMA (PDR International Coaching and Mentoring Academy), one of Turkey's leading coaching schools, in 2020, and pioneered the school's design and accreditation as a mosaic that considers Turkish motifs, traces of Eastern/Western civilizations, and all coaching schools. She served as the Dean of PDRICMA from 2020-2026 and now continues her work through Core Coaching & Training Solutions, the company she founded and directs.",
-    "bio4": "Yazganel, who is also an expert in corporate training, has had the opportunity to work with tens of thousands of people by providing training/seminars on a wide variety of topics to over 300 companies on national and international platforms for over 12 years. She is one of the names preferred by companies as a Keynote Speaker/Motivation speaker in recent times.",
-    "bio5": "Believing that individuals are unique and one-of-a-kind, trying to look at life holistically, and valuing nature and love, she has made it her mission to be with people and touch them so that everyone can discover their potential and make a difference. The words that best express her outlook on life would be \"Passion,\" \"Curiosity,\" and \"Love.\""
+    "bio": "Nurhan Yazganel is a <b>development leader</b> who approaches individual and organizational development not only as a performance lever but as a <b>holistic transformation process</b> that turns awareness into lasting impact. As <b>founder and director of CCT</b>, she is also among the few professionals worldwide to hold the <b>Master Certified Coach (MCC)</b> credential, the highest level awarded by the International Coaching Federation (ICF).",
+    "bio2": "Nurhan Yazganel graduated from the Naval Academy in 1996 and is <b>Turkey's first female active-duty naval officer</b>. This pioneering experience became one of the cornerstones of her leadership approach. After her degree in Computer and Control Engineering, she completed postgraduate studies in Business Administration, International Relations, and Public Administration. She served in various roles within the Naval Forces Command for <b>21 years</b>, led numerous teams and systems, and retired with the <b>rank of Major</b>.",
+    "bio3": "After her military career, Yazganel turned to human development and stepped into coaching and training through a rigorous learning journey. In her second career she has delivered coaching and training to thousands of participants across <b>more than 200</b> local and international organizations, focusing on combining coaching and training to bring speed and impact to the transformation of ways of working. She has over <b>8,000 hours</b> of experience in executive, leadership, team, and performance coaching. In 2016 she founded <b>Core Coaching & Training (CCT)</b> and has since deepened her professional path in this field.",
+    "bio4": "Nurhan Yazganel is not only a coach who coaches and mentors; she is also a <b>master coach</b> who <b>develops other coaches</b> and contributes to the advancement of the profession. In this capacity she led the establishment of <b>PDRICMA</b> (PDR International Coaching and Mentoring Academy), one of Turkey's prestigious coaching schools, in 2020, and served as its <b>Dean from 2020 to 2026</b>. In doing so she has taken coaching beyond individual expertise and stands out as one of the rare figures contributing to the sustainable development of the profession. She continues her work through <b>CCT</b>, the company she founded.",
+    "bio5": "Believing that each person is unique, and viewing life from a holistic perspective, Yazganel has made it her mission to stand by people as they discover their potential, make a difference, and become the leaders of their own lives. The words that best describe her outlook on life are <b>Passion, Curiosity, and Love</b>."
   },
   "coaching": {
     "title": "Corporate Programs",
     "coachingArea": {
       "title": "Coaching Programs",
       "items": [
-        "C-Level Leadership Coaching",
+        "C Level Leadership Coaching",
         "Team Coaching",
         "Executive Coaching",
+        "Career Coaching",
+        "Competency Development Coaching",
+        "Coaching for Rising Stars",
         "Assessment Preparation Coaching",
-        "Credentialing Coaching",
-        "Credentialing Mentoring",
-        "Level 1 and Level 2 Professional Coaching Training Program Instructor"
+        "Credentialing Coaching/Mentoring"
       ]
     },
     "trainingArea": {
       "title": "Training Programs",
       "items": [
-        "Developing Management and Leadership Skills",
-        "Effective People Management",
-        "Change Management",
-        "Motivation",
-        "The Art of Feedback",
-        "Teamwork and Team Coaching",
-        "Coaching for Corporate Assessment Preparation Processes",
-        "Enhancing Performance Review Effectiveness",
-        "Developing Coaching Skills",
-        "Emotional Intelligence",
-        "Stress Management",
-        "Time Management",
-        "Meeting Management",
-        "Verbal and Written Communication Skills",
-        "Success and Self-Confidence",
-        "Problem Solving and Decision Making",
-        "Customer Focus and Quality Service",
-        "Strategy Management"
+        "The Leader's Logbook",
+        "Journey to Coach-Style Leadership",
+        "High-Performing Team Compass",
+        "Motivation Codes",
+        "The DNA of Communication",
+        "Corporate Emotional Intelligence",
+        "Time Architect",
+        "Mastery in Performance Conversations",
+        "Competency Development Mentoring",
+        "Mastering Giving and Receiving Feedback"
       ]
     }
+  },
+  "workshop": {
+    "title": "Workshop/Circle Studies",
+    "subtitle": "Corporate Programs"
+  },
+  "keynote": {
+    "title": "Keynote Speeches",
+    "subtitle": "Corporate Programs"
+  },
+  "coachingSchool": {
+    "subtitle": "Coaching School",
+    "level1": { "title": "Level 1" },
+    "level2": { "title": "Level 2" },
+    "level3": { "title": "Level 3" }
   },
   "references": {
     "title": "References",
@@ -113,7 +147,21 @@
       "turquoiseYachts": "Turquoise Yachts",
       "abalioglu": "Abalıoğlu Holding",
       "yasar": "Yaşar Factoring",
-      "enerjisa": "Enerjisa"
+      "enerjisa": "Enerjisa",
+      "yeditepe": "Yeditepe University",
+      "medicana": "Medicana",
+      "isBankasi": "İş Bankası",
+      "lukoil": "Lukoil",
+      "omsan": "Omsan",
+      "akzoNobel": "Akzo Nobel",
+      "bungeGida": "Bunge",
+      "teksan": "Teksan Generator",
+      "executas": "Executas",
+      "entes": "Entes",
+      "aktifBank": "Aktif Bank",
+      "dapYapi": "DAP Construction",
+      "sutas": "Sütaş",
+      "ravago": "Ravago"
     }
   },
   "contact": {
@@ -128,7 +176,7 @@
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Thought leadership and insights",
+    "subtitle": "Thought Leadership and Insights",
     "readMore": "Read More",
     "backToBlog": "Back to Blog"
   },

@@ -42,9 +42,6 @@ export default function ReferencesGrid({ references }: ReferencesGridProps) {
               </span>
             )}
           </div>
-          <p className="mt-3 text-xs text-neutral-600 text-center font-medium group-hover:text-primary-600 transition-colors">
-            {ref.name}
-          </p>
         </motion.div>
       ))}
     </div>

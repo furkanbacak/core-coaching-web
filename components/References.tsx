@@ -50,6 +50,20 @@ const references = (t: (key: string) => string): Reference[] => [
   { name: 'Abalıoğlu Holding', logo: 'abalioglu.png?v=2' },
   { name: 'Yaşar Faktoring', logo: 'yasar.webp' },
   { name: 'Enerjisa', logo: 'enerjisa.png' },
+  { name: t('yeditepe'), logo: 'yeditepe.png' },
+  { name: t('medicana'), logo: 'medicana.png' },
+  { name: t('isBankasi'), logo: 'is-bankasi.png' },
+  { name: t('lukoil'), logo: 'lukoil.png' },
+  { name: t('omsan'), logo: 'omsan.png' },
+  { name: t('akzoNobel'), logo: 'akzo-nobel.png' },
+  { name: t('bungeGida'), logo: 'bunge-gida.png' },
+  { name: t('teksan'), logo: 'teksan.png' },
+  { name: t('executas'), logo: 'executas.png' },
+  { name: t('entes'), logo: 'entes.png' },
+  { name: t('aktifBank'), logo: 'aktif-bank.png' },
+  { name: t('dapYapi'), logo: 'dap-yapi.png' },
+  { name: t('sutas'), logo: 'sutas.png' },
+  { name: t('ravago'), logo: 'ravago.png' },
 ];
 
 export default function References() {

@@ -3,44 +3,29 @@
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import {
-  TrendingUp,
+  BookOpen,
+  Compass,
   Users,
-  RefreshCw,
   Zap,
   MessageSquare,
-  Network,
-  ClipboardList,
-  Gauge,
-  BookOpen,
   Brain,
-  Shield,
   Clock,
-  Calendar,
-  Trophy,
-  Lightbulb,
-  UserCheck,
+  ClipboardList,
+  UserCog,
   Target,
 } from 'lucide-react';
 
 const trainingIcons = [
-  TrendingUp,
-  Users,
-  RefreshCw,
-  Zap,
-  MessageSquare,
-  Network,
-  ClipboardList,
-  Gauge,
-  BookOpen,
-  Brain,
-  Shield,
-  Clock,
-  Calendar,
-  MessageSquare,
-  Trophy,
-  Lightbulb,
-  UserCheck,
-  Target,
+  BookOpen,        // Liderin Seyir Defteri
+  Compass,         // Koçvari Liderliğe Yolculuk
+  Users,           // Yüksek Performanslı Takım Pusulası
+  Zap,             // Motivasyon Kodları
+  MessageSquare,   // İletişimin DNA'sı
+  Brain,           // Kurumsal Duygusal Zekâ
+  Clock,           // Zaman Mimarı
+  ClipboardList,   // Performans Görüşmelerinde Ustalık
+  UserCog,         // Yetkinlik Gelişim Odaklı Mentorluk
+  Target,          // Geribildirim Alma ve Vermede Ustalaşmak
 ];
 
 export default function TrainingAreaList() {
@@ -62,7 +47,7 @@ export default function TrainingAreaList() {
               whileHover={{ y: -4, transition: { duration: 0.2 } }}
               className="bg-neutral-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-100 hover:border-primary-200 group"
             >
-              <div className="flex items-start space-x-4">
+              <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-50 group-hover:bg-primary-100 flex items-center justify-center transition-colors duration-300">
                   <Icon className="w-6 h-6 text-primary-600" />
                 </div>

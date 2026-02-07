@@ -1,7 +1,6 @@
 'use client';
 
 import { useLocale, useTranslations } from 'next-intl';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Instagram, Linkedin, Mail, Youtube } from 'lucide-react';
 
@@ -25,16 +24,10 @@ export default function Footer() {
     <footer className="bg-neutral-900 text-neutral-300 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-          <div className="flex items-center space-x-3">
-            <div className="relative w-10 h-10">
-              <Image
-                src="/images/core-logo.png"
-                alt="Core Coaching"
-                fill
-                className="object-contain opacity-80"
-              />
-            </div>
-            <span className="text-lg font-semibold text-white">CORE</span>
+          <div className="flex items-center">
+            <span className="text-lg font-semibold text-white tracking-wide">
+              CORE
+            </span>
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 md:gap-6 md:justify-end">
