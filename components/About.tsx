@@ -25,33 +25,38 @@ export default function About() {
 
         {/* C-shape: image floats right, text wraps around circle */}
         <div className="overflow-hidden mb-24">
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="float-none md:float-right ml-0 md:ml-8 mb-6 w-52 h-52 mx-auto md:mx-0 md:w-[22rem] md:h-[22rem] shrink-0 relative rounded-full"
-            style={{ shapeOutside: 'circle(50% at 50% 50%)' }}
-          >
-            {/* Circle frame (circle.svg) */}
-            <Image
-              src="/images/circle.svg"
-              alt=""
-              fill
-              className="object-contain pointer-events-none"
-              sizes="(max-width: 768px) 208px, 352px"
-              priority
-            />
-            <div className="absolute inset-[14%] rounded-full overflow-hidden bg-white shadow-inner">
+          {/* Mobilde fotoğrafı ortalamak için wrapper */}
+          <div className="flex justify-center md:block md:contents">
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="float-none md:float-right ml-0 md:ml-8 mb-6 w-80 h-80 md:w-[22rem] md:h-[22rem] shrink-0 relative rounded-full"
+              style={{ shapeOutside: 'circle(50% at 50% 50%)' }}
+            >
+              {/* Circle frame (circle.svg) */}
               <Image
-                src="/images/nurhan-yazganel.jpg"
-                alt="Nurhan Yazganel"
+                src="/images/circle.svg"
+                alt=""
                 fill
-                className="object-cover"
+                className="object-contain pointer-events-none"
+                sizes="(max-width: 768px) 320px, 352px"
                 priority
               />
-            </div>
-          </motion.div>
+              <div className="absolute inset-[14%] rounded-full overflow-hidden bg-white shadow-inner">
+                <Image
+                  src="/images/nurhan-yazganel.jpg"
+                  alt="Nurhan Yazganel"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 640px, 704px"
+                  quality={90}
+                  priority
+                />
+              </div>
+            </motion.div>
+          </div>
 
           <motion.div
             initial={{ opacity: 0, x: -30 }}
