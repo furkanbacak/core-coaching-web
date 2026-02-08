@@ -5,11 +5,20 @@ import Footer from '@/components/Footer';
 import EventRegisterForm from '@/components/EventRegisterForm';
 import Link from 'next/link';
 
+// searchParams kullandığımız için statik üretim yerine istek anında render
+export const dynamic = 'force-dynamic';
+
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata() {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations('coachingSchool.register');
   const tSub = await getTranslations('coachingSchool');
   return {
