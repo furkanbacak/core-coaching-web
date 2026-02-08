@@ -64,7 +64,7 @@ export default async function RegisterPage({ params, searchParams }: Props) {
               <div className="mx-auto max-w-md rounded-2xl border border-neutral-200 bg-white p-8 text-center text-left">
                 <p className="text-neutral-600">
                   {locale === 'tr'
-                    ? 'Kayıt yapmak için takvim sayfasından bir etkinliğe tıklayıp "Kaydol" demeniz yeterli."
+                    ? 'Kayıt yapmak için takvim sayfasından bir etkinliğe tıklayıp "Kaydol" demeniz yeterli.'
                     : 'To register, click on an event on the calendar page and then click "Register".'}
                 </p>
                 <Link
