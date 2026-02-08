@@ -58,12 +58,11 @@ export default function EventRegisterForm({ eventName, date, time, locale }: Pro
       fd.append('email', email);
       fd.append('phone', phone);
       fd.append('message', message);
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      const res = await fetch('/api/formspree', {
         method: 'POST',
         body: fd,
       });
-      // res.ok veya CORS/opaque (status 0) – localhost'ta Formspree yine de gönderir, yanıt bazen okunamaz
-      if (res.ok || res.status === 0) {
+      if (res.ok) {
         setStatus('success');
         setName('');
         setSurname('');

@@ -65,11 +65,11 @@ export default function ContactMailtoForm() {
       fd.append('name', name);
       fd.append('email', email);
       fd.append('message', message);
-      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+      const res = await fetch('/api/formspree', {
         method: 'POST',
         body: fd,
       });
-      if (res.ok || res.status === 0) {
+      if (res.ok) {
         setStatus('success');
         setName('');
         setEmail('');
