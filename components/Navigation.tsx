@@ -100,9 +100,10 @@ export default function Navigation() {
   const coachingSchoolDropdownItems = useMemo(() => {
     const base = `/${locale}/coaching-school`;
     return [
-      { key: 'level1', href: `${base}/level-1`, label: t('level1'), comingSoon: true },
-      { key: 'level2', href: `${base}/level-2`, label: t('level2'), comingSoon: true },
-      { key: 'level3', href: `${base}/level-3`, label: t('level3'), comingSoon: true },
+      { key: 'level1', href: `${base}/level-1`, label: t('level1') },
+      { key: 'level2', href: `${base}/level-2`, label: t('level2') },
+      { key: 'level3', href: `${base}/level-3`, label: t('level3') },
+      { key: 'calendar', href: `${base}/calendar`, label: t('calendar') },
     ];
   }, [locale, t]);
 
@@ -172,7 +173,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href={`/${locale}`} className="flex items-center">
-            <div className="relative w-12 h-12">
+            <div className="relative w-16 h-16">
               <Image
                 src="/images/core-logo.png"
                 alt="Core Coaching"

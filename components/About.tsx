@@ -103,7 +103,7 @@ export default function About() {
               <li>{t('why1')}</li>
               <li>{t('why2')}</li>
               <li>{t('why3')}</li>
-              <li>{t('why4')}</li>
+              <li className="font-semibold text-neutral-900">{t('why4')}</li>
             </ul>
           </motion.div>
 

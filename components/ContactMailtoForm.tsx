@@ -7,6 +7,7 @@ import LegalModal from './LegalModal';
 import { TermsContent, PrivacyContent } from './LegalContent';
 
 const DEFAULT_TO = 'info@corecoachingtraining.com';
+const FORMSPREE_ID = process.env.NEXT_PUBLIC_FORMSPREE_LEVEL_REQUEST_ID;
 
 function buildMailtoUrl(params: { to: string; subject: string; body: string }) {
   const { to, subject, body } = params;
@@ -26,6 +27,7 @@ export default function ContactMailtoForm() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [consent, setConsent] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
 
   // Modal states
   const [showTerms, setShowTerms] = useState(false);
@@ -35,26 +37,66 @@ export default function ContactMailtoForm() {
     return locale === 'tr' ? 'İletişim Formu' : 'Contact Form';
   }, [locale]);
 
-  const onSubmit = (e: FormEvent) => {
+  const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!consent) return;
 
-    const bodyLines = [
-      `${locale === 'tr' ? 'Ad Soyad' : 'Name'}: ${name}`,
-      `${locale === 'tr' ? 'E-posta' : 'Email'}: ${email}`,
-      '',
-      `${locale === 'tr' ? 'Mesaj' : 'Message'}:`,
-      message,
-    ];
+    if (!FORMSPREE_ID) {
+      const bodyLines = [
+        `${locale === 'tr' ? 'Ad Soyad' : 'Name'}: ${name}`,
+        `${locale === 'tr' ? 'E-posta' : 'Email'}: ${email}`,
+        '',
+        `${locale === 'tr' ? 'Mesaj' : 'Message'}:`,
+        message,
+      ];
+      window.location.href = buildMailtoUrl({
+        to: DEFAULT_TO,
+        subject,
+        body: bodyLines.join('\n'),
+      });
+      return;
+    }
 
-    const url = buildMailtoUrl({
-      to: DEFAULT_TO,
-      subject,
-      body: bodyLines.join('\n'),
-    });
-
-    window.location.href = url;
+    setStatus('sending');
+    try {
+      const fd = new FormData();
+      fd.append('_subject', subject);
+      fd.append('formType', 'contact');
+      fd.append('name', name);
+      fd.append('email', email);
+      fd.append('message', message);
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: 'POST',
+        body: fd,
+      });
+      if (res.ok || res.status === 0) {
+        setStatus('success');
+        setName('');
+        setEmail('');
+        setMessage('');
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
   };
+
+  if (status === 'success') {
+    return (
+      <>
+        <div className="rounded-2xl border-2 border-primary-200 bg-primary-50 p-8 text-center">
+          <p className="text-lg font-medium text-primary-800">{t('successMessage')}</p>
+        </div>
+        <LegalModal isOpen={showTerms} onClose={() => setShowTerms(false)} title={tLegal('termsTitle')}>
+          <TermsContent />
+        </LegalModal>
+        <LegalModal isOpen={showPrivacy} onClose={() => setShowPrivacy(false)} title={tLegal('privacyTitle')}>
+          <PrivacyContent />
+        </LegalModal>
+      </>
+    );
+  }
 
   return (
     <>
@@ -174,23 +216,27 @@ export default function ContactMailtoForm() {
           </label>
         </div>
 
+        {status === 'error' && (
+          <p className="text-sm text-red-600">{t('errorMessage')}</p>
+        )}
+
         {/* Submit Section */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-2">
           <p className="text-xs text-neutral-500 leading-relaxed max-w-sm">
-            {t('hint')}
+            {FORMSPREE_ID ? t('hint') : t('hintMailto')}
           </p>
 
           <button
             type="submit"
-            disabled={!consent}
+            disabled={!consent || status === 'sending'}
             className={`inline-flex items-center justify-center gap-2.5 rounded-xl px-8 py-4 text-white font-semibold shadow-lg transition-all duration-300 ${
-              consent
+              consent && status !== 'sending'
                 ? 'bg-primary-500 hover:bg-primary-600 hover:shadow-xl hover:shadow-primary-500/25 hover:-translate-y-0.5'
                 : 'bg-neutral-300 cursor-not-allowed shadow-none'
             }`}
           >
             <Send className="w-4 h-4" />
-            {t('submit')}
+            {status === 'sending' ? t('sending') : t('submit')}
           </button>
         </div>
       </form>

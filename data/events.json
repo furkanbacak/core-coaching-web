@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "date": "2026-02-15",
+    "timeStart": "14:00",
+    "timeEnd": "17:00",
+    "titleTr": "Level 1 – Koçluk Temelleri (ICF ACC)",
+    "titleEn": "Level 1 – Coaching Foundation (ICF ACC)",
+    "type": "course",
+    "link": ""
+  },
+  {
+    "id": "2",
+    "date": "2026-02-20",
+    "timeStart": "19:00",
+    "timeEnd": "20:00",
+    "titleTr": "Koçlukta Farkındalık ve Sürdürülebilir Büyüme",
+    "titleEn": "Coaching Masterclass: Awareness and Sustained Growth",
+    "type": "webinar",
+    "link": "",
+    "image": "/images/blog/kocluk.jpg",
+    "descriptionTr": "Bu masterclass'ta koçluk oturumlarında farkındalık yaratma ve sürdürülebilir büyümeyi nasıl destekleyeceğinizi keşfedeceksiniz.",
+    "descriptionEn": "In this masterclass you will explore how to foster awareness and sustained growth in coaching sessions."
+  },
+  {
+    "id": "3",
+    "date": "2026-02-25",
+    "timeStart": "10:00",
+    "timeEnd": "12:00",
+    "titleTr": "Liderlik ve Takım Koçluğu Webinar",
+    "titleEn": "Leadership and Team Coaching Webinar",
+    "type": "webinar",
+    "link": ""
+  },
+  {
+    "id": "4",
+    "date": "2026-03-05",
+    "timeStart": "14:00",
+    "timeEnd": "17:00",
+    "titleTr": "Level 2 – İleri Koçluk Uygulaması",
+    "titleEn": "Level 2 – Advanced Coaching Practice",
+    "type": "course",
+    "link": ""
+  },
+  {
+    "id": "5",
+    "date": "2026-03-12",
+    "timeStart": "19:30",
+    "timeEnd": "20:30",
+    "titleTr": "İnsan Odaklı Yetenek Geliştirme: Yapay Zeka Çağında Beceriler",
+    "titleEn": "Building Human Capability: Skills That Matter in an AI-Driven World",
+    "type": "webinar",
+    "link": "",
+    "image": "/images/blog/yonetim-ve-liderlik.jpg",
+    "descriptionTr": "Yapay zeka çağında insan odaklı yeteneklerin ve liderlik becerilerinin neden önemli olduğunu ve nasıl geliştirileceğini ele alıyoruz.",
+    "descriptionEn": "We explore why human-centred capabilities and leadership skills matter in the AI era and how to develop them."
+  },
+  {
+    "id": "6",
+    "date": "2026-03-22",
+    "timeStart": "09:00",
+    "timeEnd": "12:00",
+    "titleTr": "Level 1 – Koçluk Temelleri (ICF ACC)",
+    "titleEn": "Level 1 – Coaching Foundation (ICF ACC)",
+    "type": "course",
+    "link": ""
+  }
+]

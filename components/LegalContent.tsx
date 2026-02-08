@@ -3,7 +3,7 @@
 
 import { useLocale } from 'next-intl';
 
-const effectiveDate = '2026-01-28';
+const effectiveDate = '2026-02-09';
 
 export function TermsContent() {
   const locale = useLocale();
@@ -46,37 +46,44 @@ export function TermsContent() {
           için gerektiğinde bağımsız uzman görüşü almanız önerilir.
         </p>
 
-        <h3>5. Üçüncü Taraf Bağlantılar</h3>
+        <h3>5. Form Gönderimleri</h3>
+        <p>
+          İletişim formu, Koçluk Okulu talep formları ve etkinlik kayıt formları, Formspree (formspree.io) hizmeti
+          üzerinden işlenir. Formu göndererek, girdiğiniz bilgilerin talebinize yanıt ve hizmet sunumu amacıyla
+          işlenmesini kabul etmiş olursunuz. Üçüncü taraf form hizmetinin kendi kullanım ve gizlilik politikaları geçerlidir.
+        </p>
+
+        <h3>6. Üçüncü Taraf Bağlantılar</h3>
         <p>
           Site; LinkedIn gibi üçüncü taraf web sitelerine bağlantı verebilir. Üçüncü tarafların içerik ve
           politikalarından sorumlu değiliz.
         </p>
 
-        <h3>6. Fikri Mülkiyet</h3>
+        <h3>7. Fikri Mülkiyet</h3>
         <p>
           Site'deki metinler, görseller, marka/işaretler ve tasarım öğeleri (aksi belirtilmedikçe) ilgili hak
           sahiplerine aittir. Önceden yazılı izin olmadan kopyalanamaz, çoğaltılamaz, değiştirilemez veya
           yeniden yayınlanamaz.
         </p>
 
-        <h3>7. Garanti Vermeme</h3>
+        <h3>8. Garanti Vermeme</h3>
         <p>
           Site, "olduğu gibi" sunulur. Kesintisiz, hatasız veya güvenli çalışacağına dair açık/zımni garanti
           verilmez.
         </p>
 
-        <h3>8. Sorumluluğun Sınırlandırılması</h3>
+        <h3>9. Sorumluluğun Sınırlandırılması</h3>
         <p>
           Kanunun izin verdiği ölçüde; Site kullanımından doğabilecek dolaylı, arızi, özel veya sonuçsal
           zararlardan sorumluluk kabul edilmez.
         </p>
 
-        <h3>9. Değişiklikler</h3>
+        <h3>10. Değişiklikler</h3>
         <p>
           Şartlar zaman zaman güncellenebilir. Güncellemeler bu sayfada yayınlandığı anda yürürlüğe girer.
         </p>
 
-        <h3>10. İletişim</h3>
+        <h3>11. İletişim</h3>
         <p>
           Bu Şartlar hakkında sorularınız için{' '}
           <a href="mailto:info@corecoachingtraining.com" className="text-primary-600 hover:text-primary-700">info@corecoachingtraining.com</a> adresine yazabilirsiniz.
@@ -122,36 +129,43 @@ export function TermsContent() {
         no specific results are guaranteed. You should seek independent professional advice where appropriate.
       </p>
 
-      <h3>5. Third‑Party Links</h3>
+      <h3>5. Form Submissions</h3>
+      <p>
+        The contact form, Coaching School request forms, and event registration forms are processed via Formspree (formspree.io). By
+        submitting a form, you accept that the information you provide will be processed to respond to your request
+        and provide the service. The third‑party form service’s own terms and privacy policy apply.
+      </p>
+
+      <h3>6. Third‑Party Links</h3>
       <p>
         The Site may link to third‑party websites (e.g., LinkedIn). We are not responsible for third‑party
         content, terms, or privacy practices.
       </p>
 
-      <h3>6. Intellectual Property</h3>
+      <h3>7. Intellectual Property</h3>
       <p>
         Unless stated otherwise, Site content (texts, images, trademarks, design elements) belongs to its
         respective owner. You may not copy, reproduce, modify, or republish without prior written permission.
       </p>
 
-      <h3>7. No Warranties</h3>
+      <h3>8. No Warranties</h3>
       <p>
         The Site is provided "as is." We make no warranties that the Site will be uninterrupted, error‑free,
         or secure.
       </p>
 
-      <h3>8. Limitation of Liability</h3>
+      <h3>9. Limitation of Liability</h3>
       <p>
         To the maximum extent permitted by law, we are not liable for indirect, incidental, special, or
         consequential damages arising from your use of the Site.
       </p>
 
-      <h3>9. Changes to These Terms</h3>
+      <h3>10. Changes to These Terms</h3>
       <p>
         We may update these Terms from time to time. Updates are effective once posted on this page.
       </p>
 
-      <h3>10. Contact</h3>
+      <h3>11. Contact</h3>
       <p>
         If you have questions about these Terms, email{' '}
         <a href="mailto:info@corecoachingtraining.com" className="text-primary-600 hover:text-primary-700">info@corecoachingtraining.com</a>.
@@ -184,8 +198,12 @@ export function PrivacyContent() {
         <h3>2. Hangi Bilgiler Toplanır?</h3>
         <ul>
           <li>
-            <strong>İletişim formu verileri:</strong> Site'deki iletişim formu "mailto" yöntemiyle çalışır. Form
-            verileri sunucumuza gönderilmez; cihazınızın mail uygulamasında e‑posta taslağı olarak açılır.
+            <strong>İletişim, talep ve etkinlik kayıt formları:</strong> İletişim formu, Koçluk Okulu program talepleri (Level 1/2/3) ve takvimdeki etkinlik kayıt formları,
+            Formspree (formspree.io) hizmeti üzerinden işlenir. Gönderdiğiniz ad, e‑posta, mesaj (ve talep/kayıt
+            formlarında soyad, telefon, program/etkinlik bilgisi) Formspree sunucularına iletilir ve bize e‑posta
+            yoluyla ulaştırılır. Formspree yapılandırılmadığında iletişim formu yalnızca cihazınızda e‑posta taslağı
+            açar (mailto); veri sunucumuza veya Formspree'e gönderilmez.
+            Formspree’in veri işleme ve gizlilik uygulamaları için formspree.io adresindeki bilgilere bakabilirsiniz.
           </li>
           <li>
             <strong>Teknik veriler:</strong> Tarayıcı/cihaz türü gibi temel teknik bilgiler, standart sunucu
@@ -213,8 +231,9 @@ export function PrivacyContent() {
 
         <h3>6. Saklama Süresi</h3>
         <p>
-          Site, form verilerini sunucuda saklamaz (mailto akışı). Teknik kayıtlar varsa, yalnızca gerekli süre
-          boyunca tutulur.
+          Formlardan gelen veriler Formspree aracılığıyla bize e‑posta ile iletilir; bu e‑postaları yalnızca talebinize yanıt ve hizmet
+          sunumu amacıyla, yasal zorunluluklar çerçevesinde tutarız. Formspree yapılandırılmadığında iletişim formu mailto ile çalışır ve veri sunucumuzda saklanmaz. Formspree’in kendi saklama süreleri için
+          formspree.io politikaları geçerlidir. Teknik kayıtlar yalnızca gerekli süre boyunca tutulur.
         </p>
 
         <h3>7. Haklarınız</h3>
@@ -250,8 +269,10 @@ export function PrivacyContent() {
       <h3>2. Information We Collect</h3>
       <ul>
         <li>
-          <strong>Contact form data:</strong> The contact form uses a "mailto" workflow; your form data is not
-          sent to our server—it opens as an email draft in your device's email app.
+          <strong>Contact, request and event registration forms:</strong> The contact form, Coaching School program requests (Level 1/2/3), and
+          event registration forms are processed via Formspree (formspree.io). Name, surname, email, phone, message,
+          and related program/event details are sent to Formspree’s servers and forwarded to us by email. If Formspree is not configured, the contact form uses mailto only (opens a draft in your email app; no data is sent to our server or Formspree). For
+          Formspree’s data processing and privacy practices, see formspree.io.
         </li>
         <li>
           <strong>Technical data:</strong> Basic technical information (e.g., browser/device type) may be
@@ -280,8 +301,10 @@ export function PrivacyContent() {
 
       <h3>6. Data Retention</h3>
       <p>
-        The Site does not store contact form submissions on our server (mailto flow). If technical logs exist,
-        they are retained only for as long as necessary.
+        Data from forms is delivered to us by email via Formspree; we retain those emails only for responding to
+        your request and providing the service, and as required by law. When Formspree is not configured, the
+        contact form uses mailto and no data is stored on our server. Formspree's own retention terms apply (see
+        formspree.io). Technical logs are retained only as long as necessary.
       </p>
 
       <h3>7. Your Rights</h3>
