@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
@@ -35,19 +35,23 @@ export default function Navigation() {
       return;
     }
 
+    let ticking = false;
     const handleScroll = () => {
-      const scrollY = window.scrollY;
-      setScrolled(scrollY > 20);
-      
-      // Check if we're in the hero section (first 80vh)
-      const heroHeight = window.innerHeight;
-      setIsHeroSection(scrollY < heroHeight * 0.8);
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const scrollY = window.scrollY;
+        setScrolled(scrollY > 20);
+        const heroHeight = window.innerHeight;
+        setIsHeroSection(scrollY < heroHeight * 0.8);
+        ticking = false;
+      });
     };
     
     // Initial check
     handleScroll();
     
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isNonHomePage]);
 
@@ -178,7 +182,7 @@ export default function Navigation() {
                 src="/images/core-logo.png"
                 alt="Core Coaching"
                 fill
-                className="object-contain"
+                className="object-contain mix-blend-multiply"
                 priority
               />
             </div>

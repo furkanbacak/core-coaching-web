@@ -248,7 +248,7 @@ Are you ready to unleash the transformative power of coaching in your organizati
       tr: 'İnsan Odaklı Dönüşüm Yolculukları',
       en: 'Human-Centered Transformation Journeys',
     },
-    image: '/images/blog/cct.png',
+    image: '/images/blog/cct.jpg',
     content: {
       tr: `CCT, 2016 yılında Nurhan Yazganel tarafından; bireysel ve kurumsal gelişimi bütünsel yaklaşımlarla destekleyerek uzun vadeli değer üretmek amacıyla kurulmuştur. Kuruluşundan bu yana temel yaklaşımı nettir: Farkındalığı davranışa, potansiyeli kalıcı etkiye dönüştüren bütünsel gelişim modelleri tasarlamak.
 
@@ -318,7 +318,7 @@ The most important element that makes this approach possible is the disciplined 
       tr: 'Kurucu | ICF Master Certified Coach (MCC) | Eğitmen | Keynote Speaker',
       en: 'Founder | ICF Master Certified Coach (MCC) | Trainer | Keynote Speaker',
     },
-    image: '/images/blog/nurhan-yazganel-blog.png',
+    image: '/images/blog/nurhan-yazganel-blog.jpg',
     content: {
       tr: `"Gerçek etki, insanı ve sistemi aynı anda okuyabildiğinizde ortaya çıkar."
 

@@ -1,7 +1,8 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import {
   Crown,
   Users,
@@ -20,7 +21,10 @@ import {
   ClipboardList,
   UserCog,
   Target,
+  GraduationCap,
+  ArrowRight,
 } from 'lucide-react';
+import { coachingSlugs, trainingSlugs } from '@/lib/program-slugs';
 
 // Icon mapping for coaching area items (8)
 const coachingIcons = [
@@ -48,16 +52,86 @@ const trainingIcons = [
   Target,          // Geribildirim Alma ve Vermede Ustalaşmak
 ];
 
-const getIcon = (index: number, category: 'coaching' | 'training') => {
-  const icons = category === 'coaching' ? coachingIcons : trainingIcons;
-  return icons[index] || Target;
-};
+interface CardItem {
+  title: string;
+  description: string;
+  href: string;
+  icon: typeof Crown;
+}
 
 export default function CoachingFocus() {
   const t = useTranslations('coaching');
+  const tTeam = useTranslations('teamCoaching');
+  const locale = useLocale();
 
   const coachingItems = t.raw('coachingArea.items') as string[];
+  const coachingDescriptions = t.raw('coachingArea.descriptions') as string[];
   const trainingItems = t.raw('trainingArea.items') as string[];
+  const trainingDescriptions = t.raw('trainingArea.descriptions') as string[];
+
+  // Build flat coaching cards with special card at position 4
+  const coachingCards: CardItem[] = [];
+  coachingItems.forEach((item, index) => {
+    if (index === 4) {
+      coachingCards.push({
+        title: tTeam('title'),
+        description: tTeam('subtitle'),
+        href: `/${locale}/coaching/team-coaching`,
+        icon: GraduationCap,
+      });
+    }
+    coachingCards.push({
+      title: item,
+      description: coachingDescriptions[index] || '',
+      href: `/${locale}/coaching/${coachingSlugs[index]}`,
+      icon: coachingIcons[index] || Crown,
+    });
+  });
+
+  // Build flat training cards
+  const trainingCards: CardItem[] = trainingItems.map((item, index) => ({
+    title: item,
+    description: trainingDescriptions[index] || '',
+    href: `/${locale}/training/${trainingSlugs[index]}`,
+    icon: trainingIcons[index] || Target,
+  }));
+
+  const renderCard = (card: CardItem, i: number) => {
+    const Icon = card.icon;
+    return (
+      <motion.div
+        key={`${card.href}-${i}`}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: i * 0.05, duration: 0.8, ease: 'easeOut' }}
+        whileHover={{ y: -4, transition: { duration: 0.2 } }}
+        className="h-full"
+      >
+        <Link
+          href={card.href}
+          className="flex h-full bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-100 hover:border-primary-300 hover:bg-gradient-to-br hover:from-primary-50 hover:to-white group"
+        >
+          <div className="flex items-center space-x-4 w-full">
+            <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-neutral-50 group-hover:bg-primary-500 flex items-center justify-center transition-colors duration-300">
+              <Icon className="w-6 h-6 text-primary-600 group-hover:text-white transition-colors duration-300" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-base font-medium text-neutral-700 leading-relaxed group-hover:text-primary-700 transition-colors text-left">
+                {card.title}
+              </p>
+              {card.description && (
+                <p className="text-xs text-neutral-400 mt-1 leading-relaxed text-left line-clamp-2 group-hover:text-primary-500/70 transition-colors">
+                  {card.description}
+                </p>
+              )}
+            </div>
+            <ArrowRight className="w-4 h-4 text-neutral-300 group-hover:text-primary-500 group-hover:translate-x-1 transition-all duration-300 flex-shrink-0" />
+          </div>
+        </Link>
+      </motion.div>
+    );
+  };
 
   return (
     <section id="coaching" className="py-24 md:py-32 bg-neutral-50">
@@ -86,29 +160,7 @@ export default function CoachingFocus() {
             {t('coachingArea.title')}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {coachingItems.map((item: string, index: number) => {
-              const Icon = getIcon(index, 'coaching');
-              return (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.05, duration: 0.8, ease: 'easeOut' }}
-                  whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                  className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-100 hover:border-primary-200 group"
-                >
-                  <div className="flex items-center space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-50 group-hover:bg-primary-100 flex items-center justify-center transition-colors duration-300">
-                      <Icon className="w-6 h-6 text-primary-600" />
-                    </div>
-                    <p className="text-base font-medium text-neutral-700 leading-relaxed group-hover:text-neutral-900 transition-colors">
-                      {item}
-                    </p>
-                  </div>
-                </motion.div>
-              );
-            })}
+            {coachingCards.map((card, i) => renderCard(card, i))}
           </div>
         </motion.div>
 
@@ -123,29 +175,7 @@ export default function CoachingFocus() {
             {t('trainingArea.title')}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {trainingItems.map((item: string, index: number) => {
-              const Icon = getIcon(index, 'training');
-              return (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.03, duration: 0.8, ease: 'easeOut' }}
-                  whileHover={{ y: -4, transition: { duration: 0.2 } }}
-                  className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-neutral-100 hover:border-primary-200 group"
-                >
-                  <div className="flex items-center space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-50 group-hover:bg-primary-100 flex items-center justify-center transition-colors duration-300">
-                      <Icon className="w-6 h-6 text-primary-600" />
-                    </div>
-                    <p className="text-base font-medium text-neutral-700 leading-relaxed group-hover:text-neutral-900 transition-colors">
-                      {item}
-                    </p>
-                  </div>
-                </motion.div>
-              );
-            })}
+            {trainingCards.map((card, i) => renderCard(card, i))}
           </div>
         </motion.div>
       </div>

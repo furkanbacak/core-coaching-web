@@ -46,7 +46,7 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-            <div className="flex items-center gap-4 text-sm">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
               <Link
                 href={`/${locale}/terms`}
                 className="text-neutral-400 hover:text-white transition-colors underline underline-offset-4 decoration-neutral-600 hover:decoration-neutral-300"
@@ -58,6 +58,24 @@ export default function Footer() {
                 className="text-neutral-400 hover:text-white transition-colors underline underline-offset-4 decoration-neutral-600 hover:decoration-neutral-300"
               >
                 {t('privacy')}
+              </Link>
+              <Link
+                href={`/${locale}/pricing-policy`}
+                className="text-neutral-400 hover:text-white transition-colors underline underline-offset-4 decoration-neutral-600 hover:decoration-neutral-300"
+              >
+                {t('pricing')}
+              </Link>
+              <Link
+                href={`/${locale}/cancellation-policy`}
+                className="text-neutral-400 hover:text-white transition-colors underline underline-offset-4 decoration-neutral-600 hover:decoration-neutral-300"
+              >
+                {t('cancellation')}
+              </Link>
+              <Link
+                href={`/${locale}/refund-policy`}
+                className="text-neutral-400 hover:text-white transition-colors underline underline-offset-4 decoration-neutral-600 hover:decoration-neutral-300"
+              >
+                {t('refund')}
               </Link>
             </div>
           </div>

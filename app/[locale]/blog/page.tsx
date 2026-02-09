@@ -62,7 +62,7 @@ const blogPosts = [
   {
     id: '3',
     slug: 'cct-core-coaching-training',
-    image: '/images/blog/cct.png',
+    image: '/images/blog/cct.jpg',
     title: {
       tr: 'CCT | Core Coaching & Training',
       en: 'CCT | Core Coaching & Training',
@@ -84,7 +84,7 @@ const blogPosts = [
   {
     id: '4',
     slug: 'nurhan-yazganel',
-    image: '/images/blog/nurhan-yazganel-blog.png',
+    image: '/images/blog/nurhan-yazganel-blog.jpg',
     title: {
       tr: 'Nurhan Yazganel',
       en: 'Nurhan Yazganel',

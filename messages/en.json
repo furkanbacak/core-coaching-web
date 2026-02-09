@@ -16,6 +16,7 @@
   "programs": {
     "coachingPrograms": "Coaching Programs",
     "trainingPrograms": "Training Programs",
+    "teamCoaching": "Training-Supported Team Coaching",
     "workshopPrograms": "Workshop/Circle Studies",
     "keynoteSpeeches": "Keynote Speeches"
   },
@@ -76,6 +77,97 @@
         "Coaching for Rising Stars",
         "Assessment Preparation Coaching",
         "Credentialing Coaching/Mentoring"
+      ],
+      "descriptions": [
+        "Transforming the performance of top-level executives in their strategic roles into an organizational leverage effect, beyond their individual potential.",
+        "Enabling a working group to transform into a high-performing, self-managing system that represents far more than the sum of individual competencies.",
+        "Maximizing managers' leadership capacities in full alignment with organizational goals and preparing them for future senior roles.",
+        "Enabling individuals to gain awareness in their professional journeys and equipping them with the ability to take the wheel of their own careers.",
+        "Enabling individuals to recognize the critical competencies needed for professional success, activate their development potential, and transform these into lasting behavioral habits.",
+        "Accelerating the transition of the organization's most valuable talents from current expertise roles to strategic leadership roles and making this transition seamless.",
+        "Enabling executive candidates or current leaders to demonstrate their true potential at the highest level in professional assessment centers.",
+        "Ensuring professional coaches demonstrate the 8 Core Competencies defined by ICF at the highest level and guiding them through the credentialing process."
+      ],
+      "details": [
+        {
+          "intro": "Designed to manage the complexity, high responsibility, and strategic loneliness that comes with leadership at the top, this program aims to maximize both the leader's professional competencies and personal integrity.",
+          "bullets": [
+            "Strategic Vision & Agility: Enabling the leader to step out of daily operational cycles to focus on long-term strategies; strengthening rapid and accurate decision-making in times of uncertainty.",
+            "Influence & Impact Management: Building a trust-based, persuasive, and inspiring leadership presence (Executive Presence) beyond hierarchical power.",
+            "Corporate Culture & Succession: Enabling the leader to become a role model who embodies corporate values; guiding talent management and succession planning processes.",
+            "Cognitive & Emotional Resilience: Sustaining the leader's mental clarity and psychological resilience by maintaining emotional intelligence under high stress and pressure."
+          ]
+        },
+        {
+          "intro": "Aims to align the team around a common vision, optimize its internal dynamics, and create sustainable synergy while achieving organizational goals.",
+          "bullets": [
+            "Common Goals & Strategic Alignment: Ensuring team members are fully aligned with the organization's main strategies; transforming 'me'-focused approaches into 'we'-focused collective success consciousness.",
+            "Psychological Safety & Interaction Culture: Building a trust-based interaction environment where open communication is supported and different ideas are seen as richness.",
+            "Collective Accountability & Responsibility: Developing a 'responsibility consciousness' where success and failure are jointly owned by the team.",
+            "Agility & Decision-Making Dynamics: Increasing the team's adaptation capability in complex environments; maximizing implementation speed through transparent decision-making.",
+            "Conflict Management & Constructive Discussion: Eliminating hidden agendas and unproductive conflicts within the team, redirecting energy toward innovation."
+          ]
+        },
+        {
+          "intro": "Serves as a catalyst that enables managers to master people management, strategic influence, and emotional maturity beyond their technical expertise.",
+          "bullets": [
+            "Strengthening Leadership Identity: Enabling managers to recognize their leadership style and develop strategies to turn development areas into organizational advantages.",
+            "Performance & Results Focus: Increasing efficiency in complex project management, developing delegation skills, and focusing on clear business results.",
+            "Effective Communication & Relationship Management: Developing the ability to build bridges between departments and stakeholders; elevating conflict management and persuasion skills.",
+            "Career Transition & Adaptation: Facilitating newly appointed or promoted managers to quickly adapt to expectations in their new roles.",
+            "Self-Awareness & Emotional Intelligence: Enabling managers to understand their own triggers, maintaining rationality under stress and enhancing empathy skills."
+          ]
+        },
+        {
+          "intro": "Aims to crystallize the individual's strengths, values, and development areas, offering strategic and sustainable career navigation aligned with market dynamics.",
+          "bullets": [
+            "Self-Discovery & Competency Inventory: Enabling individuals to discover their core talents and their 'unique value proposition' that sets them apart.",
+            "Career Vision & Goal Setting: Structuring short and long-term career goals according to SMART criteria, transforming uncertainty into a concrete roadmap.",
+            "Career Transitions & Change Management: Guiding individuals to maintain mental resilience at critical junctures and turn transitions into strategic opportunities.",
+            "Market Positioning & Branding: Rebuilding resume, LinkedIn profile, and interview performance as a 'professional brand' aligned with target positions.",
+            "Work-Life Balance & Purpose: Designing career success in an integrated way with the individual's life values and happiness."
+          ]
+        },
+        {
+          "intro": "Aims to close the gap between 'knowing' and 'being able to do' with an action-oriented development plan.",
+          "bullets": [
+            "Competency Analysis & Awareness: Analyzing the individual's current competency level and identifying the areas with the highest leverage effect.",
+            "Personalized Development Roadmap: Creating a strategic plan that converts abstract goals into concrete, measurable micro-goals.",
+            "Stretching the Comfort Zone: Rehearsing new skills in a safe environment and applying them in real business scenarios.",
+            "Cognitive & Behavioral Transformation: Identifying mental barriers to competency and developing behavior at an internalized reflex level.",
+            "Sustainable Performance Improvement: Tracking the reflection of developed competencies on business results and establishing mechanisms for lasting change."
+          ]
+        },
+        {
+          "intro": "Aims to equip participants with the mental and behavioral competencies to transform individual achievements into team success and view the corporate vision from a broader perspective.",
+          "bullets": [
+            "From Individual Expertise to Leadership Identity: Achieving the mental transformation from being 'the best doer' to 'the leader who ensures the best is done'.",
+            "Strategic Perspective & Big Picture: Developing the muscles of understanding long-term goals and strategic decision-making instead of getting lost in operational details.",
+            "Influence & Stakeholder Management: Demonstrating a strong 'Leadership Presence' through persuasion ability and effective communication beyond hierarchical power.",
+            "Emotional Intelligence & Resilience: Coping with increasing stress and responsibility, turning tough feedback into growth.",
+            "Talent Management & Development: Recognizing potential in others, nurturing them, and acquiring the skills to create a 'learning culture' within the team."
+          ]
+        },
+        {
+          "intro": "Aims not only for participants to understand measured competencies but also to convert them into behavioral evidence for effective performance.",
+          "bullets": [
+            "Competency Awareness & Alignment: Deep analysis of competencies in the organization's leadership model and aligning them with the participant's own style.",
+            "Case Analysis & Strategic Problem-Solving: Developing skills to analyze complex business scenarios under time constraints and structure data-driven solutions.",
+            "Role-Play Simulations: Experiencing professional behavior patterns in difficult employee management, client meetings, or crisis scenarios.",
+            "Impact & Presentation Techniques: Delivering prepared solutions to senior management in a persuasive, confident, and structured manner.",
+            "Mental Preparation & Anxiety Management: Managing performance pressure and developing mental resilience focused on 'right behavior' rather than 'right answers'."
+          ]
+        },
+        {
+          "intro": "Aims to elevate the coach's sessions to 'mastery' level and achieve success in both credentialing exams and performance evaluations.",
+          "bullets": [
+            "In-Depth Competency Analysis: Ensuring ICF core competencies become a natural reflex within coaching sessions.",
+            "Audio Recording Analysis & Feedback: Analyzing real session recordings with 'Marker'-based concrete data.",
+            "Coaching Presence Development: Strengthening the coach's ability to remain in a state of 'not knowing' and use intuitions professionally during sessions.",
+            "Exam Preparation & Technical Support: Structuring credentialing application requirements and strategic preparation for the current ICF exam format.",
+            "Ethics & Professional Standards: Developing professional awareness by discussing the ethical rules of coaching through case analyses."
+          ]
+        }
       ]
     },
     "trainingArea": {
@@ -91,6 +183,140 @@
         "Mastery in Performance Conversations",
         "Competency Development Mentoring",
         "Mastering Giving and Receiving Feedback"
+      ],
+      "descriptions": [
+        "Enabling leaders to analyze their own experiences in a structured way without getting lost in the daily work tempo, transitioning from intuitive leadership to conscious leadership.",
+        "Transforming leaders' management styles from a 'responding' model to an 'asking and provoking thought' model, building a learning and high-accountability culture in the organization.",
+        "Optimizing a team's potential along the axes of strategic clarity, relational trust, and agile execution to achieve sustainable high performance.",
+        "Equipping leaders with the ability to read the fundamental needs and motivation codes behind each individual's behaviors and develop management models suited to these codes.",
+        "Enabling participants to recognize the fundamental mechanisms in their communication processes and transform this awareness into a strategic influence power.",
+        "Building a high-performance corporate culture by increasing an organization's collective awareness, resilience, and relational quality.",
+        "Enabling participants to move from the 'busyness' trap to the 'effectiveness' level, becoming active architects of their own time.",
+        "Equipping managers with the ability to transform performance evaluation sessions into high-impact development dialogues that directly affect business results.",
+        "Ensuring systematic transfer of critical competencies to developing talents through experienced leaders (mentors) for the organization's strategic goals.",
+        "Enabling participants to transform feedback from a defense or attack mechanism into a development fuel."
+      ],
+      "details": [
+        {
+          "duration": "2 Days",
+          "participants": "15 Participants",
+          "intro": "A strategic development tool where the manager transforms not only events but also their own attitudes, decisions, and emotions into learning data.",
+          "bullets": [
+            "Structured Self-Reflection: Regularly analyzing critical events to help leaders recognize patterns and blind spots in their own decisions.",
+            "Strategic Memory Building: Recording how past crises were managed to build a unique 'leadership library' and decision support mechanism.",
+            "Emotional & Mental Clarity: Helping the leader clear their mind and maintain inner balance under intense stress.",
+            "Values & Vision Alignment: Regularly checking how daily actions align with long-term vision to reinforce 'authentic leadership'.",
+            "Continuous Development Tracking: Monitoring progress in leadership competencies with concrete examples and turning development into an evidence-based journey."
+          ]
+        },
+        {
+          "duration": "2 Days",
+          "participants": "15 Participants",
+          "intro": "Aims to base the leader's influence on a trust-based growth relationship rather than hierarchical power, triggering sustainable high performance.",
+          "bullets": [
+            "Mindset Transformation: Shedding micro-management habits to become a 'coach leader' who trusts employees.",
+            "Converting Potential to Performance: Guiding employees to recognize their existing competencies and triggering their intrinsic motivation.",
+            "Questioning & Listening Discipline: Masterfully applying strategic questioning techniques that enable employees to find their own solutions.",
+            "Continuous Feedback & Development Culture: Transforming performance management into 'instant coaching' sessions integrated into daily interactions.",
+            "Empowerment & Delegation: Spreading leadership responsibility by providing coaching support for employees to gain competency and confidence."
+          ]
+        },
+        {
+          "duration": "2 Days",
+          "participants": "15 Participants",
+          "intro": "A dynamic guidance process that analyzes the team's current state and provides a concrete roadmap to close the gap with its target (North Star).",
+          "bullets": [
+            "North Star (Common Vision) Setting: Clarifying the team's reason for existence and priority strategic goals to ensure all members focus on the same vision.",
+            "Values & Trust Foundation: Creating a foundation where team members are confident in each other's intentions and psychological safety is ensured.",
+            "Role & Responsibility Clarity: Ending authority confusion and crystallizing each member's value to the team.",
+            "Communication & Decision Navigation: Establishing rules for information flow and increasing operational speed.",
+            "Continuous Development & Adaptation: Gaining the ability to recalibrate according to changing conditions; creating a learning team culture."
+          ]
+        },
+        {
+          "duration": "2 Days",
+          "participants": "15 Participants",
+          "intro": "Moves beyond the 'same reward for everyone' mentality, offering a scientific and psychological approach that synchronizes individual passions with organizational goals.",
+          "bullets": [
+            "Motivational Profiling: Using analytical tools and observation techniques to accurately diagnose employees' motivation codes.",
+            "Personalizing Communication & Influence Language: Developing a communication language suited to each employee's 'hearing and action' code to maximize persuasion.",
+            "Igniting the Inner Fuel: Opening intrinsic motivation channels that address the employee's need for 'meaning', 'mastery', and 'autonomy' in their work.",
+            "Team Energy & Harmony: Transforming the differences of individuals with different motivation codes into a synergistic force.",
+            "High Engagement & Performance Sustainability: Creating an ecosystem where employees know 'why' they work, reducing turnover."
+          ]
+        },
+        {
+          "duration": "2 Days",
+          "participants": "15 Participants",
+          "intro": "Centers on 'creating shared meaning' rather than just 'sending messages', aiming to build a transparent, productive, and trust-based interaction architecture.",
+          "bullets": [
+            "Analyzing Hidden Layers: Developing the ability to manage the real message created by tone of voice, micro-expressions, and body language beyond words.",
+            "Decoding Listening: Moving from 'listening to respond' to 'listening to understand and feel', building genuine connections.",
+            "Perception & Filter Management: Recognizing individuals' 'communication filters' and learning techniques to deliver messages without them getting stuck.",
+            "Psychological Safety & Transparency: Developing open communication protocols where information flows with trust; building a language based on facts rather than assumptions.",
+            "Influence & Persuasion Genetics: Understanding the decision-making codes of the other person and structuring messages most effectively."
+          ]
+        },
+        {
+          "duration": "2 Days",
+          "participants": "15 Participants",
+          "intro": "Treats emotional intelligence principles not just as an individual competency but as a strategic management discipline, aiming to increase the organization's adaptation speed to changes.",
+          "bullets": [
+            "Emotional Culture Design: Analyzing 'invisible rules' within the organization and creating a work environment built on trust, appreciation, and transparency.",
+            "Organizational Empathy & Customer Focus: Building value-creating relationships by correctly reading emotional data in interactions with external stakeholders and customers.",
+            "Collective Resilience: Developing systemic mechanisms to transform crisis and uncertainty moments into learning and strengthening opportunities.",
+            "Conflict Management & Psychological Safety: Establishing a trust environment where different ideas can be freely expressed and constructive conflict feeds innovation.",
+            "EQ-Based Leadership Pipeline: Building a consistent chain of management practices with a common emotional language across all management levels."
+          ]
+        },
+        {
+          "duration": "2 Days",
+          "participants": "15 Participants",
+          "intro": "Combines neuroscientific approaches and strategic planning techniques to structure limited time for maximum meaning and output.",
+          "bullets": [
+            "From Reactive to Proactive: Achieving the mental transformation that enables leaders to set their own strategic agenda instead of chasing daily crises.",
+            "Cognitive Energy & Focus Management: Recognizing that time is managed with energy and attention, maximizing mental performance with 'Deep Work' sessions.",
+            "Prioritization Architecture: Making it a life discipline to lower the noise of what's 'urgent' and amplify the voice of what's 'important'.",
+            "Digital & Physical Space Design: Structurally managing digital noise that sabotages focus and establishing work routines that support flow state.",
+            "Life Balance & Sustainability: Creating a time design that prevents burnout by integrating professional success with personal renewal and quality of life."
+          ]
+        },
+        {
+          "duration": "2 Days",
+          "participants": "15 Participants",
+          "intro": "Aims for the manager to reach a negotiation mastery that blends objective data analysis with emotional intelligence, developing the employee without putting them on the defensive.",
+          "bullets": [
+            "Psychological Safety & Environment Design: Establishing the conversation on a safe, transparent, and constructive ground; creating a climate where feedback is perceived as a reward.",
+            "Evidence-Based & Objective Evaluation: Developing a feedback language based on concrete achievements and observable behaviors to reinforce fairness.",
+            "Mastery in Challenging Dialogues: Experiencing how to discuss underperformance while maintaining professional boundaries without compromising message clarity.",
+            "Future Focus: Structuring 'feedforward' techniques and development plans instead of focusing on past mistakes.",
+            "Commitment & Action Alignment: Creating a consensus ground where the employee fully understands, owns, and feels supported in new goals."
+          ]
+        },
+        {
+          "duration": "2 Days",
+          "participants": "15 Participants",
+          "intro": "Going beyond theoretical knowledge, aims to transform lived experiences, organizational awareness, and application skills into lasting behavioral change.",
+          "bullets": [
+            "Closing Competency Gaps: Strengthening development areas through concrete projects and on-the-job learning under the mentor's guidance.",
+            "Experiential Learning & Wisdom Transfer: Accelerating the mentee's learning curve by sharing the mentor's career lessons and insights.",
+            "Organizational Memory & Culture Preservation: Transferring the organization's unwritten rules and values to the mentee to reinforce belonging.",
+            "Career Navigation & Networking: Increasing the mentee's visibility within the organization and serving as a strategic mirror in their career journey.",
+            "Bilateral Development: Positioning the mentoring process as a development opportunity for the mentor as well."
+          ]
+        },
+        {
+          "duration": "2 Days",
+          "participants": "15 Participants",
+          "intro": "Targeting mastery in both 'giving' and 'receiving' feedback, aiming to create a cultural foundation that supports transparent, honest, and continuous learning within the organization.",
+          "bullets": [
+            "Giving Mastery: Developing the ability to deliver feedback in a professional language focused on observable behaviors and concrete business results rather than personal judgment.",
+            "Receiving Mastery: Developing the maturity to see incoming feedback as 'valuable data' rather than a 'threat'.",
+            "SBI & Feedforward Models: Providing clarity with the Situation-Behavior-Impact flow and internalizing 'Feedforward' techniques that design future performance.",
+            "Psychological Safety Building: Establishing an environment where feedback creates trust; enabling team members to request feedback with sincerity.",
+            "Illuminating Blind Spots: Using others' observations as a mirror to surface behavior patterns that hinder performance."
+          ]
+        }
       ]
     }
   },
@@ -245,6 +471,9 @@
     "legalTitle": "Legal",
     "terms": "Terms of Service",
     "privacy": "Privacy Policy",
+    "pricing": "Pricing",
+    "cancellation": "Cancellation",
+    "refund": "Refund",
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
     "youtube": "YouTube"
@@ -271,7 +500,10 @@
   },
   "legal": {
     "termsTitle": "Terms of Service",
-    "privacyTitle": "Privacy Policy"
+    "privacyTitle": "Privacy Policy",
+    "pricingTitle": "Pricing Policy",
+    "cancellationTitle": "Cancellation Policy",
+    "refundTitle": "Refund Policy"
   },
   "faq": {
     "title": "Frequently Asked Questions",
@@ -310,5 +542,35 @@
         "answer": "You can fill out the form on our contact page or send an email directly to info@corecoachingtraining.com. We typically respond within 24 hours on business days."
       }
     ]
+  },
+  "teamCoaching": {
+    "title": "Training-Supported Team Coaching",
+    "subtitle": "CCT's Unique Holistic Transformation Model",
+    "quote": "\"True transformation is possible not by giving knowledge, but by that knowledge finding its place in life.\"",
+    "intro1": "One of the most important approaches that makes CCT different and powerful is offering training and team coaching within the same development journey as an integrated model. This approach is a unique impact model developed by CCT and applied only at CCT.",
+    "intro2": "In many organizations, training and coaching are conducted independently of each other. Training produces knowledge; coaching focuses on behavior. However, when these two areas progress disconnected from each other, the reflection of learned knowledge to the field and daily work practices remains limited.",
+    "modelName": "CCT's Training-Supported Team Coaching model",
+    "intro3": " eliminates this disconnect.",
+    "programTitle": "In this special program;",
+    "programItem1": "Targeted and precise training content is designed according to the team's needs,",
+    "programItem2": "Knowledge gained in training is transformed into behavior through team coaching sessions,",
+    "programItem3": "The learning process proceeds through the team's real cases and daily work dynamics.",
+    "programOutro": "Thus, knowledge does not remain as an abstract gain; it directly reflects on the team's decision-making, communication, collaboration, and performance practices.",
+    "benefitsTitle": "What Does This Model Provide?",
+    "benefitsSubtitle": "Training-Supported Team Coaching;",
+    "benefit1": "Ensures that learned knowledge is put into practice,",
+    "benefit2": "Creates a common language and perspective within the team,",
+    "benefit3": "Accelerates behavior change and makes it permanent,",
+    "benefit4": "Strengthens team performance not only through results but also through relationships and processes.",
+    "benefitsOutro": "In this approach, training feeds coaching; coaching transforms training into a living experience. Thus, development becomes not a one-time intervention, but a measurable, sustainable, and noticeable transformation journey.",
+    "whyTitle": "Why Only at CCT?",
+    "whySubtitle": "Because this model;",
+    "whyItem1": "Requires mastery that can read training, coaching, and facilitation simultaneously,",
+    "whyItem2": "Addresses team dynamics and organizational systems together,",
+    "whyItem3": "Is based on the field and real needs — requiring multidisciplinary expertise.",
+    "conclusion": "Training-Supported Team Coaching programs conducted at CCT are designed not with off-the-shelf content, but as living and transforming processes born from the team's needs.",
+    "ctaTitle": "Want to explore this model for your team?",
+    "ctaDescription": "Contact us for detailed information about training-supported team coaching.",
+    "ctaButton": "Get in Touch"
   }
 }

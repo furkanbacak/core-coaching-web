@@ -16,6 +16,7 @@
   "programs": {
     "coachingPrograms": "Koçluk Programları",
     "trainingPrograms": "Eğitim Programları",
+    "teamCoaching": "Eğitim Destekli Takıma Koçluk",
     "workshopPrograms": "Atölye/Çember Çalışmaları",
     "keynoteSpeeches": "Keynote Konuşmaları"
   },
@@ -76,6 +77,97 @@
         "Yükselen Yıldızlara Koçluk",
         "Assesment Hazırlık Koçluğu",
         "Unvanlanma Koçluğu/Mentorluğu"
+      ],
+      "descriptions": [
+        "Kurumun en üst düzey yöneticilerinin stratejik rollerinde sergiledikleri performansı, bireysel potansiyellerinin ötesine taşıyarak organizasyonel bir kaldıraç etkisine dönüştürmektir.",
+        "Bir çalışma grubunun bireysel yetkinlikler toplamından çok daha fazlasını ifade eden, yüksek performanslı ve kendi kendini yönetebilen bir sisteme dönüşmesini sağlamaktır.",
+        "Yöneticilerin liderlik kapasitelerini, kurumsal hedeflerle tam uyumlu bir biçimde maksimize etmek ve onları geleceğin üst düzey rollerine hazırlamaktır.",
+        "Bireylerin profesyonel yolculuklarında farkındalık kazanmalarını sağlayarak, onlara kendi kariyerlerinin direksiyonuna geçme becerisi kazandırmaktır.",
+        "Bireyin profesyonel başarı için ihtiyaç duyduğu kritik yetkinlikleri fark etmesini, bu alanlardaki gelişim potansiyelini harekete geçirmesini ve kalıcı birer davranış alışkanlığına dönüştürmesini sağlamaktır.",
+        "Kurumun en değerli yeteneklerinin, mevcut uzmanlık rollerinden stratejik liderlik rollerine geçiş süreçlerini hızlandırmak ve bu geçişi pürüzsüz hale getirmektir.",
+        "Yönetici adaylarının veya mevcut liderlerin, profesyonel değerlendirme merkezlerinde gerçek potansiyellerini en üst seviyede sergilemelerini sağlamaktır.",
+        "Profesyonel koçların ICF tarafından belirlenen 8 Temel Yetkinliği en üst düzeyde sergilemelerini sağlamak ve unvanlanma sürecindeki engelleri aşmalarına rehberlik etmektir."
+      ],
+      "details": [
+        {
+          "intro": "Zirvedeki liderliğin beraberinde getirdiği karmaşıklık, yüksek sorumluluk ve stratejik yalnızlık süreçlerini yönetmek için tasarlanan bu program, liderin hem profesyonel yetkinliklerini hem de kişisel bütünlüğünü en üst seviyeye çıkarmayı hedefler.",
+          "bullets": [
+            "Stratejik Vizyon ve Çeviklik: Liderin günlük operasyonel döngüden çıkarak uzun vadeli stratejilere odaklanmasını sağlamak; belirsizlik dönemlerinde hızlı ve isabetli karar alma becerisini güçlendirmek.",
+            "Etki ve Nüfuz Yönetimi: Hiyerarşik gücün ötesine geçerek güvene dayalı, ikna edici ve ilham veren bir liderlik duruşu (Executive Presence) inşa etmek.",
+            "Kurumsal Kültür ve Halefiyet: Liderin kurum değerlerini davranışlarıyla somutlaştıran bir rol modele dönüşmesini sağlamak; yetenek yönetimi ve halefiyet planlaması süreçlerine rehberlik etmek.",
+            "Bilişsel ve Duygusal Dayanıklılık: Yüksek stres ve baskı altında duygusal zekayı koruyarak liderin zihinsel netliğini ve psikolojik dayanıklılığını sürdürülebilir kılmak."
+          ]
+        },
+        {
+          "intro": "Takımın ortak bir vizyon etrafında hizalanmasını, iç dinamiklerini optimize etmesini ve organizasyonel hedeflere ulaşırken sürdürülebilir bir sinerji yaratmasını hedefler.",
+          "bullets": [
+            "Ortak Hedef ve Stratejik Hizalanma: Takım üyelerinin kurumun ana stratejileriyle tam uyumlu hale gelmesini sağlamak; 'ben' odaklı yaklaşımları 'biz' odaklı kolektif bir başarı bilincine dönüştürmek.",
+            "Psikolojik Güven ve Etkileşim Kültürü: Takım içinde açık iletişimi destekleyen, farklı fikirlerin zenginlik olarak görüldüğü, güvene dayalı bir etkileşim ortamı inşa etmek.",
+            "Kolektif Hesap Verebilirlik ve Sorumluluk: Başarının ve başarısızlığın sorumluluğunun ekip tarafından ortaklaşa üstlenildiği bir 'sorumluluk bilinci' geliştirmek.",
+            "Çeviklik ve Karar Alma Dinamiği: Karmaşık ortamlarda takımın adaptasyon yeteneğini artırmak; karar alma süreçlerini şeffaflaştırarak uygulama hızını maksimize etmek.",
+            "Çatışma Yönetimi ve Yapıcı Tartışma: Takım içindeki enerjiyi engelleyen gizli ajandaları ve verimsiz çatışmaları ortadan kaldırarak inovasyona yönlendirmek."
+          ]
+        },
+        {
+          "intro": "Yöneticinin teknik uzmanlığının ötesine geçerek, insan yönetimi, stratejik etki ve duygusal olgunluk alanlarında ustalaşmasını sağlayan bir katalizör görevi görür.",
+          "bullets": [
+            "Liderlik Kimliğinin Güçlendirilmesi: Yöneticinin kendi liderlik stilini fark etmesini sağlamak, gelişim alanlarını kurumsal avantaja dönüştürecek stratejiler geliştirmek.",
+            "Performans ve Sonuç Odaklılık: Karmaşık projelerin yönetiminde verimliliği artırmak, delegasyon becerilerini geliştirerek net iş sonuçlarına odaklanmak.",
+            "Etkili İletişim ve İlişki Yönetimi: Farklı departmanlar ve paydaşlar arasında köprü kurma yetisini geliştirmek; çatışmaları yönetme ve ikna kabiliyetini profesyonel düzeye taşımak.",
+            "Kariyer Geçişi ve Adaptasyon: Yeni atanan veya terfi alan yöneticilerin yeni rollerindeki beklentilere hızla uyum sağlamalarını kolaylaştırmak.",
+            "Öz-Farkındalık ve Duygusal Zeka: Yöneticinin kendi tetikleyicilerini anlamasını sağlayarak, stres altında rasyonel kalabilme ve empati kurma becerisini artırmak."
+          ]
+        },
+        {
+          "intro": "Kişinin güçlü yönlerini, değerlerini ve gelişim alanlarını kristalleştirerek; piyasa dinamikleriyle uyumlu, stratejik ve sürdürülebilir bir kariyer navigasyonu sunmayı hedefler.",
+          "bullets": [
+            "Öz-Keşif ve Yetkinlik Envanteri: Bireyin temel yeteneklerini ve onu diğerlerinden ayıran 'eşsiz değer önerisini' keşfetmesini sağlamak.",
+            "Kariyer Vizyonu ve Hedef Belirleme: Kısa ve uzun vadeli kariyer hedeflerini SMART kriterlerine göre yapılandırarak belirsizliği somut bir yol haritasına dönüştürmek.",
+            "Kariyer Geçişleri ve Değişim Yönetimi: Kritik dönemeçlerde bireyin zihinsel dayanıklılığını korumasına ve geçişleri stratejik fırsatlara dönüştürmesine rehberlik etmek.",
+            "Piyasa Konumlandırması ve Markalama: Özgeçmiş, LinkedIn profili ve mülakat performansını profesyonel bir marka olarak yeniden inşa etmek.",
+            "İş-Özel Yaşam Dengesi ve Anlam Arayışı: Kariyer başarısını bireyin yaşam değerleri ve mutluluğuyla bütünleşik bir şekilde kurgulamak."
+          ]
+        },
+        {
+          "intro": "'Bilmek' ile 'yapabilmek' arasındaki boşluğu, aksiyon odaklı bir gelişim planıyla kapatmayı hedefler.",
+          "bullets": [
+            "Yetkinlik Analizi ve Farkındalık: Bireyin mevcut yetkinlik düzeyini analiz ederek en yüksek kaldıraç etkisine sahip alanları belirlemek.",
+            "Kişiselleştirilmiş Gelişim Yol Haritası: Soyut gelişim hedeflerini somut ve ölçülebilir mikro-hedeflere dönüştüren stratejik bir plan oluşturmak.",
+            "Konfor Alanını Esnetme ve Deneyimleme: Yeni becerileri güvenli bir ortamda prova etmek ve gerçek iş senaryolarında uygulamak.",
+            "Bilişsel ve Davranışsal Dönüşüm: Yetkinliğin önündeki zihinsel engelleri tespit ederek davranışı içselleştirilmiş bir refleks düzeyinde geliştirmek.",
+            "Sürdürülebilir Performans Artışı: Geliştirilen yetkinliklerin iş sonuçlarına yansımasını takip etmek ve değişimin kalıcı olmasını sağlamak."
+          ]
+        },
+        {
+          "intro": "Katılımcıların bireysel başarılarını ekip başarısına dönüştürecek zihinsel ve davranışsal yetkinlikleri kazanmalarını, kurumsal vizyona daha geniş bir perspektiften bakmalarını hedefler.",
+          "bullets": [
+            "Bireysel Uzmanlıktan Liderlik Kimliğine Geçiş: 'İşi en iyi yapan kişi' olmaktan, 'işin en iyi şekilde yapılmasını sağlayan lider' olmaya giden zihinsel dönüşümü gerçekleştirmek.",
+            "Stratejik Perspektif ve Büyük Resim: Operasyonel detaylarda boğulmak yerine uzun vadeli hedefleri anlama ve stratejik karar alma kaslarını geliştirmek.",
+            "Etki Gücü ve Paydaş Yönetimi: Hiyerarşik gücün ötesinde ikna kabiliyeti ve etkili iletişim yoluyla güçlü bir 'Liderlik Varlığı' sergilemek.",
+            "Duygusal Zekâ ve Dayanıklılık: Artan stres ve sorumlulukla başa çıkabilmek, zorlu geri bildirimleri gelişime dönüştürmek.",
+            "Yetenek Yönetimi ve Geliştirme: Çevresindeki potansiyelleri fark etme, onları besleme ve ekip içinde bir 'öğrenen kültür' yaratma becerilerini edinmek."
+          ]
+        },
+        {
+          "intro": "Katılımcının sadece ölçülen yetkinlikleri anlamasını değil, aynı zamanda bu yetkinlikleri davranışsal kanıtlara dönüştürerek etkili bir performans sergilemesini hedefler.",
+          "bullets": [
+            "Yetkinlik Farkındalığı ve Hizalanma: Kurumun liderlik modelindeki yetkinliklerin derinlemesine analizi ve katılımcının kendi tarzıyla eşleştirmesi.",
+            "Vaka Analizi ve Stratejik Çözümleme: Karmaşık iş senaryolarının kısıtlı sürede analiz edilmesi ve veriye dayalı çözüm önerilerinin yapılandırılması.",
+            "Rol Oyunu Simülasyonları: Zor çalışan yönetimi, müşteri görüşmesi veya kriz anı gibi canlandırmalarda profesyonel davranış kalıplarını deneyimlemek.",
+            "Etki ve Sunum Teknikleri: Hazırlanan çözümlerin üst yönetime ikna edici ve yapılandırılmış bir dille aktarılması.",
+            "Zihinsel Hazırlık ve Kaygı Yönetimi: Performans baskısını yönetmek ve 'doğru davranış' sergilemeye odaklanan zihinsel dayanıklılık geliştirmek."
+          ]
+        },
+        {
+          "intro": "Koçun seanslarını 'ustalık' seviyesine taşıyarak hem unvan sınavlarında hem de performans değerlendirmelerinde başarıya ulaşmasını hedefler.",
+          "bullets": [
+            "Yetkinliklerin Derinlemesine Analizi: ICF temel yetkinliklerinin seans içerisinde doğal bir reflekse dönüşmesini sağlamak.",
+            "Ses Kaydı Analizi ve Geri Bildirim: Gerçek seans kayıtlarını 'Marker' bazlı somut verilerle analiz etmek.",
+            "Koçluk Varlığı Gelişimi: Koçun seans sırasında 'bilmeme' halinde kalabilme ve sezgilerini profesyonelce kullanma becerisini güçlendirmek.",
+            "Sınav Hazırlığı ve Teknik Destek: Unvanlanma başvuru sürecindeki gereklilikleri yapılandırmak ve güncel ICF sınav formatına dair stratejik hazırlık yapmak.",
+            "Etik ve Profesyonel Standartlar: Koçluk mesleğinin etik kurallarını vaka analizleri üzerinden tartışarak mesleki farkındalık geliştirmek."
+          ]
+        }
       ]
     },
     "trainingArea": {
@@ -91,6 +183,140 @@
         "Performans Görüşmelerinde Ustalık",
         "Yetkinlik Gelişim Odaklı Mentorluk",
         "Geribildirim Alma ve Vermede Ustalaşmak"
+      ],
+      "descriptions": [
+        "Liderlerin günlük iş temposu içinde kaybolmadan, kendi deneyimlerini yapılandırılmış bir biçimde analiz etmelerini ve sezgisel liderlikten bilinçli liderliğe geçiş yapmalarını sağlamaktır.",
+        "Liderlerin yönetim tarzlarını 'cevap veren' bir modelden 'soru soran ve düşündüren' bir modele dönüştürerek, organizasyonda öğrenen ve yüksek sorumluluk alan bir kültür inşa etmektir.",
+        "Bir çalışma ekibinin potansiyelini stratejik netlik, ilişkisel güven ve çevik uygulama eksenlerinde optimize ederek sürdürülebilir yüksek performansa ulaşmasını sağlamaktır.",
+        "Liderlere, ekiplerindeki her bir bireyin davranışlarının arkasında yatan temel ihtiyaçları ve motivasyon kodlarını okuma ve bu kodlara uygun yönetim modelleri geliştirme becerisi kazandırmaktır.",
+        "Katılımcıların iletişim süreçlerindeki temel mekanizmaları fark etmelerini ve bu farkındalığı stratejik bir etki gücüne dönüştürmelerini sağlamaktır.",
+        "Bir organizasyonun kolektif farkındalığını, dayanıklılığını ve ilişkisel kalitesini artırarak yüksek performanslı bir kurum kültürü inşa etmektir.",
+        "Katılımcıların 'meşguliyet' tuzağından kurtulup 'etkililik' seviyesine geçmelerini sağlayarak, kendi zamanlarının aktif bir mimarı olmalarını sağlamaktır.",
+        "Yöneticilerin performans değerlendirme seanslarını, iş sonuçlarını doğrudan etkileyen yüksek etkili gelişim diyaloglarına dönüştürme becerisi kazandırmaktır.",
+        "Kurumun stratejik hedeflerine ulaşması için kritik yetkinliklerin, deneyimli liderler aracılığıyla gelişime açık yeteneklere sistemli bir şekilde aktarılmasını sağlamaktır.",
+        "Katılımcıların geribildirimi bir savunma veya saldırı mekanizması olmaktan çıkarıp, bir gelişim yakıtı olarak kullanma becerisi kazanmalarını sağlamaktır."
+      ],
+      "details": [
+        {
+          "duration": "2 Gün",
+          "participants": "15 Katılımcı",
+          "intro": "Yöneticinin sadece olayları değil, bu olaylar karşısındaki kendi tutum, karar ve duygularını birer öğrenme verisine dönüştürdüğü stratejik bir gelişim aracıdır.",
+          "bullets": [
+            "Yapılandırılmış Öz-Yansıtma: Yaşanan kritik olayları düzenli olarak analiz ederek liderin kendi kararlarındaki örüntüleri ve kör noktalarını fark etmesini sağlamak.",
+            "Stratejik Hafıza Oluşturma: Geçmiş krizlerin nasıl yönetildiğini kayıt altına alarak eşsiz bir 'liderlik kütüphanesi' inşa etmek.",
+            "Duygusal ve Zihinsel Netlik: Yoğun stres altında liderin zihnini boşaltmasına ve içsel dengesini korumasına yardımcı olmak.",
+            "Değerler ve Vizyon Hizalaması: Liderin günlük eylemlerinin uzun vadeli vizyonuyla ne ölçüde örtüştüğünü düzenli kontrol ederek 'otantik liderlik' duruşunu pekiştirmek.",
+            "Sürekli Gelişim Takibi: Liderlik yetkinliklerindeki ilerlemeyi somut örneklerle izlemek ve gelişimi kanıta dayalı bir yolculuğa dönüştürmek."
+          ]
+        },
+        {
+          "duration": "2 Gün",
+          "participants": "15 Katılımcı",
+          "intro": "Liderin ekibi üzerindeki etkisini hiyerarşik güce değil, gelişim odaklı bir güven ilişkisine dayandırmasını ve sürdürülebilir yüksek performansı tetiklemeyi hedefler.",
+          "bullets": [
+            "Zihniyet Dönüşümü: Mikro-yönetim alışkanlıklarından sıyrılarak çalışanlarına güvenen bir 'koç lider' kimliği kazanması.",
+            "Potansiyeli Performansa Dönüştürme: Çalışanların mevcut yetkinliklerini fark etmelerine rehberlik etmek ve içsel motivasyonlarını tetiklemek.",
+            "Soru Sorma ve Dinleme Disiplini: Talimat vermek yerine çalışanın kendi çözüm yollarını bulmasını sağlayacak stratejik soru sorma tekniklerini ustalıkla uygulamak.",
+            "Sürekli Geri Bildirim ve Gelişim Kültürü: Performans yönetimini günlük etkileşimlerin bir parçası haline gelen 'anlık koçluk' seanslarına dönüştürmek.",
+            "Yetkilendirme ve Delegasyon: Çalışanın yetkinliğe ve özgüvene erişmesi için koçluk desteği sunarak liderlik sorumluluğunu tabana yaymak."
+          ]
+        },
+        {
+          "duration": "2 Gün",
+          "participants": "15 Katılımcı",
+          "intro": "Ekibin mevcut durumunu analiz eden ve varmak istediği hedef (Kuzey Yıldızı) ile arasındaki boşluğu kapatacak somut bir yol haritası sunan dinamik bir rehberlik sürecidir.",
+          "bullets": [
+            "Kuzey Yıldızı (Ortak Vizyon) Belirleme: Ekibin varlık nedenini ve öncelikli stratejik hedeflerini netleştirerek tüm üyelerin aynı vizyona odaklanmasını sağlamak.",
+            "Değerler ve Güven Zemini İnşası: Ekip üyelerinin birbirlerinin niyetinden emin olduğu, psikolojik güvenliğin sağlandığı bir zemin oluşturmak.",
+            "Rol ve Sorumluluk Netliği: Yetki karmaşasını sonlandırmak ve her üyenin takıma kattığı değeri kristalleştirmek.",
+            "İletişim ve Karar Alma Navigasyonu: Bilginin ekip içinde nasıl akacağını kurala bağlayarak operasyonel hızı artırmak.",
+            "Sürekli Gelişim ve Adaptasyon: Değişen koşullara göre yeniden kalibre edebilme becerisi kazanmak; öğrenen bir ekip kültürü oluşturmak."
+          ]
+        },
+        {
+          "duration": "2 Gün",
+          "participants": "15 Katılımcı",
+          "intro": "'Herkese aynı ödül' mantığından sıyrılarak bireysel tutkuları kurumsal hedeflerle senkronize eden bilimsel ve psikolojik bir yaklaşım sunmayı hedefler.",
+          "bullets": [
+            "Motivasyonel Profilleme: Çalışanların motivasyon kodlarını doğru teşhis etmek için gerekli analitik araçları ve gözlem tekniklerini kullanmak.",
+            "İletişim ve Etki Dilini Kişiselleştirme: Her çalışanın 'duyma ve harekete geçme' koduna uygun bir iletişim dili geliştirerek ikna gücünü maksimize etmek.",
+            "İçsel Yakıtı Ateşlemek: Çalışanın işindeki 'anlam', 'ustalık' ve 'özerklik' ihtiyacına hitap eden içsel motivasyon kanallarını açmak.",
+            "Takım Enerjisi ve Uyum: Farklı motivasyon kodlarına sahip bireylerin farklılıklarını sinerji yaratan bir güce dönüştürmek.",
+            "Yüksek Bağlılık ve Performans Sürdürülebilirliği: Çalışanın 'neden' çalıştığını bildiği bir ekosistem yaratarak iş gücü devrini azaltmak."
+          ]
+        },
+        {
+          "duration": "2 Gün",
+          "participants": "15 Katılımcı",
+          "intro": "'Mesaj iletmekten' ziyade 'anlamda ortaklaşmayı' merkeze alarak iş yaşamında şeffaf, verimli ve güven odaklı bir etkileşim mimarisi kurmayı hedefler.",
+          "bullets": [
+            "Görünmeyen Katmanların Analizi: Kelimelerin ötesine geçerek ses tonu, mikro-ifadeler ve beden dilinin yarattığı asıl mesajı yönetme becerisi kazanmak.",
+            "Dinleme Kodlarının Çözümü: 'Cevap vermek için dinlemekten', 'anlamak ve hissetmek için dinlemeye' geçerek gerçek bir bağ kurmak.",
+            "Algı ve Filtre Yönetimi: Bireylerin 'iletişim filtrelerini' fark ederek mesajları bu filtrelere takılmadan iletme tekniklerini öğrenmek.",
+            "Psikolojik Güven ve Şeffaflık: Bilginin güvenle aktığı açık iletişim protokolleri geliştirmek; varsayımlar yerine gerçekler üzerine kurulu bir dil inşa etmek.",
+            "Etki ve İkna Genetiği: Karşımızdakinin karar alma kodlarını anlayarak mesajı en etkili şekilde yapılandırmak."
+          ]
+        },
+        {
+          "duration": "2 Gün",
+          "participants": "15 Katılımcı",
+          "intro": "Duygusal zekâ prensiplerini sadece bireysel bir yetkinlik olarak değil, stratejik bir yönetim disiplini olarak ele alır ve kurumun değişimlere adaptasyon hızını artırmayı hedefler.",
+          "bullets": [
+            "Duygusal Kültürün Tasarımı: Kurum içindeki 'görünmeyen kuralları' analiz ederek güven, takdir ve şeffaflık üzerine kurulu bir çalışma ortamı yaratmak.",
+            "Organizasyonel Empati ve Müşteri Odaklılık: Dış paydaşlar ve müşterilerle etkileşimde duygusal verileri doğru okuyarak değer yaratan ilişkiler kurmak.",
+            "Kolektif Dayanıklılık (Resilience): Kriz ve belirsizlik anlarını birer öğrenme ve güçlenme fırsatına dönüştürecek sistemik mekanizmalar geliştirmek.",
+            "Çatışma Yönetimi ve Psikolojik Güvenlik: Farklı fikirlerin özgürce ifade edilebildiği, yapıcı çatışmanın inovasyonu beslediği bir güven ortamı tesis etmek.",
+            "Duygusal Zekâ Temelli Liderlik Hattı: Tüm yönetim kademelerinde ortak bir duygusal dil ve tutarlı yönetim pratikleri zinciri kurmak."
+          ]
+        },
+        {
+          "duration": "2 Gün",
+          "participants": "15 Katılımcı",
+          "intro": "Nörobilimsel yaklaşımlar ve stratejik planlama tekniklerini birleştirerek kısıtlı zamanı en yüksek anlam ve çıktı üretecek şekilde yapılandırmayı hedefler.",
+          "bullets": [
+            "Reaktiften Proaktife Geçiş: Günlük krizlerin peşinden koşmak yerine liderin kendi stratejik ajandasını belirlemesini sağlayacak zihinsel dönüşümü gerçekleştirmek.",
+            "Bilişsel Enerji ve Odak Yönetimi: Zamanın enerji ve dikkat ile yönetildiğini fark ederek 'Derin Çalışma' seanslarıyla zihinsel performansı maksimize etmek.",
+            "Önceliklendirme Mimarisi: 'Acil' olanın gürültüsünü kısmayı ve 'önemli' olanın sesini yükseltmeyi bir yaşam disiplini haline getirmek.",
+            "Dijital ve Fiziksel Alan Tasarımı: Odaklanmayı baltalayan dijital gürültüyü yapısal olarak yönetmek ve akış halini destekleyen çalışma rutinleri kurmak.",
+            "Yaşam Dengesi ve Sürdürülebilirlik: Profesyonel başarıyı kişisel yenilenme ve yaşam kalitesiyle entegre ederek tükenmişliği engelleyen bir zaman tasarımı oluşturmak."
+          ]
+        },
+        {
+          "duration": "2 Gün",
+          "participants": "15 Katılımcı",
+          "intro": "Yöneticinin objektif veri analizi ile duygusal zekayı harmanlayarak, çalışanı savunmaya geçirmeden geliştiren bir müzakere ustalığına erişmesini hedefler.",
+          "bullets": [
+            "Psikolojik Güven ve Ortam Tasarımı: Görüşmeyi güvenli, şeffaf ve yapıcı bir zemine oturtmak; geri bildirimi bir ödül olarak algılanmasını sağlayacak iklimi yaratmak.",
+            "Kanıta Dayalı ve Objektif Değerlendirme: Somut başarılara ve gözlemlenebilir davranışlara dayalı bir geribildirim dili geliştirerek adaleti pekiştirmek.",
+            "Zorlayıcı Diyaloglarda Ustalık: Beklentinin altında kalan performansın profesyonel sınırları koruyarak netlikle konuşulmasını deneyimlemek.",
+            "Gelecek Odaklılık: Geçmişe odaklanmak yerine 'ileri bildirim' tekniklerini ve gelişim planlarını yapılandırmak.",
+            "Taahhüt ve Aksiyon Hizalaması: Çalışanın yeni hedefleri sahiplendiği ve desteklendiğini hissettiği bir mutabakat zemini oluşturmak."
+          ]
+        },
+        {
+          "duration": "2 Gün",
+          "participants": "15 Katılımcı",
+          "intro": "Teorik bilginin ötesine geçerek yaşanmış deneyimlerin, kurumsal farkındalığın ve uygulama becerisinin kalıcı bir davranış değişikliğine dönüşmesini hedefler.",
+          "bullets": [
+            "Yetkinlik Boşluklarının Kapatılması: Gelişim alanlarını mentorun rehberliğinde somut projeler ve iş üstünde öğrenme yöntemleriyle güçlendirmek.",
+            "Deneyimsel Öğrenme ve Bilgelik Transferi: Mentorun kariyer yolculuğundaki dersleri aktararak mentinin gelişim eğrisini hızlandırmak.",
+            "Kurumsal Hafıza ve Kültürün Korunması: Kurumun yazılı olmayan kurallarını ve değerlerini mentiye aktararak aidiyeti pekiştirmek.",
+            "Kariyer Navigasyonu ve Ağ Oluşturma: Mentinin kurum içindeki görünürlüğünü artırmak ve kariyer yolculuğunda stratejik bir ayna tutmak.",
+            "Çift Taraflı Gelişim: Mentorluk sürecini mentor için de bir gelişim fırsatı olarak konumlandırmak."
+          ]
+        },
+        {
+          "duration": "2 Gün",
+          "participants": "15 Katılımcı",
+          "intro": "Geribildirimin hem 'verme' hem de 'alma' boyutunda ustalığı hedefleyerek kurum içinde şeffaf, dürüst ve sürekli öğrenmeyi destekleyen bir kültürel zemin oluşturmayı amaçlar.",
+          "bullets": [
+            "Verme Ustalığı: Geribildirimi kişiliğe yönelik yargıdan çıkarıp gözlemlenebilir davranışlara ve somut iş sonuçlarına odaklanan profesyonel bir dille aktarma becerisi kazanmak.",
+            "Alma Ustalığı: Gelen geribildirimi bir 'tehdit' değil, 'değerli bir veri' olarak görebilme olgunluğunu geliştirmek.",
+            "SBI ve Feedforward Modelleri: Durum-Davranış-Etki akışıyla netlik sağlamak ve gelecekteki performansı kurgulayan 'İleri Bildirim' tekniklerini içselleştirmek.",
+            "Psikolojik Güven İnşası: Geribildirimin güven yarattığı bir ortam tesis etmek; ekip üyelerinin samimiyetle geribildirim talep etmelerini sağlamak.",
+            "Kör Noktaları Aydınlatmak: Başkalarının gözlemlerini ayna olarak kullanarak performansı engelleyen davranış kalıplarını su yüzüne çıkarmak."
+          ]
+        }
       ]
     }
   },
@@ -245,6 +471,9 @@
     "legalTitle": "Yasal",
     "terms": "Kullanım Şartları",
     "privacy": "Gizlilik Politikası",
+    "pricing": "Fiyatlandırma",
+    "cancellation": "İptal Politikası",
+    "refund": "İade Politikası",
     "linkedin": "LinkedIn",
     "instagram": "Instagram",
     "youtube": "YouTube"
@@ -271,7 +500,10 @@
   },
   "legal": {
     "termsTitle": "Kullanım Şartları",
-    "privacyTitle": "Gizlilik Politikası"
+    "privacyTitle": "Gizlilik Politikası",
+    "pricingTitle": "Fiyatlandırma Politikası",
+    "cancellationTitle": "İptal ve Değişiklik Politikası",
+    "refundTitle": "İade Politikası"
   },
   "faq": {
     "title": "Sıkça Sorulan Sorular",
@@ -310,5 +542,35 @@
         "answer": "İletişim sayfamızdaki formu doldurabilir veya doğrudan info@corecoachingtraining.com adresine e-posta gönderebilirsiniz. Genellikle iş günlerinde 24 saat içinde dönüş yapıyoruz."
       }
     ]
+  },
+  "teamCoaching": {
+    "title": "Eğitim Destekli Takıma Koçluk",
+    "subtitle": "CCT'ye Özgü Bütünsel Dönüşüm Modeli",
+    "quote": "\"Gerçek dönüşüm, bilgiyi vermekle değil; o bilginin hayatta karşılık bulmasıyla mümkündür.\"",
+    "intro1": "CCT'yi farklı ve güçlü kılan en önemli yaklaşımlardan biri, eğitim ile takıma koçluğu aynı gelişim yolculuğu içinde, entegre bir modelle sunmasıdır. Bu yaklaşım, CCT tarafından geliştirilmiş ve yalnızca CCT'de uygulanan özgün bir etki modelidir.",
+    "intro2": "Pek çok kurumda eğitim ve koçluk birbirinden bağımsız yürütülür. Eğitimler bilgi üretir; koçluk ise davranışa odaklanır. Ancak bu iki alan birbirinden kopuk ilerlediğinde, öğrenilen bilginin sahaya ve günlük iş yapış biçimlerine yansıması sınırlı kalır.",
+    "modelName": "CCT'nin Eğitim Destekli Takıma Koçluk modeli",
+    "intro3": ", bu kopukluğu ortadan kaldırır.",
+    "programTitle": "Bu özel programda;",
+    "programItem1": "Takımın ihtiyacına göre hedefli ve nokta atışı eğitim içerikleri tasarlanır,",
+    "programItem2": "Eğitimlerde edinilen bilgi, takıma koçluk seanslarıyla davranışa dönüştürülür,",
+    "programItem3": "Öğrenme süreci, takımın gerçek vakaları ve günlük iş dinamikleri üzerinden ilerler.",
+    "programOutro": "Bu sayede bilgi, soyut bir kazanım olarak kalmaz; takımın karar alma, iletişim, iş birliği ve performans pratiklerine doğrudan yansır.",
+    "benefitsTitle": "Bu Model Ne Sağlar?",
+    "benefitsSubtitle": "Eğitim Destekli Takıma Koçluk;",
+    "benefit1": "Öğrenilen bilginin hayata geçmesini sağlar,",
+    "benefit2": "Takım içinde ortak dil ve bakış açısı oluşturur,",
+    "benefit3": "Davranış değişimini hızlandırır ve kalıcı hâle getirir,",
+    "benefit4": "Takım performansını yalnızca sonuçlar üzerinden değil, ilişki ve süreçler üzerinden de güçlendirir.",
+    "benefitsOutro": "Bu yaklaşımda eğitim, koçluğu besler; koçluk ise eğitimi yaşayan bir deneyime dönüştürür. Böylece gelişim, tek seferlik bir müdahale değil; ölçülebilir, sürdürülebilir ve fark edilir bir dönüşüm yolculuğu hâline gelir.",
+    "whyTitle": "Neden Sadece CCT'de?",
+    "whySubtitle": "Çünkü bu model;",
+    "whyItem1": "Eğitimi, koçluğu ve fasilitasyonu aynı anda okuyabilen,",
+    "whyItem2": "Takım dinamiklerini ve kurumsal sistemi birlikte ele alan,",
+    "whyItem3": "Sahaya ve gerçek ihtiyaçlara dayalı çok disiplinli bir ustalık gerektirir.",
+    "conclusion": "CCT'de yürütülen Eğitim Destekli Takıma Koçluk programları, raftan inen içeriklerle değil; takımın ihtiyacından doğan, yaşayan ve dönüşen süreçler olarak tasarlanır.",
+    "ctaTitle": "Takımınız için bu modeli keşfetmek ister misiniz?",
+    "ctaDescription": "Eğitim destekli takıma koçluk hakkında detaylı bilgi almak için bizimle iletişime geçin.",
+    "ctaButton": "İletişime Geçin"
   }
 }
