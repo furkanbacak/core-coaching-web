@@ -179,7 +179,7 @@ export default function Navigation() {
           <Link href={`/${locale}`} className="flex items-center">
             <div className="relative w-16 h-16">
               <Image
-                src="/images/core-logo.png"
+                src="/images/logo-yeni.png"
                 alt="Core Coaching"
                 fill
                 className="object-contain mix-blend-multiply"
