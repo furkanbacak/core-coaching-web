@@ -453,8 +453,7 @@
     "location": "Location",
     "socialTitle": "Social Media",
     "linkedin": "LinkedIn",
-    "instagram": "Instagram",
-    "youtube": "YouTube"
+    "instagram": "Instagram"
   },
   "blog": {
     "title": "Blog",
@@ -475,8 +474,7 @@
     "cancellation": "Cancellation",
     "refund": "Refund",
     "linkedin": "LinkedIn",
-    "instagram": "Instagram",
-    "youtube": "YouTube"
+    "instagram": "Instagram"
   },
   "contactPage": {
     "title": "Get in Touch",

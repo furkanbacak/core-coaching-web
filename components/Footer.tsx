@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { Instagram, Linkedin, Mail, Youtube } from 'lucide-react';
+import { Instagram, Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -16,8 +16,7 @@ export default function Footer() {
       href: 'https://www.linkedin.com/in/nurhan-yazganel?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
       Icon: Linkedin,
     },
-    { key: 'instagram', label: t('instagram'), href: '#', Icon: Instagram },
-    { key: 'youtube', label: t('youtube'), href: '#', Icon: Youtube },
+    { key: 'instagram', label: t('instagram'), href: 'https://www.instagram.com/corecoachingtraining/', Icon: Instagram },
   ] as const;
 
   return (

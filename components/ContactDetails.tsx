@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Instagram, Linkedin, Mail, Youtube, MapPin } from 'lucide-react';
+import { Instagram, Linkedin, Mail, MapPin } from 'lucide-react';
 
 export default function ContactDetails() {
   const t = useTranslations('contact');
@@ -17,14 +17,8 @@ export default function ContactDetails() {
     {
       name: 'Instagram',
       icon: Instagram,
-      href: '#',
+      href: 'https://www.instagram.com/corecoachingtraining/',
       color: 'hover:bg-gradient-to-br hover:from-[#f09433] hover:via-[#e6683c] hover:to-[#bc1888] hover:text-white hover:border-transparent',
-    },
-    {
-      name: 'YouTube',
-      icon: Youtube,
-      href: '#',
-      color: 'hover:bg-[#FF0000] hover:text-white hover:border-[#FF0000]',
     },
   ] as const;
 
