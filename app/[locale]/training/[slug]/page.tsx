@@ -104,7 +104,7 @@ export default async function TrainingDetailPage({
                 </span>
               </div>
 
-              <div className="prose prose-lg max-w-none text-neutral-700 leading-relaxed space-y-6">
+              <div className="prose prose-lg max-w-none text-neutral-700 leading-relaxed space-y-6 text-justify">
                 <p>{detail.intro}</p>
 
                 <h2 className="text-2xl font-serif font-bold text-neutral-900 mt-10 mb-4">

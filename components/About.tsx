@@ -63,7 +63,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="space-y-5 text-neutral-700 leading-relaxed text-lg"
+            className="space-y-5 text-neutral-700 leading-relaxed text-lg text-justify"
           >
             <blockquote className="text-xl md:text-2xl font-serif font-bold text-primary-600 italic border-l-4 border-primary-400 pl-4">
               {t('quote1')}
@@ -130,7 +130,7 @@ export default function About() {
             </blockquote>
           </div>
 
-          <div className="space-y-6 text-neutral-700 leading-relaxed max-w-4xl mx-auto">
+          <div className="space-y-6 text-neutral-700 leading-relaxed max-w-4xl mx-auto text-justify">
             <p className="text-lg">{tFounder.rich('bio', { b: (chunks) => <strong className="font-semibold text-neutral-800">{chunks}</strong> })}</p>
             <p className="text-lg">{tFounder.rich('bio2', { b: (chunks) => <strong className="font-semibold text-neutral-800">{chunks}</strong> })}</p>
             <p className="text-lg">{tFounder.rich('bio3', { b: (chunks) => <strong className="font-semibold text-neutral-800">{chunks}</strong> })}</p>

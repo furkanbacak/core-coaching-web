@@ -630,7 +630,7 @@ export default async function BlogPostPage({
 
           {/* Content */}
           <div className="prose prose-lg max-w-none">
-            <div className="text-neutral-700 leading-relaxed space-y-6 text-lg">
+            <div className="text-neutral-700 leading-relaxed space-y-6 text-lg text-justify">
               {renderContent(post.content[locale as 'tr' | 'en'])}
             </div>
           </div>

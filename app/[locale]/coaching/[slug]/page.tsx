@@ -86,7 +86,7 @@ export default async function CoachingDetailPage({
         <section className="relative -mt-16 pb-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl shadow-neutral-200/50 border border-neutral-100">
-              <div className="prose prose-lg max-w-none text-neutral-700 leading-relaxed space-y-6">
+              <div className="prose prose-lg max-w-none text-neutral-700 leading-relaxed space-y-6 text-justify">
                 <p>{detail.intro}</p>
 
                 <h2 className="text-2xl font-serif font-bold text-neutral-900 mt-10 mb-4">
