@@ -108,8 +108,8 @@ const blogPosts = [
     slug: 'egitim-destekli-takima-kocluk',
     image: '/images/blog/egitim-destekli-takima-kocluk.jpg',
     title: {
-      tr: 'Eğitim Destekli Takıma Koçluk',
-      en: 'Training-Supported Team Coaching',
+      tr: 'Beyond Team Coaching',
+      en: 'Beyond Team Coaching',
     },
     subtitle: {
       tr: 'CCT\'ye Özgü Bütünsel Dönüşüm Modeli',

@@ -65,7 +65,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="space-y-5 text-neutral-700 leading-relaxed text-lg"
           >
-            <blockquote className="text-xl md:text-2xl font-serif text-primary-600 italic border-l-4 border-primary-400 pl-4">
+            <blockquote className="text-xl md:text-2xl font-serif font-bold text-primary-600 italic border-l-4 border-primary-400 pl-4">
               {t('quote1')}
             </blockquote>
             <p>{t('intro')}</p>
@@ -90,7 +90,7 @@ export default function About() {
               <li>{t('journey5')}</li>
             </ul>
 
-            <blockquote className="text-xl font-serif text-primary-600 italic border-l-4 border-primary-400 pl-4 py-2">
+            <blockquote className="text-xl font-serif font-bold text-primary-600 italic border-l-4 border-primary-400 pl-4 py-2">
               {t('quote2')}
             </blockquote>
             <p>{t('different')}</p>

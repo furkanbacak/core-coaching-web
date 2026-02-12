@@ -19,8 +19,8 @@ import { coachingSlugs } from '@/lib/program-slugs';
 
 const coachingIcons = [
   Crown,           // C Level Lider Koçluğu
-  Users,           // Takım Koçluğu
-  Briefcase,       // Yönetici / Executive Koçluğu
+  Users,           // Beyond Team Coaching
+  Briefcase,       // Beyond Executive Coaching
   TrendingUp,      // Kariyer Koçluğu
   Activity,        // Yetkinlik Gelişim Koçluğu
   Star,            // Yükselen Yıldızlara Koçluk

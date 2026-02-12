@@ -16,7 +16,7 @@
   "programs": {
     "coachingPrograms": "Coaching Programs",
     "trainingPrograms": "Training Programs",
-    "teamCoaching": "Training-Supported Team Coaching",
+    "teamCoaching": "Beyond Team Coaching",
     "workshopPrograms": "Workshop/Circle Studies",
     "keynoteSpeeches": "Keynote Speeches"
   },
@@ -70,8 +70,8 @@
       "title": "Coaching Programs",
       "items": [
         "C Level Leadership Coaching",
-        "Team Coaching",
-        "Executive Coaching",
+        "Beyond Team Coaching",
+        "Beyond Executive Coaching",
         "Career Coaching",
         "Competency Development Coaching",
         "Coaching for Rising Stars",
@@ -542,20 +542,20 @@
     ]
   },
   "teamCoaching": {
-    "title": "Training-Supported Team Coaching",
+    "title": "Beyond Team Coaching",
     "subtitle": "CCT's Unique Holistic Transformation Model",
     "quote": "\"True transformation is possible not by giving knowledge, but by that knowledge finding its place in life.\"",
     "intro1": "One of the most important approaches that makes CCT different and powerful is offering training and team coaching within the same development journey as an integrated model. This approach is a unique impact model developed by CCT and applied only at CCT.",
     "intro2": "In many organizations, training and coaching are conducted independently of each other. Training produces knowledge; coaching focuses on behavior. However, when these two areas progress disconnected from each other, the reflection of learned knowledge to the field and daily work practices remains limited.",
-    "modelName": "CCT's Training-Supported Team Coaching model",
+    "modelName": "CCT's Beyond Team Coaching model",
     "intro3": " eliminates this disconnect.",
     "programTitle": "In this special program;",
     "programItem1": "Targeted and precise training content is designed according to the team's needs,",
-    "programItem2": "Knowledge gained in training is transformed into behavior through team coaching sessions,",
+    "programItem2": "Knowledge gained in training is transformed into behavior through team coaching and mentoring approaches,",
     "programItem3": "The learning process proceeds through the team's real cases and daily work dynamics.",
     "programOutro": "Thus, knowledge does not remain as an abstract gain; it directly reflects on the team's decision-making, communication, collaboration, and performance practices.",
     "benefitsTitle": "What Does This Model Provide?",
-    "benefitsSubtitle": "Training-Supported Team Coaching;",
+    "benefitsSubtitle": "Beyond Team Coaching;",
     "benefit1": "Ensures that learned knowledge is put into practice,",
     "benefit2": "Creates a common language and perspective within the team,",
     "benefit3": "Accelerates behavior change and makes it permanent,",
@@ -566,9 +566,9 @@
     "whyItem1": "Requires mastery that can read training, coaching, and facilitation simultaneously,",
     "whyItem2": "Addresses team dynamics and organizational systems together,",
     "whyItem3": "Is based on the field and real needs — requiring multidisciplinary expertise.",
-    "conclusion": "Training-Supported Team Coaching programs conducted at CCT are designed not with off-the-shelf content, but as living and transforming processes born from the team's needs.",
+    "conclusion": "Beyond Team Coaching programs conducted at CCT are designed not with off-the-shelf content, but as living and transforming processes born from the team's needs.",
     "ctaTitle": "Want to explore this model for your team?",
-    "ctaDescription": "Contact us for detailed information about training-supported team coaching.",
+    "ctaDescription": "Contact us for detailed information about Beyond Team Coaching.",
     "ctaButton": "Get in Touch"
   }
 }

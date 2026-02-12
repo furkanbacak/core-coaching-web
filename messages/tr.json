@@ -16,7 +16,7 @@
   "programs": {
     "coachingPrograms": "Koçluk Programları",
     "trainingPrograms": "Eğitim Programları",
-    "teamCoaching": "Eğitim Destekli Takıma Koçluk",
+    "teamCoaching": "Beyond Team Coaching",
     "workshopPrograms": "Atölye/Çember Çalışmaları",
     "keynoteSpeeches": "Keynote Konuşmaları"
   },
@@ -70,8 +70,8 @@
       "title": "Koçluk Programları",
       "items": [
         "C Level Lider Koçluğu",
-        "Takım Koçluğu",
-        "Yönetici / Executive Koçluğu",
+        "Beyond Team Coaching",
+        "Beyond Executive Coaching",
         "Kariyer Koçluğu",
         "Yetkinlik Gelişim Koçluğu",
         "Yükselen Yıldızlara Koçluk",
@@ -80,8 +80,8 @@
       ],
       "descriptions": [
         "Kurumun en üst düzey yöneticilerinin stratejik rollerinde sergiledikleri performansı, bireysel potansiyellerinin ötesine taşıyarak organizasyonel bir kaldıraç etkisine dönüştürmektir.",
-        "Bir çalışma grubunun bireysel yetkinlikler toplamından çok daha fazlasını ifade eden, yüksek performanslı ve kendi kendini yönetebilen bir sisteme dönüşmesini sağlamaktır.",
-        "Yöneticilerin liderlik kapasitelerini, kurumsal hedeflerle tam uyumlu bir biçimde maksimize etmek ve onları geleceğin üst düzey rollerine hazırlamaktır.",
+        "CCT'yi farklı ve güçlü kılan en önemli yaklaşımlardan biri, eğitim ile takım koçluğunu aynı gelişim yolculuğu içinde, entegre bir modelle sunmasıdır. Bu yaklaşım, CCT tarafından geliştirilmiş ve yalnızca CCT'de uygulanan özgün bir etki modelidir.",
+        "Yönetici Koçluğu programının temel amacı; yöneticilerin liderlik kapasitelerini, kurumsal hedeflerle tam uyumlu bir biçimde maksimize etmek ve onları geleceğin üst düzey rollerine hazırlamaktır.",
         "Bireylerin profesyonel yolculuklarında farkındalık kazanmalarını sağlayarak, onlara kendi kariyerlerinin direksiyonuna geçme becerisi kazandırmaktır.",
         "Bireyin profesyonel başarı için ihtiyaç duyduğu kritik yetkinlikleri fark etmesini, bu alanlardaki gelişim potansiyelini harekete geçirmesini ve kalıcı birer davranış alışkanlığına dönüştürmesini sağlamaktır.",
         "Kurumun en değerli yeteneklerinin, mevcut uzmanlık rollerinden stratejik liderlik rollerine geçiş süreçlerini hızlandırmak ve bu geçişi pürüzsüz hale getirmektir.",
@@ -99,23 +99,23 @@
           ]
         },
         {
-          "intro": "Takımın ortak bir vizyon etrafında hizalanmasını, iç dinamiklerini optimize etmesini ve organizasyonel hedeflere ulaşırken sürdürülebilir bir sinerji yaratmasını hedefler.",
+          "intro": "Pek çok kurumda eğitim ve koçluk birbirinden bağımsız yürütülür. Eğitimler bilgi üretir; koçluk ise davranışa odaklanır. Ancak bu iki alan birbirinden kopuk ilerlediğinde, öğrenilen bilginin sahaya ve günlük iş yapış biçimlerine yansıması sınırlı kalır. CCT'nin Beyond Team Coaching modeli, bu kopukluğu ortadan kaldırır. Bu özel programda; takımın ihtiyacına göre hedefli ve nokta atışı eğitim içerikleri tasarlanır, eğitimlerde edinilen bilgi takıma koçluk ve mentorluk yaklaşımlarıyla davranışa dönüştürülür, öğrenme süreci takımın gerçek vakaları ve günlük iş dinamikleri üzerinden ilerler. Bu sayede bilgi, soyut bir kazanım olarak kalmaz; takımın karar alma, iletişim, iş birliği ve performans pratiklerine doğrudan yansır.",
           "bullets": [
             "Ortak Hedef ve Stratejik Hizalanma: Takım üyelerinin kurumun ana stratejileriyle tam uyumlu hale gelmesini sağlamak; 'ben' odaklı yaklaşımları 'biz' odaklı kolektif bir başarı bilincine dönüştürmek.",
-            "Psikolojik Güven ve Etkileşim Kültürü: Takım içinde açık iletişimi destekleyen, farklı fikirlerin zenginlik olarak görüldüğü, güvene dayalı bir etkileşim ortamı inşa etmek.",
-            "Kolektif Hesap Verebilirlik ve Sorumluluk: Başarının ve başarısızlığın sorumluluğunun ekip tarafından ortaklaşa üstlenildiği bir 'sorumluluk bilinci' geliştirmek.",
-            "Çeviklik ve Karar Alma Dinamiği: Karmaşık ortamlarda takımın adaptasyon yeteneğini artırmak; karar alma süreçlerini şeffaflaştırarak uygulama hızını maksimize etmek.",
-            "Çatışma Yönetimi ve Yapıcı Tartışma: Takım içindeki enerjiyi engelleyen gizli ajandaları ve verimsiz çatışmaları ortadan kaldırarak inovasyona yönlendirmek."
+            "Psikolojik Güven ve Etkileşim Kültürü: Takım içinde açık iletişimi destekleyen, farklı fikirlerin birer çatışma unsuru değil zenginlik olarak görüldüğü, güvene dayalı bir etkileşim ortamı inşa etmek.",
+            "Kolektif Hesap Verebilirlik ve Sorumluluk: Başarının ve başarısızlığın sorumluluğunun ekip tarafından ortaklaşa üstlenildiği, hiyerarşiden bağımsız bir 'sorumluluk bilinci' geliştirmek.",
+            "Çeviklik ve Karar Alma Dinamiği: Karmaşık ve belirsiz ortamlarda takımın adaptasyon yeteneğini artırmak; karar alma süreçlerini şeffaflaştırarak uygulama hızını maksimize etmek.",
+            "Çatışma Yönetimi ve Yapıcı Tartışma: Takım içindeki enerjiyi engelleyen gizli ajandaları ve verimsiz çatışmaları ortadan kaldırarak, bu enerjiyi inovasyona ve çözüm üretmeye yönlendirmek."
           ]
         },
         {
-          "intro": "Yöneticinin teknik uzmanlığının ötesine geçerek, insan yönetimi, stratejik etki ve duygusal olgunluk alanlarında ustalaşmasını sağlayan bir katalizör görevi görür.",
+          "intro": "Bu programda normal yönetici koçluğu şapkasına ilave olarak mentorluk, eğitim, danışmanlık şapkaları birleştirildiğinden yöneticinin teknik uzmanlığının ötesine geçerek çağdaş yönetim ve liderlik yetkinliklerinde güçlenme, liderlik varlığı, duruşu ve zihniyetini benimseme, insan yönetimi, stratejik etki ve duygusal olgunluk alanlarında ustalaşma sağlayan bir katalizör görevi görür. Tüm yetkinliklerde farkındalık, gelişim ve iş yapış şekillerinde gözle görünür dönüşümler yaşanır.",
           "bullets": [
-            "Liderlik Kimliğinin Güçlendirilmesi: Yöneticinin kendi liderlik stilini fark etmesini sağlamak, gelişim alanlarını kurumsal avantaja dönüştürecek stratejiler geliştirmek.",
-            "Performans ve Sonuç Odaklılık: Karmaşık projelerin yönetiminde verimliliği artırmak, delegasyon becerilerini geliştirerek net iş sonuçlarına odaklanmak.",
-            "Etkili İletişim ve İlişki Yönetimi: Farklı departmanlar ve paydaşlar arasında köprü kurma yetisini geliştirmek; çatışmaları yönetme ve ikna kabiliyetini profesyonel düzeye taşımak.",
-            "Kariyer Geçişi ve Adaptasyon: Yeni atanan veya terfi alan yöneticilerin yeni rollerindeki beklentilere hızla uyum sağlamalarını kolaylaştırmak.",
-            "Öz-Farkındalık ve Duygusal Zeka: Yöneticinin kendi tetikleyicilerini anlamasını sağlayarak, stres altında rasyonel kalabilme ve empati kurma becerisini artırmak."
+            "Liderlik Kimliğinin Güçlendirilmesi: Yöneticinin kendi liderlik stilini fark etmesini sağlamak, güçlü yönlerini parlatırken gelişim alanlarını kurumsal bir avantaja dönüştürecek stratejiler geliştirmek.",
+            "Performans ve Sonuç Odaklılık: Karmaşık projelerin yönetiminde verimliliği artırmak, delegasyon becerilerini geliştirerek ekibin performansını yukarı çekmek ve net iş sonuçlarına odaklanmak.",
+            "Etkili İletişim ve İlişki Yönetimi: Farklı departmanlar ve paydaşlar arasında köprü kurma yetisini geliştirmek; çatışmaları yönetme ve ikna kabiliyetini profesyonel bir düzeye taşımak.",
+            "Kariyer Geçişi ve Adaptasyon: Yeni atanan veya terfi alan yöneticilerin, yeni rollerindeki beklentilere hızla uyum sağlamalarını ve 'yönetilen' rolden 'yöneten' role geçiş sancılarını minimize etmek.",
+            "Öz-Farkındalık ve Duygusal Zeka: Yöneticinin kendi tetikleyicilerini anlamasını sağlayarak, stres altında dahi rasyonel kalabilme ve empati kurarak çevresini motive etme becerisini artırmak."
           ]
         },
         {
@@ -185,7 +185,7 @@
         "Geribildirim Alma ve Vermede Ustalaşmak"
       ],
       "descriptions": [
-        "Liderlerin günlük iş temposu içinde kaybolmadan, kendi deneyimlerini yapılandırılmış bir biçimde analiz etmelerini ve sezgisel liderlikten bilinçli liderliğe geçiş yapmalarını sağlamaktır.",
+        "Bu eğitim programının temel amacı; liderlerin günlük iş temposu içinde kaybolmadan, kendi deneyimlerini yapılandırılmış bir biçimde analiz etmelerini ve bu yolla sezgisel liderlikten bilinçli liderliğe geçiş yapmalarını sağlamaktır. Program, yöneticilerin yalnızca bilgi edinmesini değil, gerçek iş ortamında davranış dönüşümü yaşamasını hedefleyen bütünsel bir liderlik gelişim programıdır.",
         "Liderlerin yönetim tarzlarını 'cevap veren' bir modelden 'soru soran ve düşündüren' bir modele dönüştürerek, organizasyonda öğrenen ve yüksek sorumluluk alan bir kültür inşa etmektir.",
         "Bir çalışma ekibinin potansiyelini stratejik netlik, ilişkisel güven ve çevik uygulama eksenlerinde optimize ederek sürdürülebilir yüksek performansa ulaşmasını sağlamaktır.",
         "Liderlere, ekiplerindeki her bir bireyin davranışlarının arkasında yatan temel ihtiyaçları ve motivasyon kodlarını okuma ve bu kodlara uygun yönetim modelleri geliştirme becerisi kazandırmaktır.",
@@ -198,15 +198,15 @@
       ],
       "details": [
         {
-          "duration": "2 Gün",
+          "duration": "4 Gün Eğitim + 4 Adet Koçluk",
           "participants": "15 Katılımcı",
-          "intro": "Yöneticinin sadece olayları değil, bu olaylar karşısındaki kendi tutum, karar ve duygularını birer öğrenme verisine dönüştürdüğü stratejik bir gelişim aracıdır.",
+          "intro": "Katılımcılar bu yolculukta; liderlik zihniyetlerini güçlendirir, temel liderlik yetkinliklerinde derinleşir ve takımını yüksek performansa taşıyacak pratik araçlar kazanır. Program içerisinde liderler birebir koçluklarla desteklenmektedir.",
           "bullets": [
-            "Yapılandırılmış Öz-Yansıtma: Yaşanan kritik olayları düzenli olarak analiz ederek liderin kendi kararlarındaki örüntüleri ve kör noktalarını fark etmesini sağlamak.",
-            "Stratejik Hafıza Oluşturma: Geçmiş krizlerin nasıl yönetildiğini kayıt altına alarak eşsiz bir 'liderlik kütüphanesi' inşa etmek.",
-            "Duygusal ve Zihinsel Netlik: Yoğun stres altında liderin zihnini boşaltmasına ve içsel dengesini korumasına yardımcı olmak.",
-            "Değerler ve Vizyon Hizalaması: Liderin günlük eylemlerinin uzun vadeli vizyonuyla ne ölçüde örtüştüğünü düzenli kontrol ederek 'otantik liderlik' duruşunu pekiştirmek.",
-            "Sürekli Gelişim Takibi: Liderlik yetkinliklerindeki ilerlemeyi somut örneklerle izlemek ve gelişimi kanıta dayalı bir yolculuğa dönüştürmek."
+            "Koçluk Yaklaşımı Benimseme: Liderin kendi kararlarındaki örüntüleri ve kör noktalarını fark etmesini sağlayarak kendini, insanı ve performansı aynı anda yönetebilen, koçluk yaklaşımıyla etki yaratan, güven ve bağlılık oluşturan, zor konuşmaları cesaretle yapabilen, takımını kendi kendini yöneten bir yapıya taşıyan bütünsel liderlik ustalığına ulaştırmak.",
+            "Yetkinliklerde Ustalaşma: Liderin Seyir Defteri, liderlik yetkinliklerini tek tek geliştirmez; liderin tüm liderlik kapasitesini aynı anda güçlendirir. Pusulası net, ekibine güven veren, yön gösteren değil yön açan, sorun çözen değil kapasite büyüten ustalaşmış lidere dönüşümü sağlamak.",
+            "Duygusal ve Zihinsel Netlik: Yoğun veri akışı ve stres altında, liderin zihnini boşaltmasına, önceliklerini netleştirmesine ve içsel dengesini korumasına yardımcı olmak.",
+            "Değerler ve Vizyon Hizalaması: Liderin günlük eylemlerinin, uzun vadeli vizyonu ve kişisel değerleriyle ne ölçüde örtüştüğünü düzenli olarak kontrol etmesini sağlayarak 'otantik liderlik' duruşunu pekiştirmek.",
+            "Sürekli Gelişim Takibi: Belirlenen liderlik yetkinliklerindeki ilerlemeyi somut örneklerle izlemek ve gelişimi sadece bir niyet olmaktan çıkarıp kanıta dayalı bir yolculuğa dönüştürmek."
           ]
         },
         {
@@ -542,20 +542,20 @@
     ]
   },
   "teamCoaching": {
-    "title": "Eğitim Destekli Takıma Koçluk",
+    "title": "Beyond Team Coaching",
     "subtitle": "CCT'ye Özgü Bütünsel Dönüşüm Modeli",
     "quote": "\"Gerçek dönüşüm, bilgiyi vermekle değil; o bilginin hayatta karşılık bulmasıyla mümkündür.\"",
-    "intro1": "CCT'yi farklı ve güçlü kılan en önemli yaklaşımlardan biri, eğitim ile takıma koçluğu aynı gelişim yolculuğu içinde, entegre bir modelle sunmasıdır. Bu yaklaşım, CCT tarafından geliştirilmiş ve yalnızca CCT'de uygulanan özgün bir etki modelidir.",
+    "intro1": "CCT'yi farklı ve güçlü kılan en önemli yaklaşımlardan biri, eğitim ile takım koçluğunu aynı gelişim yolculuğu içinde, entegre bir modelle sunmasıdır. Bu yaklaşım, CCT tarafından geliştirilmiş ve yalnızca CCT'de uygulanan özgün bir etki modelidir.",
     "intro2": "Pek çok kurumda eğitim ve koçluk birbirinden bağımsız yürütülür. Eğitimler bilgi üretir; koçluk ise davranışa odaklanır. Ancak bu iki alan birbirinden kopuk ilerlediğinde, öğrenilen bilginin sahaya ve günlük iş yapış biçimlerine yansıması sınırlı kalır.",
-    "modelName": "CCT'nin Eğitim Destekli Takıma Koçluk modeli",
+    "modelName": "CCT'nin Beyond Team Coaching modeli",
     "intro3": ", bu kopukluğu ortadan kaldırır.",
     "programTitle": "Bu özel programda;",
     "programItem1": "Takımın ihtiyacına göre hedefli ve nokta atışı eğitim içerikleri tasarlanır,",
-    "programItem2": "Eğitimlerde edinilen bilgi, takıma koçluk seanslarıyla davranışa dönüştürülür,",
+    "programItem2": "Eğitimlerde edinilen bilgi, takıma koçluk ve mentorluk yaklaşımlarıyla davranışa dönüştürülür,",
     "programItem3": "Öğrenme süreci, takımın gerçek vakaları ve günlük iş dinamikleri üzerinden ilerler.",
     "programOutro": "Bu sayede bilgi, soyut bir kazanım olarak kalmaz; takımın karar alma, iletişim, iş birliği ve performans pratiklerine doğrudan yansır.",
     "benefitsTitle": "Bu Model Ne Sağlar?",
-    "benefitsSubtitle": "Eğitim Destekli Takıma Koçluk;",
+    "benefitsSubtitle": "Beyond Team Coaching;",
     "benefit1": "Öğrenilen bilginin hayata geçmesini sağlar,",
     "benefit2": "Takım içinde ortak dil ve bakış açısı oluşturur,",
     "benefit3": "Davranış değişimini hızlandırır ve kalıcı hâle getirir,",
@@ -566,9 +566,9 @@
     "whyItem1": "Eğitimi, koçluğu ve fasilitasyonu aynı anda okuyabilen,",
     "whyItem2": "Takım dinamiklerini ve kurumsal sistemi birlikte ele alan,",
     "whyItem3": "Sahaya ve gerçek ihtiyaçlara dayalı çok disiplinli bir ustalık gerektirir.",
-    "conclusion": "CCT'de yürütülen Eğitim Destekli Takıma Koçluk programları, raftan inen içeriklerle değil; takımın ihtiyacından doğan, yaşayan ve dönüşen süreçler olarak tasarlanır.",
+    "conclusion": "CCT'de yürütülen Beyond Team Coaching programları, raftan inen içeriklerle değil; takımın ihtiyacından doğan, yaşayan ve dönüşen süreçler olarak tasarlanır.",
     "ctaTitle": "Takımınız için bu modeli keşfetmek ister misiniz?",
-    "ctaDescription": "Eğitim destekli takıma koçluk hakkında detaylı bilgi almak için bizimle iletişime geçin.",
+    "ctaDescription": "Beyond Team Coaching hakkında detaylı bilgi almak için bizimle iletişime geçin.",
     "ctaButton": "İletişime Geçin"
   }
 }

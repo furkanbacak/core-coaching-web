@@ -155,7 +155,7 @@ Yönetici koçluğu, üst düzey yöneticilerin ve liderlerin yalnızca iş sonu
 
 Koçluk süreci, yöneticilerin yalnızca daha iyi liderler olmalarına değil; daha dengeli, daha net ve daha etkili bireyler hâline gelmelerine katkı sunar.
 
-**Takım Koçluğu: Birlikte Başarmanın Dinamiğini Güçlendirmek**
+**Beyond Team Coaching: Birlikte Başarmanın Dinamiğini Güçlendirmek**
 
 Takımlar, yalnızca bir araya gelen bireylerden ibaret değildir. Her takımın kendine özgü bir dinamiği, iletişim dili ve ilişki yapısı vardır. Takım koçluğu, bu dinamikleri görünür kılarak; ekiplerin birlikte düşünmesini, birlikte öğrenmesini ve birlikte üretmesini destekler.
 
@@ -205,7 +205,7 @@ Organizational coaching addresses the entire organization as a system; it aims t
 
 Therefore, coaching is not just a tool for increasing performance; it is a strategic approach that develops the organization's learning and transformation capacity.
 
-**Executive Coaching: Strengthening the Inner Foundation of Leadership**
+**Beyond Executive Coaching: Strengthening the Inner Foundation of Leadership**
 
 Executive coaching enables senior executives and leaders to create space not only for business results but also for themselves. Today's managers are under high responsibility, intense pace, and constant decision-making pressure. Under these conditions, what leaders need most is to create a space where they can stop, think, and hear their own inner voice.
 
@@ -217,7 +217,7 @@ Executive coaching enables senior executives and leaders to create space not onl
 
 The coaching process contributes to executives becoming not only better leaders but also more balanced, clearer, and more effective individuals.
 
-**Team Coaching: Strengthening the Dynamics of Achieving Together**
+**Beyond Team Coaching: Strengthening the Dynamics of Achieving Together**
 
 Teams are not just individuals coming together. Every team has its own unique dynamics, communication language, and relationship structure. Team coaching makes these dynamics visible; supporting teams to think together, learn together, and produce together.
 
@@ -383,8 +383,8 @@ Believing that individuals are unique and special, looking at life from a holist
   },
   'egitim-destekli-takima-kocluk': {
     title: {
-      tr: 'Eğitim Destekli Takıma Koçluk',
-      en: 'Training-Supported Team Coaching',
+      tr: 'Beyond Team Coaching',
+      en: 'Beyond Team Coaching',
     },
     subtitle: {
       tr: 'CCT\'ye Özgü Bütünsel Dönüşüm Modeli',
@@ -398,7 +398,7 @@ CCT'yi farklı ve güçlü kılan en önemli yaklaşımlardan biri, eğitim ile 
 
 Pek çok kurumda eğitim ve koçluk birbirinden bağımsız yürütülür. Eğitimler bilgi üretir; koçluk ise davranışa odaklanır. Ancak bu iki alan birbirinden kopuk ilerlediğinde, öğrenilen bilginin sahaya ve günlük iş yapış biçimlerine yansıması sınırlı kalır.
 
-CCT'nin Eğitim Destekli Takıma Koçluk modeli, bu kopukluğu ortadan kaldırır.
+CCT'nin Beyond Team Coaching modeli, bu kopukluğu ortadan kaldırır.
 
 **Bu özel programda;**
 • Takımın ihtiyacına göre hedefli ve nokta atışı eğitim içerikleri tasarlanır,
@@ -409,7 +409,7 @@ Bu sayede bilgi, soyut bir kazanım olarak kalmaz; takımın karar alma, iletiş
 
 **Bu Model Ne Sağlar?**
 
-**Eğitim Destekli Takıma Koçluk;**
+**Beyond Team Coaching;**
 • Öğrenilen bilginin hayata geçmesini sağlar,
 • Takım içinde ortak dil ve bakış açısı oluşturur,
 • Davranış değişimini hızlandırır ve kalıcı hâle getirir,
@@ -424,14 +424,14 @@ Bu yaklaşımda eğitim, koçluğu besler; koçluk ise eğitimi yaşayan bir den
 • Takım dinamiklerini ve kurumsal sistemi birlikte ele alan,
 • Sahaya ve gerçek ihtiyaçlara dayalı çok disiplinli bir ustalık gerektirir.
 
-CCT'de yürütülen Eğitim Destekli Takıma Koçluk programları, raftan inen içeriklerle değil; takımın ihtiyacından doğan, yaşayan ve dönüşen süreçler olarak tasarlanır.`,
+CCT'de yürütülen Beyond Team Coaching programları, raftan inen içeriklerle değil; takımın ihtiyacından doğan, yaşayan ve dönüşen süreçler olarak tasarlanır.`,
       en: `"True transformation is possible not by giving knowledge, but by that knowledge finding its place in life."
 
 One of the most important approaches that makes CCT different and powerful is offering training and team coaching within the same development journey as an integrated model. This approach is a unique impact model developed by CCT and applied only at CCT.
 
 In many organizations, training and coaching are conducted independently of each other. Training produces knowledge; coaching focuses on behavior. However, when these two areas progress disconnected from each other, the reflection of learned knowledge to the field and daily work practices remains limited.
 
-CCT's Training-Supported Team Coaching model eliminates this disconnect.
+CCT's Beyond Team Coaching model eliminates this disconnect.
 
 **In this special program;**
 • Targeted and precise training content is designed according to the team's needs,
@@ -442,7 +442,7 @@ Thus, knowledge does not remain as an abstract gain; it directly reflects on the
 
 **What Does This Model Provide?**
 
-**Training-Supported Team Coaching;**
+**Beyond Team Coaching;**
 • Ensures that learned knowledge is put into practice,
 • Creates a common language and perspective within the team,
 • Accelerates behavior change and makes it permanent,
@@ -457,7 +457,7 @@ In this approach, training feeds coaching; coaching transforms training into a l
 • Addresses team dynamics and organizational systems together,
 • Is based on the field and real needs.
 
-Training-Supported Team Coaching programs conducted at CCT are designed not with off-the-shelf content, but as living and transforming processes born from the team's needs.`,
+Beyond Team Coaching programs conducted at CCT are designed not with off-the-shelf content, but as living and transforming processes born from the team's needs.`,
     },
     date: '2026-02-01',
     readTime: {

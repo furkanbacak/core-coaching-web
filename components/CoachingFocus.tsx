@@ -29,8 +29,8 @@ import { coachingSlugs, trainingSlugs } from '@/lib/program-slugs';
 // Icon mapping for coaching area items (8)
 const coachingIcons = [
   Crown,           // C Level Lider Koçluğu
-  Users,           // Takım Koçluğu
-  Briefcase,       // Yönetici / Executive Koçluğu
+  Users,           // Beyond Team Coaching
+  Briefcase,       // Beyond Executive Coaching
   TrendingUp,      // Kariyer Koçluğu
   Activity,        // Yetkinlik Gelişim Koçluğu
   Star,            // Yükselen Yıldızlara Koçluk
